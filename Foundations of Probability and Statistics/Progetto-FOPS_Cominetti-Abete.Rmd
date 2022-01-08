@@ -1,0 +1,1114 @@
+---
+title: "Progetto Foundations of Probability and Statistics"
+author: "Fabrizio Cominetti, Davide Abete"
+date: "2021/2022"
+output:
+  html_document:
+    toc: true
+    number_sections: true
+---
+
+# Introduzione
+
+L'obiettivo principale di questa analisi è quello di predirre la percentuale di grasso corporeo di una serie di individui date alcune variabili esplicative.
+
+[Link al dataset](https://www.kaggle.com/fedesoriano/body-fat-prediction-dataset)
+
+Nel dataset sono presenti misurazioni per 252 uomini.
+
+Il dataset è composto dalle seguenti colonne:
+
+-   Densità determinata dal peso sott'acqua
+-   Percentuale grasso corporeo (equazione di Siri del 1956)
+-   Età (anni)
+-   Peso (libbre)
+-   Altezza (pollici)
+-   Circonferenza del collo (cm)
+-   Circonferenza del petto (cm)
+-   Circonferenza del'addome (cm)
+-   Circonferenza del bacino (cm)
+-   Circonferenza della coscia (cm)
+-   Circonferenza del ginocchio (cm)
+-   Circonferenza della caviglia (cm)
+-   Circonferenza delbicipite (cm, da esteso)
+-   Circonferenza dell'avambraccio (cm)
+-   Circonferenza del polso (cm)
+
+La variabile target all'interno del dataset è l'attributo 'BodyFat'.
+
+La percentuale di grasso nel corpo è spesso considerata come una misura per valutare lo stato di salute di un individuo. Questa percentuale è calcolata o meglio stimata partendo dalla densità del corpo, che corrisponde al peso sott'acqua.
+
+    Folks (e.g. Siri (1956)) assume that the body consists of two components
+    - lean body tissue and fat tissue. Letting:
+
+    D = Body Density (gm/cm\^3) A = proportion of lean body tissue B =
+    proportion of fat tissue (A+B=1) a = density of lean body tissue
+    (gm/cm\^3) b = density of fat tissue (gm/cm\^3)
+
+    we have:
+
+    D = 1/\[(A/a) + (B/b)\]
+
+    solving for B we find:
+
+    B = (1/D)\*\[ab/(a-b)\] - \[b/(a-b)\].
+
+    Using the estimates a=1.10 gm/cm\^3 and b=0.90 gm/cm\^3 (see Katch and
+    McArdle (1977), p. 111 or Wilmore (1976), p. 123) we come up with
+    "Siri's equation":
+
+    Percentage of Body Fat (i.e. 100\*B) = 495/D - 450.
+
+    Volume, and hence body density, can be accurately measured a variety of
+    ways. The technique of underwater weighing "computes body volume as the
+    difference between body weight measured in air and weight measured
+    during water submersion. In other words, body volume is equal to the
+    loss of weight in water with the appropriate temperature correction for
+    the water's density" (Katch and McArdle (1977), p. 113). Using this
+    technique,
+
+    Body Density = WA/\[(WA-WW)/c.f. - LV\]
+
+    where:
+
+    WA = Weight in air (kg) WW = Weight in water (kg) c.f. = Water
+    correction factor (=1 at 39.2 deg F as one-gram of water occupies
+    exactly one cm\^3 at this temperature, =.997 at 76-78 deg F) LV =
+    Residual Lung Volume (liters) (Katch and McArdle (1977), p. 115).
+
+**Requirements**
+
+All'interno di questo report sono stati utilizzati alcuni pacchetti R, molti dei quali scaricabili dalla libreria Tidyverse.
+
+-   install.packages("ggplot2")
+-   install.packages("ggpubr")
+-   install.packages("GGally")
+-   install.packages("ggpairs")
+-   install.packages("wesanderson")
+
+```{r}
+library(ggplot2) # grafica
+library(ggpubr)
+library(ggcorrplot) # per matrice di correlazione
+library(GGally) # per ggppairs plots
+library(RColorBrewer) # palette di colori
+library(wesanderson) # palette di colori
+library(car)
+```
+
+# Esplorazione Dati
+
+Carichiamo il dataset:
+
+```{r}
+bodyfat0 <- read.table("bodyfat.csv", header = TRUE, sep = ",")
+```
+
+Una volta caricato il file, è utile svolgere un'analisi esplorativa per osservarne contenuti e caratteristiche.
+
+```{r}
+dim(bodyfat0)
+```
+
+Come possiamo osservare dall'output, il dataset è composto da 252 righe e 15 colonne.
+
+```{r}
+colnames(bodyfat0)
+```
+
+Leggendo la documentazione del file abbiamo notato che l'unità di misura delle variabili peso e altezza (Weight and Height) è rispettivamente libbre e pollici.
+
+Per motivi interpretativi convertiamo l'unità di misura della variabile peso da libbre a kg e l'unità di misura della variabile altezza da pollici a centimetri.
+
+Per convertire le libbre in kg è necessario moltiplicare la misura espressa in libbre per 0,45, che è il fattore di conversione da libbre a kg approssimato alla seconda cifra decimale.
+
+1 lb ≅ 0,45 kg
+
+```{r}
+bodyfat0$Weight <- round(bodyfat0$Weight * 0.45, 2)
+```
+
+```{r}
+bodyfat0$Weight[1:10]
+```
+
+In questo secondo caso, per convertire da inches a centimetri è necessario moltiplicare il valore inches per 2.54.
+
+```{r}
+bodyfat0$Height <- round(bodyfat0$Height * 2.54, 2)
+```
+
+```{r}
+bodyfat0$Height[1:10]
+```
+
+A questo punto possiamo osservare la 'testa' e la 'coda' del nostro dataframe.
+
+```{r}
+head(bodyfat0)
+```
+
+```{r}
+tail(bodyfat0)
+```
+
+Con il seguente codice verifichiamo la tipologia di dati delle variabili.
+
+```{r}
+str(bodyfat0)
+```
+
+Possiamo osservare che 14 variabili presenti sono di tipo 'numeric', la variabile 'Age' è invece di tipo integer.
+
+Sappiamo che la tipologia 'integer' costituisce una sottoclasse della tipologia 'numeric', ed ha la caratteristica di occupare meno spazio in memoria.
+
+A questo punto verifichiamo l'eventuale presenza di valori nulli o mancanti.
+
+```{r}
+bodyfat0[rowSums(is.na(bodyfat0)) > 0, ]
+```
+
+Il risultato di questo chunk di codice non restituisce righe, perciò all'interno del dataset non sono presenti valori nulli o mancanti.
+
+# Statistica Descrittiva
+
+Procediamo con l'analisi descrittiva del dataset.
+
+```{r}
+summary(bodyfat0)
+```
+
+Dal sommario possiamo notare alcune caratteristiche interessanti e a cui prestare attenzione.
+
+L'età degli individui varia da 22 a 81 anni.
+
+Il valore minimo riscontrato per quanto riguarda la variabile BodyFat è di 0.0, valore che risulta non corretto e non possibile scientificamente. Individui professionisti di bodybuilding sono conosciuti per avere una percentuale di grasso corporeo minima, ma l'essere umano necessita di una percentuale di grasso corporeo dal due al cinque percento per vivere in modo sano.
+
+Questo concetto è stato spiegato da diversi esperti, che hanno additato le 'colpe' di eventuali misurazioni minime, intorno allo 0, ad errori dei macchinari di misurazione.
+
+Un esempio rilevante è rintracciabile nel luglio 2020, quando l'allora Mr Olympia Ronnie Coleman dichiarò di avere una percentuale di grasso corporeo dello 0,33%; valori smentiti dall'esperto Brian Sutterer, che illustrò come un valore di questo tipo non possa essere veritiero.
+
+[Link alla fonte](https://www.menshealth.com/health/a33247811/ronnie-coleman-body-fat/)
+
+Una percentuale di grasso altamente bassa rappresenta un problema grave di salute, come testimonia la storia di Andreas Munzer, un altro bodybuilder scomparso a causa di una percentuale di grasso minima, che ha causato il collasso di diversi organi.
+
+[Link alla fonte](https://abcnews.go.com/Health/legendary-bodybuilder-died-body-fat-lives/story?id=29899438)
+
+Perciò non considereremo ammissibili percentuali di grasso troppo minime, e le escluderemo dall'analisi.
+
+```{r}
+ordered_BodyFat <- bodyfat0[order(bodyfat0$BodyFat), ]
+
+head(ordered_BodyFat)
+```
+
+In questo caso, notiamo due valori poco plausibili relativi alla percentuale di grasso corporeo, ovvero il record 182 e il record 172.
+
+```{r}
+bodyfat0[c(172,182),]
+```
+
+Decidiamo dunque di rimuovere le righe che contengono queste due osservazioni non plausibili.
+
+Anche il valore minimo riscontrato per quanto riguarda la variabile altezza è distante dalle restanti osservazioni e risulta poco plausibile.
+
+Estraiamo perciò la riga sospetta per approfondirne l'analisi.
+
+```{r}
+ordered_Height <- bodyfat0[order(bodyfat0$Height), ]
+
+head(ordered_Height)
+```
+
+```{r}
+bodyfat0[42,]
+```
+
+I dati a nostra disposizione derivano da misurazioni svolte su individui uomini americani. Possiamo osservare che la statura media negli Stati Uniti d'America si aggira intorno ai 176,94 cm; perciò un'altezza di 74,93 cm risulta anomala e rischia di influenzare i valori e i risultati dell'analisi che sarà svolta.
+
+[Link alla fonte](https://worldpopulationreview.com/country-rankings/average-height-by-country)
+
+Decidiamo per questo motivo di escludere questa riga dall'analisi.
+
+```{r}
+bodyfat <- bodyfat0[-c(42,172,182),]
+```
+
+Nella sezione successiva valuteremo attentamente le variabili presenti nel dataset e i loro punti critici.
+
+Analizzeremo dunque, per ogni attributo, la distribuzione, eventuali outliers e la correlazione con la variabile target.
+
+```{r}
+dim(bodyfat)
+```
+
+## Variabili
+
+Proseguiamo ora con l'analisi della distribuzione delle variabili presenti nel dataset. Per ogni variabile verranno computati, in ordine, istogramma, per osservarne la distribuzione, boxplot, per identificare eventuali outliers, funzione di ripartizione empirica e scatterplot, per valutare la correlazione con la variabile target.
+
+Gli istogrammi successivi sono calcolati mediante l'utilizzo della formula di Sturges, utile per scegliere in modo corretto il numero di intervalli da rappresentare:
+
+$(numero_intervalli) = 1 + log{_2}{n}$
+
+**BodyFat**
+
+BodyFat è la variabile target di questo dataset.
+
+```{r}
+brx_BodyFat <- pretty(range(bodyfat$BodyFat),
+              n = nclass.Sturges(bodyfat$BodyFat), min.n = 1)
+
+BodyFat1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=BodyFat), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_BodyFat) +
+  geom_vline(aes(xintercept=mean(BodyFat)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="BodyFat %", y="Count") +
+  theme_classic()
+
+BodyFat2 <- ggplot(bodyfat, aes(x = "", y=BodyFat)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "BodyFat %") +
+  theme_minimal()
+
+ggarrange(BodyFat1, BodyFat2,
+          ncol = 2,
+          nrow = 1)
+```
+
+Dalle visualizzazioni sopra possiamo notare come l'istogramma generato dalla variabile BodyFat si distribuisca approssimativamente come una normale.
+
+Dal boxplot a lato possiamo invece notare la presenza di un solo outlier, che sembra avere una percentuale di grasso ben superiore al resto delle osservazioni.
+
+```{r}
+ordered_BodyFat <- bodyfat[order(-bodyfat$BodyFat), ]
+
+head(ordered_BodyFat)
+```
+
+```{r}
+bodyfat[213,]
+```
+
+Un valore percentuale di grasso corporeo di 47.5 è un valore elevato ma plausibile, l'individuo considerato presenta un valore che lo cataloga tra gli individui 'obesi' ed è sicuramente un outlier ma non tale da portare all'eliminazione della riga.
+
+**Density**
+
+```{r}
+brx_Density <- pretty(range(bodyfat$Density),
+              n = nclass.Sturges(bodyfat$Density), min.n = 1)
+
+Density1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Density), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Density) +
+  geom_vline(aes(xintercept=mean(Density)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Density", y="Count") +
+  theme_classic()
+
+Density2 <- ggplot(bodyfat, aes(x = "", y=Density)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Density") +
+  theme_minimal()
+
+Density3 <- ggplot(bodyfat, aes(Density)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Density") +
+  theme_classic()
+
+Density4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Density, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Density")
+
+ggarrange(Density1, Density2, Density3, Density4,
+          ncol = 2,
+          nrow = 2)
+```
+
+La distribuzione della variabile densità (Density), come osservabile dall'istogramma e dall'ecdf, ricorda una distribuzione gaussiana (normale). Il boxplot illustra la presenza di un outlier al di sotto del primo quartile della distribuzione.
+
+```{r}
+ordered_Density <- bodyfat[order(bodyfat$Density), ]
+
+head(ordered_Density)
+```
+
+Notiamo che la riga estratta, quella che presenta un outlier, è la medesima osservata nel punto precedente. è verosimile che la riga in questione abbia tutti valori considerati come outliers.
+
+La densità è usata per calcolare la percentuale di grasso corporeo, di conseguenza ci aspettavamo e possiamo osservare una correlazione molto elevata tra le due variabili.
+
+Proprio per questo motivo la variabile 'Density' verrà esclusa dalla successiva analisi all'interno del modello di regressione.
+
+**Age**
+
+```{r}
+brx_Age <- pretty(range(bodyfat$Age),
+              n = nclass.Sturges(bodyfat$Age), min.n = 1)
+
+Age1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Age), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Age) +
+  geom_vline(aes(xintercept=mean(Age)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Age", y="Count") +
+  theme_classic()
+
+Age2 <- ggplot(bodyfat, aes(x = "", y=Age)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Age") +
+  theme_minimal()
+
+Age3 <- ggplot(bodyfat, aes(Age)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Age") +
+  theme_classic()
+
+Age4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Age, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Age")
+
+ggarrange(Age1, Age2, Age3, Age4,
+          ncol = 2,
+          nrow = 2)
+```
+
+La variabile età ha range tra 22 e 81 e le osservazioni si distribuiscono in modo relativamente equo, con picchi nella fascia tra i 40 e i 50 anni. Lo scatterplot nell'ultimo quadrante mostra come la variabile Age sia poco correlata con la variabile BodyFat. Non risultano osservazioni anomale.
+
+**Weight**
+
+```{r}
+brx_Weight <- pretty(range(bodyfat$Weight),
+              n = nclass.Sturges(bodyfat$Weight), min.n = 1)
+
+Weight1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Weight), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Weight) +
+  geom_vline(aes(xintercept=mean(Weight)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Weight", y="Count") +
+  theme_classic()
+
+Weight2 <- ggplot(bodyfat, aes(x = "", y=Weight)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Weight") +
+  theme_minimal()
+
+Weight3 <- ggplot(bodyfat, aes(Weight)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Weight") +
+  theme_classic()
+
+Weight4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Weight, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Weight")
+
+ggarrange(Weight1, Weight2, Weight3, Weight4,
+          ncol = 2,
+          nrow = 2)
+```
+
+La variabile peso presenta due outliers, identificabili dal boxplot nel secondo quadrante, uno dei quali considerabile estremo.
+
+```{r}
+ordered_Weight <- bodyfat[order(-bodyfat$Weight),]
+
+head(ordered_Weight)
+```
+
+L'osservazione alla riga 39 costituisce un valore estremo, per questo motivo sarà necessario porvi attenzione nel proseguo dell'analisi.
+
+Ne estraiamo la riga per farvi riferimento nell'analisi delle variabili successive di sotto.
+
+```{r}
+bodyfat[39,]
+```
+
+**Height**
+
+```{r}
+brx_Height <- pretty(range(bodyfat$Height),
+              n = nclass.Sturges(bodyfat$Height), min.n = 1)
+
+Height1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Height), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Height) +
+  geom_vline(aes(xintercept=mean(Height)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Height", y="Count") +
+  theme_classic()
+
+Height2 <- ggplot(bodyfat, aes(x = "", y=Height)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Height") +
+  theme_minimal()
+
+Height3 <- ggplot(bodyfat, aes(Height)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Height") +
+  theme_classic()
+
+Height4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Height, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Height")
+
+ggarrange(Height1, Height2, Height3, Height4,
+          ncol = 2,
+          nrow = 2)
+```
+
+Osservando l'istogramma e la funzione di ripartizione empirica possiamo notare come la distribuzione di questa variabile ricordi una gaussiana.
+
+Per quanto riguarda lo scatterplot, notiamo come non esista una forte correlazione tra la variabile altezza e la variabile target.
+
+**Neck**
+
+```{r}
+brx_Neck <- pretty(range(bodyfat$Neck),
+              n = nclass.Sturges(bodyfat$Neck), min.n = 1)
+
+Neck1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Neck), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Neck) +
+  geom_vline(aes(xintercept=mean(Neck)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Neck", y="Count") +
+  theme_classic()
+
+Neck2 <- ggplot(bodyfat, aes(x = "", y=Neck)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Neck") +
+  theme_minimal()
+
+Neck3 <- ggplot(bodyfat, aes(Neck)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Neck") +
+  theme_classic()
+
+Neck4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Neck, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Neck")
+
+ggarrange(Neck1, Neck2, Neck3, Neck4,
+          ncol = 2,
+          nrow = 2)
+```
+
+```{r}
+boxplot.stats(bodyfat$Neck)
+```
+
+Il boxplot mostra un outlier nella parte superiore ed uno nella parte inferiore.
+
+Per quanto riguarda quest'ultimo, il valore della variabile Neck è di poco differente dalle altre osservazioni.
+
+L'outlier nella parte superiore fa riferimento allo stesso individuo considerato estremo nell'analisi dell'attributo Weight (record 39).
+
+**Chest**
+
+```{r}
+brx_Chest <- pretty(range(bodyfat$Chest),
+              n = nclass.Sturges(bodyfat$Chest), min.n = 1)
+
+Chest1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Chest), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Chest) +
+  geom_vline(aes(xintercept=mean(Chest)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Chest", y="Count") +
+  theme_classic()
+
+Chest2 <- ggplot(bodyfat, aes(x = "", y=Chest)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Chest") +
+  theme_minimal()
+
+Chest3 <- ggplot(bodyfat, aes(Chest)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Chest") +
+  theme_classic()
+
+Chest4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Chest, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Chest")
+
+ggarrange(Chest1, Chest2, Chest3, Chest4,
+          ncol = 2,
+          nrow = 2)
+```
+
+```{r}
+boxplot.stats(bodyfat$Chest)
+```
+
+I primi due outliers, mostrati dal boxplot, non costituiscono una criticità per l'analisi, a differenza del valore più estremo identificabile sempre nell'individuo al record 39.
+
+**Abdomen**
+
+```{r}
+brx_Abdomen <- pretty(range(bodyfat$Abdomen),
+              n = nclass.Sturges(bodyfat$Abdomen), min.n = 1)
+
+Abdomen1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Abdomen), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Abdomen) +
+  geom_vline(aes(xintercept=mean(Abdomen)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Abdomen", y="Count") +
+  theme_classic()
+
+Abdomen2 <- ggplot(bodyfat, aes(x = "", y=Abdomen)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Abdomen") +
+  theme_minimal()
+
+Abdomen3 <- ggplot(bodyfat, aes(Abdomen)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Abdomen") +
+  theme_classic()
+
+Abdomen4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Abdomen, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Abdomen")
+
+ggarrange(Abdomen1, Abdomen2, Abdomen3, Abdomen4,
+          ncol = 2,
+          nrow = 2)
+```
+
+```{r}
+boxplot.stats(bodyfat$Abdomen)
+```
+
+Lo scatterplot mostra una forte correlazione tra la variabile Abdomen e la variabile target.
+
+Anche in questo caso, l'individuo considerato in precedenza rappresenta un outlier con un valore di Abdomen pari a 148.1, di gran lunga superiore agli altri valori massimi della variabile.
+
+**Hip**
+
+```{r}
+brx_Hip <- pretty(range(bodyfat$Hip),
+              n = nclass.Sturges(bodyfat$Hip), min.n = 1)
+
+Hip1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Hip), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Hip) +
+  geom_vline(aes(xintercept=mean(Hip)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Hip", y="Count") +
+  theme_classic()
+
+Hip2 <- ggplot(bodyfat, aes(x = "", y=Hip)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Hip") +
+  theme_minimal()
+
+Hip3 <- ggplot(bodyfat, aes(Hip)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Hip") +
+  theme_classic()
+
+Hip4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Hip, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Hip")
+
+ggarrange(Hip1, Hip2, Hip3, Hip4,
+          ncol = 2,
+          nrow = 2)
+```
+
+```{r}
+boxplot.stats(bodyfat$Hip)
+```
+
+Osservando il boxplot emerge la presenza di 3 outliers, ma non tutti creano criticità, l'unico a farlo è quello con valore pari a 147.7 relativo al record 39.
+
+Per quanto riguarda la correlazione, lo scatterplot mostra una buona correlazione tra l'attributo in analisi e la variabile bodyfat.
+
+**Thigh**
+
+```{r}
+brx_Thigh <- pretty(range(bodyfat$Thigh),
+              n = nclass.Sturges(bodyfat$Thigh), min.n = 1)
+
+Thigh1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Thigh), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Thigh) +
+  geom_vline(aes(xintercept=mean(Thigh)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Thigh", y="Count") +
+  theme_classic()
+
+Thigh2 <- ggplot(bodyfat, aes(x = "", y=Thigh)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Thigh") +
+  theme_minimal()
+
+Thigh3 <- ggplot(bodyfat, aes(Thigh)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Thigh") +
+  theme_classic()
+
+Thigh4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Thigh, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Thigh")
+
+ggarrange(Thigh1, Thigh2, Thigh3, Thigh4,
+          ncol = 2,
+          nrow = 2)
+```
+
+```{r}
+boxplot.stats(bodyfat$Thigh)
+```
+
+Partendo dall'osservazione dell'istogramma possiamo notare una distribuzione normale della variabile Thigh.
+
+Il boxplot mette in evidenzia la presenza di valori outliers, in modo particolare quello riferito alla riga 39 con un valore pari a 87.3 ben distante dalle altre osservazioni.
+
+Infine, lo scatterplot sottolinea una correlazione positiva tra questo attributo e la variabile target bodyfat.
+
+**Knee**
+
+```{r}
+brx_Knee <- pretty(range(bodyfat$Knee),
+              n = nclass.Sturges(bodyfat$Knee), min.n = 1)
+
+Knee1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Knee), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Knee) +
+  geom_vline(aes(xintercept=mean(Knee)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Knee", y="Count") +
+  theme_classic()
+
+Knee2 <- ggplot(bodyfat, aes(x = "", y=Knee)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Knee") +
+  theme_minimal()
+
+Knee3 <- ggplot(bodyfat, aes(Knee)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Knee") +
+  theme_classic()
+
+Knee4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Knee, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Knee")
+
+ggarrange(Knee1, Knee2, Knee3, Knee4,
+          ncol = 2,
+          nrow = 2)
+```
+
+```{r}
+boxplot.stats(bodyfat$Knee)
+```
+
+Analizzando lo scatterplot si può individuare la presenza di quattro valori outliers e in particolare quello più estremo che presenta un valore di 49.1, appartenente anche in questo caso all'individuo del record 39.
+
+**Ankle**
+
+```{r}
+brx_Ankle <- pretty(range(bodyfat$Ankle),
+              n = nclass.Sturges(bodyfat$Ankle), min.n = 1)
+
+Ankle1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Ankle), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Ankle) +
+  geom_vline(aes(xintercept=mean(Ankle)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Ankle", y="Count") +
+  theme_classic()
+
+Ankle2 <- ggplot(bodyfat, aes(x = "", y=Ankle)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Ankle") +
+  theme_minimal()
+
+Ankle3 <- ggplot(bodyfat, aes(Ankle)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Ankle") +
+  theme_classic()
+
+Ankle4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Ankle, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Ankle")
+
+ggarrange(Ankle1, Ankle2, Ankle3, Ankle4,
+          ncol = 2,
+          nrow = 2)
+```
+
+```{r}
+boxplot.stats(bodyfat$Ankle)
+```
+
+Riguardo la variabile Ankle, possiamo vedere dal grafico della correlazione (scatterplot) che non vi è una relazione con la variabile target bodyfat.
+
+Considerando la visualizzazione dello scatterplot si possono identificare tre outliers, due dei quali, rispettivamente 33.7 e 33.9, sono molto lontani dalle altre osservazioni.
+
+**Biceps**
+
+```{r}
+brx_Biceps <- pretty(range(bodyfat$Biceps),
+              n = nclass.Sturges(bodyfat$Biceps), min.n = 1)
+
+Biceps1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Biceps), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Biceps) +
+  geom_vline(aes(xintercept=mean(Biceps)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Biceps", y="Count") +
+  theme_classic()
+
+Biceps2 <- ggplot(bodyfat, aes(x = "", y=Biceps)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Biceps") +
+  theme_minimal()
+
+Biceps3 <- ggplot(bodyfat, aes(Biceps)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Biceps") +
+  theme_classic()
+
+Biceps4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Biceps, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Biceps")
+
+ggarrange(Biceps1, Biceps2, Biceps3, Biceps4,
+          ncol = 2,
+          nrow = 2)
+```
+
+```{r}
+boxplot.stats(bodyfat$Biceps)
+```
+
+Considerando la variabile Biceps, notiamo la presenza di un solo valore anomalo pari a 45 appartenente al record numero 39.
+
+Inoltre, analizzando lo scatterplot è possibile constatare una correlazione positiva tra l'attributo in esame e la variabile target.
+
+**Forearm**
+
+```{r}
+brx_Forearm <- pretty(range(bodyfat$Forearm),
+              n = nclass.Sturges(bodyfat$Forearm), min.n = 1)
+
+Forearm1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Forearm), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Forearm) +
+  geom_vline(aes(xintercept=mean(Forearm)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Forearm", y="Count") +
+  theme_classic()
+
+Forearm2 <- ggplot(bodyfat, aes(x = "", y=Forearm)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Forearm") +
+  theme_minimal()
+
+Forearm3 <- ggplot(bodyfat, aes(Forearm)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Forearm") +
+  theme_classic()
+
+Forearm4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Forearm, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Forearm")
+
+ggarrange(Forearm1, Forearm2, Forearm3, Forearm4,
+          ncol = 2,
+          nrow = 2)
+```
+
+```{r}
+boxplot.stats(bodyfat$Forearm)
+```
+
+Osservando il boxplot emerge la presenza di valori anomali nella parte superiore e inferiore del grafico.
+
+L'outlier che si discosta maggiormente dalla mediana è quello superiore pari a 34.9.
+
+```{r}
+ordered_BodyFat <- bodyfat[order(-bodyfat$Forearm), ]
+
+head(ordered_BodyFat)
+```
+
+**Wrist**
+
+```{r}
+brx_Wrist <- pretty(range(bodyfat$Wrist),
+              n = nclass.Sturges(bodyfat$Wrist), min.n = 1)
+
+Wrist1 <- ggplot(bodyfat) +
+  geom_histogram(aes(x=Wrist), fill = wes_palette("Chevalier1")[1], color="black", breaks = brx_Wrist) +
+  geom_vline(aes(xintercept=mean(Wrist)), color="white", linetype="dashed", size=1) +
+  labs(title="",x="Wrist", y="Count") +
+  theme_classic()
+
+Wrist2 <- ggplot(bodyfat, aes(x = "", y=Wrist)) +
+  geom_boxplot(fill=wes_palette("Chevalier1")[2], color="black") + labs(title = "", x = "", y = "Wrist") +
+  theme_minimal()
+
+Wrist3 <- ggplot(bodyfat, aes(Wrist)) +
+  stat_ecdf(geom="step") +
+  labs(title="", y = "", x="Wrist") +
+  theme_classic()
+
+Wrist4 <- ggplot(bodyfat) +
+  geom_point(aes(x=Wrist, y=BodyFat), shape=21, fill=wes_palette("Chevalier1")[4], color="black") +
+  labs(title="", y = "BodyFat %", x="Wrist")
+
+ggarrange(Wrist1, Wrist2, Wrist3, Wrist4,
+          ncol = 2,
+          nrow = 2)
+```
+
+```{r}
+boxplot.stats(bodyfat$Wrist)
+```
+
+Per quanto riguarda l'attributo Wrist, emerge la presenza di due valori estremi pari a 21.4 relativi ai record numero 39 (il quale presenta, come visto in precedenza, outliers in altri attributi) e 41.
+
+Lo scatterplot rende visibile una correlazione non elevata tra la variabile in esame e la variabile target.
+
+## Correlazione
+
+Dopo aver analizzato nel dettaglio la correlazione tra ciascuna variabile e la variabile target (BodyFat), computiamo ora la matrice di correlazione per quantificare la correllazione esistente tra tutti gli attributi.
+
+```{r}
+corr <- round(cor(bodyfat),1)
+```
+
+```{r}
+ggcorrplot(corr, hc.order = TRUE, type= "lower", lab= TRUE)
+```
+
+## Multicollinearità
+
+Come si evince dalla matrice di correlazione vi sono delle variabili strettamente correlate, causando il fenomeno della cosiddetta 'multi-collinearità'.
+
+In un modello di regressione lineare multipla si richiede che le variabili esplicative siano tra loro indipendenti.
+
+Si parla di multi-collinearità quando si riscontra una significativa correlazione lineare tra due o più variabili indipendenti.
+
+In tali condizioni la stima dei coefficienti risulta inaccurata e compromette la significatività del modello di regressione.
+
+In casi come questi, è importante provvedere alla rimozione delle cause della collinearità per esempio selezionando solo alcune variabili esplicative o solo alcuni termini nei quali esse compaiono.
+
+Una via per identificare se esiste multi-collinearità tra le variabili esplicative consiste nel procedere alla computazione della matrice di correlazione lineare tra le medesime e concludere che due di esse sono collineari se il valore assoluto della correlazione è maggiore di una determinata soglia. Altri metodi, come vedremo successivamente, comprendono il calcolo del VIF e di altri valori.
+
+# Statistica Inferenziale
+
+**Scelta degli attributi**
+
+La variabile target BodyFat, da quanto emerge dagli scatter plot e dalla matrice di correlazione, è prevalentemente correlata con le variabili Abdomen, Chest, Hip e Weight.
+
+Dunque, utilizzeremo suddette variabili nell'analisi successiva riguardante il modello di regressione.
+
+Inoltre, tenendo conto della multi-collinearità osservata tra gli attributi analizziamo nello specifico le relazioni delle cinque variabili selezionate.
+
+```{r}
+smoothing <- function(data, mapping){
+  p <- ggplot(data = bodyfat, mapping = mapping) + 
+    geom_point() + 
+    geom_smooth(method=lm)
+  p
+}
+
+pairs_plot <- ggpairs(bodyfat, columns = c(2,4,7,8,9), 
+        lower = list(continuous = smoothing))
+
+
+pairs_plot
+```
+
+Come preannunciato, le variabili selezionate sono tra loro altamente correlate.
+
+Precisamente, in ordine abbiamo un valore del coefficiente di correlazione di 0,942 tra Hip e Weight ed un valore di 0,914 tra Abdomen e Chest.
+
+Per quanto riguarda le correlazioni degli attributi con la variabile target, il coefficiente maggiore è riscontrabile tra BodyFat e Abdomen, con un valore di 0,807.
+
+Quando le variabili esplicative sono numerose, si utilizzano procedure di tipo 'stepwise' per costruire il modello di regressione. Di conseguenza, per la costruzione del modello di regressione utilizzeremo due approcci: il primo, che chiameremo forward o per inclusione, valuta la bontà del modello tramite l'inserimento di una variabile esplicativa alla volta, mentre il secondo, che chiameremo backward o per esclusione, parte da un modello completo di tutte le variabili esplicative eliminando una alla volta le variabili non significative.
+
+## Forward (per inclusione)
+
+Come specificato poco sopra, questa prima procedura parte da un modello parziale e procede passo per passo aggiungendo di volta in volta una variabile al modello, variabile che chiaramente contribuisce in modo significativo allo stesso modello.
+
+Dall'analisi condotta fino a questo punto abbiamo osservato come la variabile più altamente correlata con la variabile target risulti essere la variabile Abdomen, con un coefficiente di correlazione pari a 0.807.
+
+Perciò, la prima variabile che includeremo all'interno del modello di regressione sarà proprio la variabile 'Abdomen'.
+
+Vista l'alta correlazione tra le variabili esplicative inserire tutte le variabili nel modello pregiudicherebbe la bontà di quest'ultimo.
+
+```{r}
+bodyfat.lm_A <- lm(bodyfat$BodyFat ~ bodyfat$Abdomen)
+```
+
+```{r}
+summary(bodyfat.lm_A)
+```
+
+Dall'output sopra generato possiamo notare come la variabile Abdomen contribuisca in modo molto significativo al modello, concetto specificato dalle tre stars in tabella, che indicano appunto massima signficatività. Il p-value ha infatti valore estremamente basso (2.2e-16).
+
+Il modello è dotato di un valore di R\^2 pari a 0,6506 ed R\^2 aggiustato pari a 0,6491.
+
+A questo punto, utilizziamo la funzione ANOVA per selezionare la variabile più adeguata da inserire nel modello appena generato.
+
+Procediamo con il costruire i modelli con le altre tre variabili esplicative (Chest, Hip, Weight), che confronteremo con il modello iniziale.
+
+```{r}
+bodyfat.lm_AC <- update(bodyfat.lm_A,  . ~ . + bodyfat$Chest)
+bodyfat.lm_AH <- update(bodyfat.lm_A,  . ~ . + bodyfat$Hip)
+bodyfat.lm_AW <- update(bodyfat.lm_A,  . ~ . + bodyfat$Weight)
+```
+
+```{r}
+anova(bodyfat.lm_A, bodyfat.lm_AC)
+```
+
+```{r}
+anova(bodyfat.lm_A, bodyfat.lm_AH)
+```
+
+```{r}
+anova(bodyfat.lm_A, bodyfat.lm_AW)
+```
+
+```{r}
+add1(bodyfat.lm_A, . ~ . + bodyfat$Chest  + bodyfat$Hip + bodyfat$Weight)
+```
+
+Per valutare quale modello sia il migliore tra quelli computati è necessario analizzare alcuni output, tra cui il valore del test F e la significatività associata, ed il valore del campo RSS.
+
+Precisamente, il modello migliore sarà caratterizzato dal minore livello di significatività associata al test F, al più alto valore del test F e alla minore somma dei quadrati dei residui (RSS).
+
+Dai risultati della funzione ANOVA emerge che la variabile Weight migliora il modello con un livello di test F elevato. Questi risultati sono inoltre confermati in quanto la variabile Weight presenta il minor valore di RSS.
+
+```{r}
+summary(bodyfat.lm_AW)
+```
+
+Possiamo ora osservare come anche l'aggiunta dell'attributo Weight costituisca un miglioramento significativo del modello, con valori di R\^2 ed R\^2 aggiustato che passano, rispettivamente, a 0,7125 e 0,7102.
+
+Ripetiamo nuovamente il procedimento per valutare l'eventuale inserimento di un'altra variabile.
+
+```{r}
+bodyfat.lm_AWC <- update(bodyfat.lm_AW, . ~ . + bodyfat$Chest) 
+bodyfat.lm_AWH <- update(bodyfat.lm_AW, . ~ . + bodyfat$Hip) 
+```
+
+```{r}
+anova(bodyfat.lm_AW, bodyfat.lm_AWC)
+```
+
+```{r}
+anova(bodyfat.lm_AW, bodyfat.lm_AWH)
+```
+
+Possiamo osservare come l'introduzione di nessuna delle due variabili (Chest e Hip) conduca ad un miglioramento del modello, in quanto entrambe presentano un Pr(>F), livello di significatività osservato oltre la soglia limite. Precisamente, pari a 0.7622 per la variabile Chest e pari a 0.9133 per la variabile Hip, valori ben lontani dunque dai valori accettabili e vicini allo zero.
+
+Per questo motivo scegliamo di non inserire nessuna delle due variabili all'interno del modello.
+
+Il modello 'finale' sarà dunque composto inserendo le sole variabili Abdomen e Weight al suo interno.
+
+## Backward (per esclusione)
+
+La seconda procedura che utilizzeremo parte da un modello parziale che comprende tutte le variabili selezionate al suo interno, per poi di volta in volta eliminare le variabili il cui coefficiente si rileva non significativo.
+
+```{r}
+bodyfat.lm_ALL <- lm(bodyfat$BodyFat ~ bodyfat$Abdomen + bodyfat$Chest + bodyfat$Hip + bodyfat$Weight)
+```
+
+```{r}
+summary(bodyfat.lm_ALL)
+```
+
+Dai livelli di significatività osservati relativi ai test sui singoli coefficienti di regresssione, si nota che alcuni di essi non sono significativi. Le variabili corrispondenti si eliminano una alla volta, iniziando da quella cui corrisponde il più grande livello di significatività osservato.
+
+```{r}
+drop1(bodyfat.lm_ALL)
+```
+
+**VIF**
+
+Per evidenziare legami multivariati tra le variabili esplicative è possibile computare il fattore di incremento della varianza (Variance Inflation Factor VIF) definito per ogni variabile Xi come segue:
+
+$$VIF_i = 1/(1-R_i^2)$$
+
+dove R_i\^2 rappresenta il coefficiente di determinazione del modello di regressione lineare che ha come variabile di risposta la variabile X\^i e come variabili esplicative le rimanenti variabili esplicative del modello di regressione originale.
+
+Di norma valori di VIF maggiori di 5 sono indicatori della presenza di multi-collinearità tra le variabili esplicative.
+
+Il più piccolo valore possibili che la funzione VIF può assumere è 1 (in assenza di multicollinearità).
+
+La funzione VIF verrà utilizzata all'interno del modello per valutare le criticità derivate dalla multi-collinearità e di conseguenza quali attributi escludere dallo stesso modello.
+
+```{r}
+vif(bodyfat.lm_ALL)
+```
+
+I valori di VIF che emergono sono molto elevati, al di sopra del valore limite fissato a 5, ad indicare perciò l'elevata presenza di multicollinearità tra le variabili selezionate.
+
+```{r}
+vif_values <- vif(bodyfat.lm_ALL)
+```
+
+```{r}
+barplot(vif_values, main = "VIF Values", horiz = TRUE, col = "red")
+abline(v = 5, lwd = 3, lty = 2)
+```
+
+Eliminiamo una alla volta a questo punto dal modello le variabili che non sono risultate significative, partendo dall'attributo Chest, poiché presenta il livello maggiore di significatività osservato.
+
+```{r}
+bodyfat.lm_ALL <- update(bodyfat.lm_ALL, . ~ . - bodyfat$Chest)
+```
+
+```{r}
+summary(bodyfat.lm_ALL)
+```
+
+Il coefficiente associato alla variabile Hip risulta ancora non significativo, per questo motivo si procede con l'eliminazione di quest'ultimo dal modello.
+
+```{r}
+bodyfat.lm_ALL <- update(bodyfat.lm_ALL, . ~ . - bodyfat$Hip)
+```
+
+Il modello costruito a questo punto è il medesimo ottenuto con l'approccio precedente.
+
+Verifichiamo a questo punto i nuovi valori della funzione VIF, dopo aver eliminato le due variabili non significative dal modello.
+
+```{r}
+vif(bodyfat.lm_ALL)
+```
+
+Come possiamo notare, i valori della funzione VIF si sono abbassati al di sotto del valore soglia.
+
+Il modello valido e da considerare è perciò il modello che comprende al suo interno le variabili Abdomen e la variabile Weight.
+
+## Analisi dei residui
+
+Svolgiamo a questo punto l'analisi dei residui per il modello "bodyfat.lm_AW".
+
+```{r}
+par(mfrow = c(2, 2))
+plot(bodyfat.lm_AW)
+```
+
+**Residuals vs Fitted**
+
+Per verificare la linearità della distribuzione dei residui utilizziamo il grafico Residuals vs Fitted.
+
+La linea tratteggia corrisponde ai residui con media zero, la linea rossa è la linea di tendenza che identifica i residui del nostro modello.
+
+Se la linea rossa è abbastanza sovrapponibile alla linea tratteggiata, come in questo caso, allora l'ipotesi di linearità è verificata.
+
+**QQ-plot**
+
+Il grafico qqplot è utilizzato per verificare la distribuzione normale dei residui del modello.
+
+Sull'asse delle x troviamo i quantili teorici, sull'asse delle y invece i residui standardizzati.
+
+Dal grafico ottenuto, i residui si dispongono in prossimità della retta, ad indicare una distribuzione normale di quest'ultimi.
+
+**Scale-Location**
+
+Questo grafico, osservabile nel terzo quadrante, permette di visualizzare sull'asse delle x i valori del modello di regressione e sull'asse delle y la radice quadrata dei residui standardizzati.
+
+Il grafico in questione è utile per verificare l'ipotesi di omoschedasticità, quando la linea rossa è approssimativamente orizzontale l'ipotesi è soddisfatta.
+
+**Residuals vs Leverage**
+
+Per indagare sulla presenza di outliers nei residui analizziamo il grafico Residuals vs Leverage.
+
+I punteggi di leva sono compresi tra 0 ed 1. Un punteggio elevato di leva è quindi un valore vicino ad 1.
+
+Nel nostro caso i residui sono compresi tra punteggi di leva tra 0.00 e 0.15. Lontani dunque da punteggi elevati, per cui concludiamo che non rappresentano un problema.
+
+Per i residui standardizzati, si considerano valori elevati quelli maggiori di 3 o minori di -3. Dal grafico osserviamo come i residui siano contenuti nell'intervallo \[-3,3\].
+
+La distanza di Cook si considerano elevati i valori superiori ad 1. Come possiamo osservare, è presente un'osservazione (39) che si trova al limite della distanza di Cook (indicata dalla linea tratteggiata).
+
+Osservazioni che hanno valori elevati per tutte queste misure sono considerate un possibile problema.
+
+**Durbin-Watson**
+
+Per verificare l'eventuale presenza di autocorrelazione tra i residui utilizziamo invece il coefficiente di Durbin-Watson.
+
+Questo coefficiente è compreso tra 0 e 4. Valori vicini a 2 indicano che non c'è autocorrelazione.
+
+```{r}
+durbinWatsonTest(bodyfat.lm_AW)
+```
+
+Analizzando i risultati del test osserviamo che il valore del coefficiente di Durbin-Watson è vicino a 2, che indica la non-presenza di autocorrelazione.
+
+A conferma di questo, il p-value è superiore al valore soglia di 0,05; che non ci permette di rifiutare l'ipotesi nulla, ovvero che i residui non siano correlati.
+
+# Conclusioni
+
+Arrivati a questo punto, possiamo considerare conclusa l'analisi. Grazie allo svolgimento di quest'analisi abbiamo scoperto come, tra le numerose variabili che influenzano la percentuale di grasso corporeo negli individui, i valori di addome e peso influenzino maggiormente i valori della variabile target. Entrambi gli approcci utilizzati per la costruzione del modello di regressione, prima il procedimento forward e poi il procedimento backward hanno condotto allo stesso risultato, ovvero ad un modello di regressione lineare che comprende al suo interno le variabili Abdomen e Weight.
+
+Per effettuare questa analisi sono stati considerati solamente poco più di 270 individui, perciò sarebbe interessante poter lavorare su un campione più ampio e rappresentativo per verificare se, ripetendo la medesima analisi, si sarebbero ottenuti gli stessi risultati.
+
+Dunque, esperimenti e ulteriori approfondimenti sono necessari per valutare con maggiore chiarezza quali siano da considerare misure rilevanti per predire la percentuale di grasso corporeo di un individuo. Per fare ciò, è consigliato e necessaria la supervisione di figure esperte in campo medico. La percentuale di grasso corporeo di un individuo è una misura altamente importante per valutare lo stato di salute e di forma dello stesso. Questo studio, tra le altre cose, ha dimostrato come la percentuale di grasso corporeo sia correlata con numerose misurazioni relative al corpo degli individui. Sia per livelli bassi che per livelli alti di grasso corporeo è necessaria la supervisione e le cure di un medico o di una figura esperta e specializzata.

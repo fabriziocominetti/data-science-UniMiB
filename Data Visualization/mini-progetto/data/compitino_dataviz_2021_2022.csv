@@ -1,0 +1,2111 @@
+nome_modulistica,score_preop,score_postop,condizioni_meteo,sesso,anni_ricovero,temperatura_media,umidita_media,HI > 27,natural_light
+SF12 PhysicalScore,27.6,37.4,poco nuvoloso,F,70,20.0,69.0,False,True
+SF12 MentalScore,54.36,58.46,poco nuvoloso,F,70,20.0,69.0,False,True
+SF12 PhysicalScore,28.15,38.25,poco nuvoloso,M,69,18.0,65.0,False,True
+SF12 MentalScore,57.02,64.62,poco nuvoloso,M,69,18.0,65.0,False,True
+SF12 PhysicalScore,31.57,55.67,poco nuvoloso,M,70,23.0,74.0,False,True
+SF12 MentalScore,60.27,58.47,poco nuvoloso,M,70,23.0,74.0,False,True
+SF12 PhysicalScore,34.28,57.08,poco nuvoloso,F,66,15.0,72.0,False,True
+SF12 MentalScore,50.17,54.97,poco nuvoloso,F,66,15.0,72.0,False,True
+SF12 PhysicalScore,27.43,29.13,nebbia al mattino,F,73,18.0,75.0,False,True
+SF12 MentalScore,54.14,55.74,nebbia al mattino,F,73,18.0,75.0,False,True
+SF12 PhysicalScore,24.74,46.14,sereno,M,68,20.0,40.0,False,True
+SF12 MentalScore,50.13,58.23,sereno,M,68,20.0,40.0,False,True
+SF12 PhysicalScore,28.74,37.34,sereno,M,78,17.0,63.0,False,True
+SF12 MentalScore,28.39,45.59,sereno,M,78,17.0,63.0,False,True
+SF12 PhysicalScore,32.38,36.38,poco nuvoloso,M,81,26.0,59.0,True,True
+SF12 MentalScore,34.14,62.84,poco nuvoloso,M,81,26.0,59.0,True,True
+SF12 PhysicalScore,33.09,52.09,poco nuvoloso,M,75,18.0,46.0,False,True
+SF12 MentalScore,62.61,60.21,poco nuvoloso,M,75,18.0,46.0,False,True
+SF12 PhysicalScore,28.19,40.19,poco nuvoloso,F,65,20.0,69.0,False,False
+SF12 MentalScore,32.39,29.79,poco nuvoloso,F,65,20.0,69.0,False,False
+SF12 PhysicalScore,30.57,57.07,pioggia e schiarite,F,67,17.0,83.0,False,True
+SF12 MentalScore,33.57,54.47,pioggia e schiarite,F,67,17.0,83.0,False,True
+SF12 PhysicalScore,36.17,54.27,sereno,F,53,16.0,70.0,False,True
+SF12 MentalScore,54.78,54.58,sereno,F,53,16.0,70.0,False,True
+SF12 PhysicalScore,19.86,36.86,nebbia al mattino,F,24,5.0,89.0,False,True
+SF12 MentalScore,42.01,55.31,nebbia al mattino,F,24,5.0,89.0,False,True
+SF12 PhysicalScore,36.35,48.95,nebbia al mattino,F,53,18.0,75.0,False,True
+SF12 MentalScore,46.38,63.08,nebbia al mattino,F,53,18.0,75.0,False,True
+SF12 PhysicalScore,22.9,37.3,sereno,F,64,21.0,51.0,False,True
+SF12 MentalScore,31.01,36.01,sereno,F,64,21.0,51.0,False,True
+SF12 PhysicalScore,33.7,49.2,poco nuvoloso,F,50,12.0,67.0,False,True
+SF12 MentalScore,65.55,63.55,poco nuvoloso,F,50,12.0,67.0,False,True
+SF12 PhysicalScore,31.59,39.59,sereno,F,80,16.0,68.0,False,True
+SF12 MentalScore,56.14,63.74,sereno,F,80,16.0,68.0,False,True
+SF12 PhysicalScore,41.52,53.02,sereno,F,74,17.0,63.0,False,True
+SF12 MentalScore,46.68,52.38,sereno,F,74,17.0,63.0,False,True
+SF12 PhysicalScore,28.31,53.81,sereno,M,56,15.0,74.0,False,True
+SF12 MentalScore,54.04,58.84,sereno,M,56,15.0,74.0,False,True
+SF12 PhysicalScore,25.07,36.67,sereno,F,69,16.0,37.0,False,True
+SF12 MentalScore,21.8,52.7,sereno,F,69,16.0,37.0,False,True
+SF12 PhysicalScore,26.94,33.04,nebbia al mattino,F,79,18.0,75.0,False,True
+SF12 MentalScore,45.37,33.27,nebbia al mattino,F,79,18.0,75.0,False,True
+SF12 PhysicalScore,37.68,48.58,nebbia al mattino,M,55,13.0,93.0,False,True
+SF12 MentalScore,58.7,52.3,nebbia al mattino,M,55,13.0,93.0,False,True
+SF12 PhysicalScore,39.12,50.02,nebbia al mattino,F,67,15.0,81.0,False,True
+SF12 MentalScore,58.88,60.88,nebbia al mattino,F,67,15.0,81.0,False,True
+SF12 PhysicalScore,39.54,38.34,nebbia al mattino,M,56,16.0,80.0,False,True
+SF12 MentalScore,57.16,61.56,nebbia al mattino,M,56,16.0,80.0,False,True
+SF12 PhysicalScore,23.54,41.24,sereno,F,84,16.0,68.0,False,True
+SF12 MentalScore,34.04,53.04,sereno,F,84,16.0,68.0,False,True
+SF12 PhysicalScore,26.42,35.52,sereno,F,70,16.0,68.0,False,True
+SF12 MentalScore,31.61,61.21,sereno,F,70,16.0,68.0,False,True
+SF12 PhysicalScore,28.42,55.92,sereno,M,55,16.0,68.0,False,True
+SF12 MentalScore,34.41,61.41,sereno,M,55,16.0,68.0,False,True
+SF12 PhysicalScore,34.63,56.33,poco nuvoloso,F,71,18.0,70.0,False,True
+SF12 MentalScore,35.33,61.63,poco nuvoloso,F,71,18.0,70.0,False,True
+SF12 PhysicalScore,27.26,39.66,poco nuvoloso,F,72,18.0,70.0,False,True
+SF12 MentalScore,35.69,38.59,poco nuvoloso,F,72,18.0,70.0,False,True
+SF12 PhysicalScore,27.53,48.43,nebbia al mattino,M,82,16.0,80.0,False,True
+SF12 MentalScore,50.78,57.08,nebbia al mattino,M,82,16.0,80.0,False,True
+SF12 PhysicalScore,32.02,32.62,pioggia debole,F,70,2.0,97.0,False,False
+SF12 MentalScore,59.51,41.61,pioggia debole,F,70,2.0,97.0,False,False
+SF12 PhysicalScore,22.29,32.29,poco nuvoloso,F,64,18.0,70.0,False,True
+SF12 MentalScore,12.9,37.9,poco nuvoloso,F,64,18.0,70.0,False,True
+SF12 PhysicalScore,39.01,38.01,sereno,F,69,16.0,68.0,False,True
+SF12 MentalScore,36.46,54.66,sereno,F,69,16.0,68.0,False,True
+SF12 PhysicalScore,32.13,34.33,nebbia al mattino,F,70,15.0,81.0,False,True
+SF12 MentalScore,43.1,66.2,nebbia al mattino,F,70,15.0,81.0,False,True
+SF12 PhysicalScore,30.86,56.96,sereno,F,67,16.0,66.0,False,True
+SF12 MentalScore,55.65,60.15,sereno,F,67,16.0,66.0,False,True
+SF12 PhysicalScore,38.66,34.56,nebbia al mattino,F,72,15.0,81.0,False,True
+SF12 MentalScore,33.74,68.34,nebbia al mattino,F,72,15.0,81.0,False,True
+SF12 PhysicalScore,29.76,53.56,sereno,F,64,17.0,63.0,False,True
+SF12 MentalScore,37.96,62.36,sereno,F,64,17.0,63.0,False,True
+SF12 PhysicalScore,26.08,39.08,nebbia al mattino,M,45,15.0,78.0,False,True
+SF12 MentalScore,52.02,52.62,nebbia al mattino,M,45,15.0,78.0,False,True
+SF12 PhysicalScore,28.79,55.39,pioggia e schiarite,M,57,10.0,95.0,False,True
+SF12 MentalScore,39.0,60.4,pioggia e schiarite,M,57,10.0,95.0,False,True
+SF12 PhysicalScore,29.19,56.69,nebbia al mattino,M,45,16.0,86.0,False,True
+SF12 MentalScore,31.81,58.81,nebbia al mattino,M,45,16.0,86.0,False,True
+SF12 PhysicalScore,29.08,51.58,nebbia al mattino,M,79,15.0,81.0,False,True
+SF12 MentalScore,38.66,62.96,nebbia al mattino,M,79,15.0,81.0,False,True
+SF12 PhysicalScore,32.98,54.28,poco nuvoloso,M,66,13.0,67.0,False,True
+SF12 MentalScore,47.88,56.68,poco nuvoloso,M,66,13.0,67.0,False,True
+SF12 PhysicalScore,30.19,53.19,poco nuvoloso,F,51,12.0,67.0,False,True
+SF12 MentalScore,40.9,58.3,poco nuvoloso,F,51,12.0,67.0,False,True
+SF12 PhysicalScore,33.42,54.52,sereno,M,69,15.0,42.0,False,True
+SF12 MentalScore,46.53,61.13,sereno,M,69,15.0,42.0,False,True
+SF12 PhysicalScore,25.27,45.77,poco nuvoloso,M,59,2.0,73.0,False,True
+SF12 MentalScore,47.51,64.11,poco nuvoloso,M,59,2.0,73.0,False,True
+SF12 PhysicalScore,33.8,53.7,sereno,M,55,2.0,80.0,False,True
+SF12 MentalScore,50.97,61.77,sereno,M,55,2.0,80.0,False,True
+SF12 PhysicalScore,32.0,41.0,sereno,M,68,13.0,64.0,False,True
+SF12 MentalScore,47.57,29.57,sereno,M,68,13.0,64.0,False,True
+SF12 PhysicalScore,39.51,56.21,sereno,M,49,6.0,84.0,False,True
+SF12 MentalScore,63.24,59.34,sereno,M,49,6.0,84.0,False,True
+SF12 PhysicalScore,28.4,53.9,sereno,M,57,15.0,67.0,False,True
+SF12 MentalScore,50.46,61.06,sereno,M,57,15.0,67.0,False,True
+SF12 PhysicalScore,40.11,36.41,nebbia al mattino,M,64,2.0,94.0,False,True
+SF12 MentalScore,62.17,43.47,nebbia al mattino,M,64,2.0,94.0,False,True
+SF12 PhysicalScore,52.18,50.78,poco nuvoloso,M,73,7.0,83.0,False,True
+SF12 MentalScore,60.38,53.18,poco nuvoloso,M,73,7.0,83.0,False,True
+SF12 PhysicalScore,48.16,35.56,poco nuvoloso,M,78,2.0,80.0,False,True
+SF12 MentalScore,60.5,43.7,poco nuvoloso,M,78,2.0,80.0,False,True
+SF12 PhysicalScore,28.94,34.04,sereno,F,73,16.0,47.0,False,True
+SF12 MentalScore,34.2,37.5,sereno,F,73,16.0,47.0,False,True
+SF12 PhysicalScore,35.89,50.69,sereno,F,74,0.0,73.0,False,True
+SF12 MentalScore,36.97,54.17,sereno,F,74,0.0,73.0,False,True
+SF12 PhysicalScore,15.06,53.86,sereno,F,59,0.0,73.0,False,True
+SF12 MentalScore,51.63,60.73,sereno,F,59,0.0,73.0,False,True
+SF12 PhysicalScore,27.68,35.48,poco nuvoloso,F,56,3.0,74.0,False,True
+SF12 MentalScore,60.77,41.47,poco nuvoloso,F,56,3.0,74.0,False,True
+SF12 PhysicalScore,36.66,30.06,sereno,M,61,0.0,82.0,False,True
+SF12 MentalScore,51.06,44.76,sereno,M,61,0.0,82.0,False,True
+SF12 PhysicalScore,35.81,51.61,poco nuvoloso,M,67,3.0,74.0,False,True
+SF12 MentalScore,65.6,62.9,poco nuvoloso,M,67,3.0,74.0,False,True
+SF12 PhysicalScore,26.87,34.57,pioggia e schiarite,F,79,5.0,97.0,False,True
+SF12 MentalScore,52.33,59.63,pioggia e schiarite,F,79,5.0,97.0,False,True
+SF12 PhysicalScore,24.64,54.74,nebbia al mattino,M,56,4.0,94.0,False,True
+SF12 MentalScore,70.05,61.55,nebbia al mattino,M,56,4.0,94.0,False,True
+SF12 PhysicalScore,20.29,24.39,sereno,F,85,8.0,78.0,False,True
+SF12 MentalScore,27.09,55.59,sereno,F,85,8.0,78.0,False,True
+SF12 PhysicalScore,39.8,48.3,poco nuvoloso,M,51,4.0,83.0,False,False
+SF12 MentalScore,47.7,39.2,poco nuvoloso,M,51,4.0,83.0,False,False
+SF12 PhysicalScore,29.09,37.09,nebbia al mattino,F,65,2.0,87.0,False,True
+SF12 MentalScore,56.39,54.79,nebbia al mattino,F,65,2.0,87.0,False,True
+SF12 PhysicalScore,21.51,40.11,nubi sparse,M,69,5.0,83.0,False,True
+SF12 MentalScore,51.43,52.53,nubi sparse,M,69,5.0,83.0,False,True
+SF12 PhysicalScore,35.3,30.0,poco nuvoloso,M,71,4.0,69.0,False,False
+SF12 MentalScore,41.9,51.0,poco nuvoloso,M,71,4.0,69.0,False,False
+SF12 PhysicalScore,46.65,51.95,nebbia al mattino,M,58,2.0,94.0,False,True
+SF12 MentalScore,55.27,53.77,nebbia al mattino,M,58,2.0,94.0,False,True
+SF12 PhysicalScore,23.44,44.64,nebbia al mattino,M,90,2.0,87.0,False,True
+SF12 MentalScore,38.67,61.27,nebbia al mattino,M,90,2.0,87.0,False,True
+SF12 PhysicalScore,26.98,54.38,poco nuvoloso,M,46,9.0,64.0,False,True
+SF12 MentalScore,60.15,62.25,poco nuvoloso,M,46,9.0,64.0,False,True
+SF12 PhysicalScore,30.52,36.82,nubi sparse,F,76,6.0,94.0,False,True
+SF12 MentalScore,34.98,45.88,nubi sparse,F,76,6.0,94.0,False,True
+SF12 PhysicalScore,15.11,54.41,sereno,F,63,0.0,73.0,False,True
+SF12 MentalScore,54.07,59.57,sereno,F,63,0.0,73.0,False,True
+SF12 PhysicalScore,32.53,45.33,poco nuvoloso,F,64,11.0,61.0,False,True
+SF12 MentalScore,44.51,48.31,poco nuvoloso,F,64,11.0,61.0,False,True
+SF12 PhysicalScore,26.39,35.49,pioggia e schiarite,F,81,7.0,96.0,False,False
+SF12 MentalScore,37.48,61.28,pioggia e schiarite,F,81,7.0,96.0,False,False
+SF12 PhysicalScore,36.66,42.86,poco nuvoloso,M,81,7.0,60.0,False,False
+SF12 MentalScore,64.68,66.28,poco nuvoloso,M,81,7.0,60.0,False,False
+SF12 PhysicalScore,37.86,54.06,nebbia al mattino,F,73,2.0,94.0,False,True
+SF12 MentalScore,26.38,59.38,nebbia al mattino,F,73,2.0,94.0,False,True
+SF12 PhysicalScore,31.32,55.42,sereno,M,63,6.0,25.0,False,True
+SF12 MentalScore,34.0,56.9,sereno,M,63,6.0,25.0,False,True
+SF12 PhysicalScore,37.35,56.95,nebbia al mattino,M,69,2.0,87.0,False,True
+SF12 MentalScore,47.25,57.95,nebbia al mattino,M,69,2.0,87.0,False,True
+SF12 PhysicalScore,29.72,52.42,sereno,F,63,0.0,73.0,False,True
+SF12 MentalScore,55.93,60.13,sereno,F,63,0.0,73.0,False,True
+SF12 PhysicalScore,28.39,56.89,poco nuvoloso,F,65,1.0,83.0,False,True
+SF12 MentalScore,35.29,60.09,poco nuvoloso,F,65,1.0,83.0,False,True
+SF12 PhysicalScore,26.47,46.47,nebbia al mattino,M,74,5.0,74.0,False,True
+SF12 MentalScore,54.57,64.77,nebbia al mattino,M,74,5.0,74.0,False,True
+SF12 PhysicalScore,25.31,52.41,pioggia e schiarite,F,66,6.0,90.0,False,True
+SF12 MentalScore,64.46,61.46,pioggia e schiarite,F,66,6.0,90.0,False,True
+SF12 PhysicalScore,35.13,39.43,poco nuvoloso,M,81,7.0,83.0,False,True
+SF12 MentalScore,36.09,54.79,poco nuvoloso,M,81,7.0,83.0,False,True
+SF12 PhysicalScore,41.56,33.56,pioggia debole,F,81,5.0,96.0,False,True
+SF12 MentalScore,53.48,57.28,pioggia debole,F,81,5.0,96.0,False,True
+SF12 PhysicalScore,32.46,39.46,pioggia e schiarite,M,69,9.0,89.0,False,True
+SF12 MentalScore,58.21,61.41,pioggia e schiarite,M,69,9.0,89.0,False,True
+SF12 PhysicalScore,40.22,45.02,nebbia al mattino,M,69,5.0,74.0,False,True
+SF12 MentalScore,64.3,65.3,nebbia al mattino,M,69,5.0,74.0,False,True
+SF12 PhysicalScore,21.55,40.85,temporale e schiarite,F,74,11.0,89.0,False,False
+SF12 MentalScore,54.35,59.05,temporale e schiarite,F,74,11.0,89.0,False,False
+SF12 PhysicalScore,24.51,54.41,pioggia e schiarite,M,45,18.0,78.0,False,True
+SF12 MentalScore,64.18,59.88,pioggia e schiarite,M,45,18.0,78.0,False,True
+SF12 PhysicalScore,46.82,55.62,poco nuvoloso,M,59,7.0,83.0,False,True
+SF12 MentalScore,51.14,59.04,poco nuvoloso,M,59,7.0,83.0,False,True
+SF12 PhysicalScore,17.08,35.48,nebbia al mattino,F,64,7.0,87.0,False,True
+SF12 MentalScore,56.33,40.93,nebbia al mattino,F,64,7.0,87.0,False,True
+SF12 PhysicalScore,37.91,53.61,pioggia e schiarite,M,60,6.0,90.0,False,True
+SF12 MentalScore,55.05,62.25,pioggia e schiarite,M,60,6.0,90.0,False,True
+SF12 PhysicalScore,23.24,32.84,pioggia e schiarite,M,74,4.0,91.0,False,True
+SF12 MentalScore,45.12,44.52,pioggia e schiarite,M,74,4.0,91.0,False,True
+SF12 PhysicalScore,28.33,30.63,pioggia e schiarite,F,68,6.0,95.0,False,True
+SF12 MentalScore,38.14,43.54,pioggia e schiarite,F,68,6.0,95.0,False,True
+SF12 PhysicalScore,37.23,52.53,nubi sparse,F,80,4.0,86.0,False,True
+SF12 MentalScore,31.48,61.28,nubi sparse,F,80,4.0,86.0,False,True
+SF12 PhysicalScore,47.08,54.58,nubi sparse,M,68,4.0,86.0,False,True
+SF12 MentalScore,52.31,56.91,nubi sparse,M,68,4.0,86.0,False,True
+SF12 PhysicalScore,41.57,55.77,pioggia e schiarite,M,71,6.0,95.0,False,True
+SF12 MentalScore,63.83,60.63,pioggia e schiarite,M,71,6.0,95.0,False,True
+SF12 PhysicalScore,35.15,46.15,nebbia al mattino,F,69,3.0,98.0,False,False
+SF12 MentalScore,49.59,29.99,nebbia al mattino,F,69,3.0,98.0,False,False
+SF12 PhysicalScore,28.15,53.15,poco nuvoloso,F,81,11.0,70.0,False,True
+SF12 MentalScore,25.16,61.66,poco nuvoloso,F,81,11.0,70.0,False,True
+SF12 PhysicalScore,35.81,48.21,pioggia debole,F,70,6.0,100.0,False,True
+SF12 MentalScore,55.45,61.25,pioggia debole,F,70,6.0,100.0,False,True
+SF12 PhysicalScore,44.37,50.57,nebbia al mattino,M,62,6.0,90.0,False,True
+SF12 MentalScore,63.79,57.29,nebbia al mattino,M,62,6.0,90.0,False,True
+SF12 PhysicalScore,31.92,29.52,poco nuvoloso,M,63,6.0,59.0,False,True
+SF12 MentalScore,56.15,61.55,poco nuvoloso,M,63,6.0,59.0,False,True
+SF12 PhysicalScore,37.16,53.26,sereno,M,57,-2.0,59.0,False,True
+SF12 MentalScore,66.46,53.36,sereno,M,57,-2.0,59.0,False,True
+SF12 PhysicalScore,27.56,39.66,poco nuvoloso,F,79,4.0,67.0,False,True
+SF12 MentalScore,59.66,58.96,poco nuvoloso,F,79,4.0,67.0,False,True
+SF12 PhysicalScore,44.08,52.48,poco nuvoloso,M,68,4.0,67.0,False,False
+SF12 MentalScore,58.55,57.05,poco nuvoloso,M,68,4.0,67.0,False,False
+SF12 PhysicalScore,30.62,43.92,pioggia e schiarite,F,68,6.0,95.0,False,True
+SF12 MentalScore,53.06,63.96,pioggia e schiarite,F,68,6.0,95.0,False,True
+SF12 PhysicalScore,36.42,42.02,nubi sparse,F,73,6.0,94.0,False,True
+SF12 MentalScore,45.01,57.81,nubi sparse,F,73,6.0,94.0,False,True
+SF12 PhysicalScore,37.12,43.12,neve,M,81,3.0,94.0,False,True
+SF12 MentalScore,56.35,38.75,neve,M,81,3.0,94.0,False,True
+SF12 PhysicalScore,36.77,49.27,poco nuvoloso,F,75,4.0,83.0,False,False
+SF12 MentalScore,48.14,32.84,poco nuvoloso,F,75,4.0,83.0,False,False
+SF12 PhysicalScore,38.35,56.85,pioggia e schiarite,F,80,4.0,91.0,False,False
+SF12 MentalScore,42.15,43.25,pioggia e schiarite,F,80,4.0,91.0,False,False
+SF12 PhysicalScore,30.38,55.18,nubi sparse,M,60,8.0,91.0,False,True
+SF12 MentalScore,61.26,58.56,nubi sparse,M,60,8.0,91.0,False,True
+SF12 PhysicalScore,30.93,48.63,pioggia e schiarite,M,58,10.0,75.0,False,True
+SF12 MentalScore,35.86,55.36,pioggia e schiarite,M,58,10.0,75.0,False,True
+SF12 PhysicalScore,40.01,44.01,poco nuvoloso,M,69,5.0,60.0,False,False
+SF12 MentalScore,65.38,50.58,poco nuvoloso,M,69,5.0,60.0,False,False
+SF12 PhysicalScore,49.31,53.71,coperto,F,66,6.0,93.0,False,True
+SF12 MentalScore,60.43,56.83,coperto,F,66,6.0,93.0,False,True
+SF12 PhysicalScore,25.29,42.59,sereno,F,52,12.0,58.0,False,True
+SF12 MentalScore,65.89,40.39,sereno,F,52,12.0,58.0,False,True
+SF12 PhysicalScore,35.23,50.53,neve,M,75,3.0,94.0,False,True
+SF12 MentalScore,56.39,61.69,neve,M,75,3.0,94.0,False,True
+SF12 PhysicalScore,32.76,38.16,poco nuvoloso,F,84,4.0,67.0,False,True
+SF12 MentalScore,32.62,58.12,poco nuvoloso,F,84,4.0,67.0,False,True
+SF12 PhysicalScore,27.88,36.18,pioggia e schiarite,F,77,5.0,86.0,False,True
+SF12 MentalScore,51.68,55.88,pioggia e schiarite,F,77,5.0,86.0,False,True
+SF12 PhysicalScore,23.77,28.77,sereno,F,59,3.0,64.0,False,False
+SF12 MentalScore,25.92,44.92,sereno,F,59,3.0,64.0,False,False
+SF12 PhysicalScore,29.15,37.95,neve,F,58,-2.0,94.0,False,False
+SF12 MentalScore,30.55,35.65,neve,F,58,-2.0,94.0,False,False
+SF12 PhysicalScore,51.94,57.44,poco nuvoloso,M,58,-4.0,82.0,False,False
+SF12 MentalScore,62.33,61.33,poco nuvoloso,M,58,-4.0,82.0,False,False
+SF12 PhysicalScore,21.37,31.07,poco nuvoloso,F,53,4.0,72.0,False,True
+SF12 MentalScore,38.49,41.99,poco nuvoloso,F,53,4.0,72.0,False,True
+SF12 PhysicalScore,23.04,49.44,poco nuvoloso,F,48,4.0,58.0,False,True
+SF12 MentalScore,54.75,56.55,poco nuvoloso,F,48,4.0,58.0,False,True
+SF12 PhysicalScore,30.01,27.01,pioggia debole,F,73,6.0,100.0,False,False
+SF12 MentalScore,53.99,49.09,pioggia debole,F,73,6.0,100.0,False,False
+SF12 PhysicalScore,28.1,51.0,poco nuvoloso,M,46,4.0,67.0,False,True
+SF12 MentalScore,55.77,54.57,poco nuvoloso,M,46,4.0,67.0,False,True
+SF12 PhysicalScore,32.6,48.5,poco nuvoloso,M,50,5.0,68.0,False,False
+SF12 MentalScore,61.57,55.77,poco nuvoloso,M,50,5.0,68.0,False,False
+SF12 PhysicalScore,31.13,49.63,poco nuvoloso,F,49,18.0,66.0,False,True
+SF12 MentalScore,44.25,62.05,poco nuvoloso,F,49,18.0,66.0,False,True
+SF12 PhysicalScore,36.77,55.57,poco nuvoloso,M,85,4.0,70.0,False,True
+SF12 MentalScore,60.9,58.3,poco nuvoloso,M,85,4.0,70.0,False,True
+SF12 PhysicalScore,33.74,36.54,poco nuvoloso,M,73,6.0,76.0,False,False
+SF12 MentalScore,47.12,55.72,poco nuvoloso,M,73,6.0,76.0,False,False
+SF12 PhysicalScore,30.12,44.92,pioggia e schiarite,F,50,6.0,95.0,False,True
+SF12 MentalScore,42.53,61.23,pioggia e schiarite,F,50,6.0,95.0,False,True
+SF12 PhysicalScore,19.98,24.98,pioggia e schiarite,F,61,5.0,86.0,False,True
+SF12 MentalScore,58.02,56.62,pioggia e schiarite,F,61,5.0,86.0,False,True
+SF12 PhysicalScore,37.97,41.97,pioggia e schiarite,F,79,7.0,91.0,False,True
+SF12 MentalScore,46.29,51.89,pioggia e schiarite,F,79,7.0,91.0,False,True
+SF12 PhysicalScore,31.14,50.24,poco nuvoloso,M,63,-3.0,56.0,False,True
+SF12 MentalScore,69.47,53.77,poco nuvoloso,M,63,-3.0,56.0,False,True
+SF12 PhysicalScore,21.27,57.67,nubi sparse,M,70,13.0,74.0,False,True
+SF12 MentalScore,70.24,35.94,nubi sparse,M,70,13.0,74.0,False,True
+SF12 PhysicalScore,31.76,52.26,poco nuvoloso,M,43,4.0,70.0,False,False
+SF12 MentalScore,64.68,56.78,poco nuvoloso,M,43,4.0,70.0,False,False
+SF12 PhysicalScore,31.45,36.95,poco nuvoloso,F,59,9.0,54.0,False,True
+SF12 MentalScore,62.85,26.45,poco nuvoloso,F,59,9.0,54.0,False,True
+SF12 PhysicalScore,38.23,51.43,pioggia e schiarite,M,30,4.0,78.0,False,True
+SF12 MentalScore,48.67,54.87,pioggia e schiarite,M,30,4.0,78.0,False,True
+SF12 PhysicalScore,46.86,30.26,poco nuvoloso,M,60,2.0,71.0,False,True
+SF12 MentalScore,55.83,46.63,poco nuvoloso,M,60,2.0,71.0,False,True
+SF12 PhysicalScore,30.64,28.34,pioggia e schiarite,M,59,9.0,88.0,False,True
+SF12 MentalScore,41.36,62.86,pioggia e schiarite,M,59,9.0,88.0,False,True
+SF12 PhysicalScore,27.36,37.76,neve e schiarite,F,78,0.0,94.0,False,True
+SF12 MentalScore,44.61,59.91,neve e schiarite,F,78,0.0,94.0,False,True
+SF12 PhysicalScore,27.32,36.52,neve debole,F,65,0.0,94.0,False,True
+SF12 MentalScore,55.96,64.76,neve debole,F,65,0.0,94.0,False,True
+SF12 PhysicalScore,35.6,57.2,sereno,M,64,3.0,64.0,False,True
+SF12 MentalScore,59.2,28.7,sereno,M,64,3.0,64.0,False,True
+SF12 PhysicalScore,36.57,33.97,poco nuvoloso,M,32,14.0,58.0,False,True
+SF12 MentalScore,47.61,57.21,poco nuvoloso,M,32,14.0,58.0,False,True
+SF12 PhysicalScore,18.31,33.21,neve,F,85,-3.0,96.0,False,True
+SF12 MentalScore,58.66,45.16,neve,F,85,-3.0,96.0,False,True
+SF12 PhysicalScore,31.59,34.09,pioggia e schiarite,F,64,7.0,83.0,False,True
+SF12 MentalScore,14.06,37.36,pioggia e schiarite,F,64,7.0,83.0,False,True
+SF12 PhysicalScore,27.23,55.23,poco nuvoloso,M,65,-5.0,71.0,False,False
+SF12 MentalScore,69.05,55.25,poco nuvoloso,M,65,-5.0,71.0,False,False
+SF12 PhysicalScore,20.55,27.45,pioggia e schiarite,F,58,11.0,89.0,False,True
+SF12 MentalScore,28.29,24.99,pioggia e schiarite,F,58,11.0,89.0,False,True
+SF12 PhysicalScore,26.98,47.78,poco nuvoloso,F,75,11.0,82.0,False,True
+SF12 MentalScore,40.78,57.98,poco nuvoloso,F,75,11.0,82.0,False,True
+SF12 PhysicalScore,28.49,45.59,pioggia e schiarite,F,76,15.0,91.0,False,True
+SF12 MentalScore,48.61,57.41,pioggia e schiarite,F,76,15.0,91.0,False,True
+SF12 PhysicalScore,37.61,37.11,poco nuvoloso,F,72,14.0,69.0,False,True
+SF12 MentalScore,44.55,29.05,poco nuvoloso,F,72,14.0,69.0,False,True
+SF12 PhysicalScore,35.06,46.66,pioggia e schiarite,F,59,10.0,95.0,False,True
+SF12 MentalScore,38.11,62.91,pioggia e schiarite,F,59,10.0,95.0,False,True
+SF12 PhysicalScore,33.3,33.4,poco nuvoloso,F,78,6.0,55.0,False,True
+SF12 MentalScore,40.91,31.21,poco nuvoloso,F,78,6.0,55.0,False,True
+SF12 PhysicalScore,22.61,28.01,pioggia e schiarite,F,74,7.0,94.0,False,False
+SF12 MentalScore,47.93,35.23,pioggia e schiarite,F,74,7.0,94.0,False,False
+SF12 PhysicalScore,26.27,37.37,poco nuvoloso,F,79,20.0,63.0,False,True
+SF12 MentalScore,42.34,63.24,poco nuvoloso,F,79,20.0,63.0,False,True
+SF12 PhysicalScore,36.25,28.35,pioggia e schiarite,F,82,12.0,81.0,False,True
+SF12 MentalScore,33.51,51.41,pioggia e schiarite,F,82,12.0,81.0,False,True
+SF12 PhysicalScore,34.08,53.58,poco nuvoloso,F,71,20.0,69.0,False,True
+SF12 MentalScore,66.32,60.92,poco nuvoloso,F,71,20.0,69.0,False,True
+SF12 PhysicalScore,34.68,52.18,poco nuvoloso,M,49,18.0,59.0,False,True
+SF12 MentalScore,55.81,32.51,poco nuvoloso,M,49,18.0,59.0,False,True
+SF12 PhysicalScore,28.15,53.05,pioggia e schiarite,F,71,10.0,77.0,False,True
+SF12 MentalScore,52.3,61.9,pioggia e schiarite,F,71,10.0,77.0,False,True
+SF12 PhysicalScore,27.18,38.48,poco nuvoloso,F,55,20.0,60.0,True,True
+SF12 MentalScore,54.4,62.6,poco nuvoloso,F,55,20.0,60.0,True,True
+SF12 PhysicalScore,48.33,31.23,poco nuvoloso,M,69,23.0,60.0,False,True
+SF12 MentalScore,37.91,55.71,poco nuvoloso,M,69,23.0,60.0,False,True
+SF12 PhysicalScore,26.21,36.91,pioggia e schiarite,F,74,11.0,92.0,False,True
+SF12 MentalScore,65.42,66.92,pioggia e schiarite,F,74,11.0,92.0,False,True
+SF12 PhysicalScore,41.18,31.08,poco nuvoloso,F,70,19.0,62.0,False,True
+SF12 MentalScore,51.39,44.39,poco nuvoloso,F,70,19.0,62.0,False,True
+SF12 PhysicalScore,38.82,48.52,temporale e schiarite,F,76,11.0,88.0,False,True
+SF12 MentalScore,32.07,44.07,temporale e schiarite,F,76,11.0,88.0,False,True
+SF12 PhysicalScore,43.5,38.6,poco nuvoloso,F,70,13.0,66.0,False,True
+SF12 MentalScore,56.1,55.4,poco nuvoloso,F,70,13.0,66.0,False,True
+SF12 PhysicalScore,35.88,47.48,sereno,M,52,20.0,55.0,True,True
+SF12 MentalScore,62.69,64.19,sereno,M,52,20.0,55.0,True,True
+SF12 PhysicalScore,45.29,38.69,temporale e schiarite,M,62,20.0,67.0,False,True
+SF12 MentalScore,62.39,27.39,temporale e schiarite,M,62,20.0,67.0,False,True
+SF12 PhysicalScore,38.86,37.96,poco nuvoloso,F,65,14.0,69.0,False,False
+SF12 MentalScore,56.59,53.69,poco nuvoloso,F,65,14.0,69.0,False,False
+SF12 PhysicalScore,37.72,41.92,nubi sparse,M,48,15.0,93.0,False,True
+SF12 MentalScore,55.03,50.23,nubi sparse,M,48,15.0,93.0,False,True
+SF12 PhysicalScore,41.49,41.39,nebbia al mattino,M,59,6.0,85.0,False,True
+SF12 MentalScore,63.1,45.5,nebbia al mattino,M,59,6.0,85.0,False,True
+SF12 PhysicalScore,44.68,58.38,pioggia e schiarite,F,82,18.0,78.0,False,True
+SF12 MentalScore,63.22,48.32,pioggia e schiarite,F,82,18.0,78.0,False,True
+SF12 PhysicalScore,28.88,39.18,temporale e schiarite,F,78,16.0,74.0,False,True
+SF12 MentalScore,42.55,30.25,temporale e schiarite,F,78,16.0,74.0,False,True
+SF12 PhysicalScore,28.57,25.37,nubi sparse,F,57,19.0,96.0,False,True
+SF12 MentalScore,40.48,62.38,nubi sparse,F,57,19.0,96.0,False,True
+SF12 PhysicalScore,25.71,54.01,poco nuvoloso,F,73,18.0,66.0,False,True
+SF12 MentalScore,69.64,60.24,poco nuvoloso,F,73,18.0,66.0,False,True
+SF12 PhysicalScore,21.98,52.78,temporale e schiarite,M,64,27.0,65.0,True,True
+SF12 MentalScore,65.44,61.04,temporale e schiarite,M,64,27.0,65.0,True,True
+SF12 PhysicalScore,34.14,43.84,poco nuvoloso,F,83,21.0,72.0,False,True
+SF12 MentalScore,41.39,64.49,poco nuvoloso,F,83,21.0,72.0,False,True
+SF12 PhysicalScore,30.83,29.83,pioggia e schiarite,M,70,14.0,72.0,False,True
+SF12 MentalScore,39.93,38.33,pioggia e schiarite,M,70,14.0,72.0,False,True
+SF12 PhysicalScore,24.15,54.45,poco nuvoloso,M,47,20.0,63.0,False,True
+SF12 MentalScore,42.39,54.49,poco nuvoloso,M,47,20.0,63.0,False,True
+SF12 PhysicalScore,36.48,54.58,pioggia debole,M,38,19.0,86.0,False,True
+SF12 MentalScore,51.49,60.49,pioggia debole,M,38,19.0,86.0,False,True
+SF12 PhysicalScore,34.11,41.91,nubi sparse,M,61,20.0,73.0,False,True
+SF12 MentalScore,53.98,56.78,nubi sparse,M,61,20.0,73.0,False,True
+SF12 PhysicalScore,30.26,54.46,poco nuvoloso,F,39,24.0,50.0,True,True
+SF12 MentalScore,49.04,60.64,poco nuvoloso,F,39,24.0,50.0,True,True
+SF12 PhysicalScore,37.58,44.78,nubi sparse,F,68,19.0,69.0,False,True
+SF12 MentalScore,35.1,60.5,nubi sparse,F,68,19.0,69.0,False,True
+SF12 PhysicalScore,35.98,43.18,pioggia e schiarite,M,74,15.0,65.0,False,True
+SF12 MentalScore,49.61,56.91,pioggia e schiarite,M,74,15.0,65.0,False,True
+SF12 PhysicalScore,25.92,40.22,poco nuvoloso,M,73,26.0,67.0,True,True
+SF12 MentalScore,63.17,56.97,poco nuvoloso,M,73,26.0,67.0,True,True
+SF12 PhysicalScore,26.62,54.12,pioggia e schiarite,M,75,18.0,84.0,False,True
+SF12 MentalScore,72.93,62.33,pioggia e schiarite,M,75,18.0,84.0,False,True
+SF12 PhysicalScore,33.09,48.29,poco nuvoloso,M,46,22.0,51.0,False,True
+SF12 MentalScore,43.1,40.5,poco nuvoloso,M,46,22.0,51.0,False,True
+SF12 PhysicalScore,43.39,54.29,poco nuvoloso,M,47,29.0,51.0,True,True
+SF12 MentalScore,34.6,60.4,poco nuvoloso,M,47,29.0,51.0,True,True
+SF12 PhysicalScore,28.02,52.12,poco nuvoloso,F,83,22.0,75.0,False,True
+SF12 MentalScore,42.11,57.51,poco nuvoloso,F,83,22.0,75.0,False,True
+SF12 PhysicalScore,21.2,53.7,temporale e schiarite,F,44,27.0,56.0,True,True
+SF12 MentalScore,58.93,60.03,temporale e schiarite,F,44,27.0,56.0,True,True
+SF12 PhysicalScore,24.92,35.02,poco nuvoloso,M,38,24.0,63.0,True,True
+SF12 MentalScore,33.8,57.2,poco nuvoloso,M,38,24.0,63.0,True,True
+SF12 PhysicalScore,27.75,46.25,poco nuvoloso,F,71,19.0,75.0,False,True
+SF12 MentalScore,53.26,51.26,poco nuvoloso,F,71,19.0,75.0,False,True
+SF12 PhysicalScore,34.75,58.15,poco nuvoloso,M,68,23.0,62.0,True,True
+SF12 MentalScore,53.63,30.83,poco nuvoloso,M,68,23.0,62.0,True,True
+SF12 PhysicalScore,41.77,58.17,poco nuvoloso,M,68,21.0,77.0,True,True
+SF12 MentalScore,65.78,52.98,poco nuvoloso,M,68,21.0,77.0,True,True
+SF12 PhysicalScore,24.99,41.69,sole e caldo,F,76,28.0,63.0,True,True
+SF12 MentalScore,54.79,55.49,sole e caldo,F,76,28.0,63.0,True,True
+SF12 PhysicalScore,31.56,52.76,poco nuvoloso,M,63,23.0,48.0,True,True
+SF12 MentalScore,49.0,60.2,poco nuvoloso,M,63,23.0,48.0,True,True
+SF12 PhysicalScore,22.88,48.38,poco nuvoloso,M,58,25.0,67.0,True,True
+SF12 MentalScore,55.17,53.87,poco nuvoloso,M,58,25.0,67.0,True,True
+SF12 PhysicalScore,34.54,49.74,poco nuvoloso,F,61,27.0,57.0,True,False
+SF12 MentalScore,60.35,53.85,poco nuvoloso,F,61,27.0,57.0,True,False
+SF12 PhysicalScore,35.64,55.64,poco nuvoloso,F,68,26.0,60.0,True,True
+SF12 MentalScore,67.68,62.58,poco nuvoloso,F,68,26.0,60.0,True,True
+SF12 PhysicalScore,30.05,27.65,poco nuvoloso,M,75,26.0,60.0,True,True
+SF12 MentalScore,53.92,59.02,poco nuvoloso,M,75,26.0,60.0,True,True
+SF12 PhysicalScore,25.6,24.9,poco nuvoloso,F,83,23.0,74.0,True,True
+SF12 MentalScore,65.69,47.79,poco nuvoloso,F,83,23.0,74.0,True,True
+SF12 PhysicalScore,33.38,44.08,poco nuvoloso,F,71,22.0,51.0,True,True
+SF12 MentalScore,55.33,46.13,poco nuvoloso,F,71,22.0,51.0,True,True
+SF12 PhysicalScore,31.18,54.78,poco nuvoloso,F,83,22.0,76.0,True,True
+SF12 MentalScore,27.43,60.33,poco nuvoloso,F,83,22.0,76.0,True,True
+SF12 PhysicalScore,18.09,30.29,sole e caldo,F,68,25.0,62.0,True,True
+SF12 MentalScore,65.65,60.55,sole e caldo,F,68,25.0,62.0,True,True
+SF12 PhysicalScore,39.79,56.49,poco nuvoloso,F,69,24.0,68.0,True,True
+SF12 MentalScore,41.14,62.04,poco nuvoloso,F,69,24.0,68.0,True,True
+SF12 PhysicalScore,38.21,47.71,poco nuvoloso,F,70,27.0,61.0,True,True
+SF12 MentalScore,14.4,60.2,poco nuvoloso,F,70,27.0,61.0,True,True
+SF12 PhysicalScore,39.01,54.31,temporale e schiarite,M,66,22.0,80.0,True,False
+SF12 MentalScore,56.15,52.85,temporale e schiarite,M,66,22.0,80.0,True,False
+SF12 PhysicalScore,32.55,42.95,poco nuvoloso,F,68,24.0,74.0,True,True
+SF12 MentalScore,62.62,50.62,poco nuvoloso,F,68,24.0,74.0,True,True
+SF12 PhysicalScore,25.43,34.53,poco nuvoloso,F,65,23.0,76.0,True,True
+SF12 MentalScore,23.76,46.86,poco nuvoloso,F,65,23.0,76.0,True,True
+SF12 PhysicalScore,25.32,35.02,temporale e schiarite,F,70,21.0,83.0,False,True
+SF12 MentalScore,23.41,40.51,temporale e schiarite,F,70,21.0,83.0,False,True
+SF12 PhysicalScore,21.51,26.11,poco nuvoloso,F,81,26.0,57.0,True,True
+SF12 MentalScore,47.28,46.88,poco nuvoloso,F,81,26.0,57.0,True,True
+SF12 PhysicalScore,29.07,52.07,poco nuvoloso,M,85,25.0,58.0,True,True
+SF12 MentalScore,50.18,62.08,poco nuvoloso,M,85,25.0,58.0,True,True
+SF12 PhysicalScore,29.13,56.33,poco nuvoloso,M,56,21.0,78.0,False,True
+SF12 MentalScore,60.65,49.05,poco nuvoloso,M,56,21.0,78.0,False,True
+SF12 PhysicalScore,33.15,55.15,pioggia e schiarite,F,55,20.0,79.0,False,True
+SF12 MentalScore,67.62,60.92,pioggia e schiarite,F,55,20.0,79.0,False,True
+SF12 PhysicalScore,24.78,51.68,sole e caldo,F,84,28.0,63.0,True,True
+SF12 MentalScore,57.07,50.87,sole e caldo,F,84,28.0,63.0,True,True
+SF12 PhysicalScore,32.86,40.36,sole e caldo,F,67,29.0,66.0,True,True
+SF12 MentalScore,47.46,51.06,sole e caldo,F,67,29.0,66.0,True,True
+SF12 PhysicalScore,25.55,40.45,sole e caldo,M,54,27.0,51.0,True,True
+SF12 MentalScore,63.57,35.87,sole e caldo,M,54,27.0,51.0,True,True
+SF12 PhysicalScore,44.55,47.65,sole e caldo,M,58,28.0,51.0,True,True
+SF12 MentalScore,49.57,54.07,sole e caldo,M,58,28.0,51.0,True,True
+SF12 PhysicalScore,29.94,47.44,sole e caldo,F,68,26.0,70.0,True,True
+SF12 MentalScore,43.19,53.29,sole e caldo,F,68,26.0,70.0,True,True
+SF12 PhysicalScore,36.06,39.96,temporale e schiarite,F,71,20.0,89.0,False,True
+SF12 MentalScore,41.64,32.54,temporale e schiarite,F,71,20.0,89.0,False,True
+SF12 PhysicalScore,30.92,48.92,sole e caldo,M,78,26.0,70.0,True,True
+SF12 MentalScore,55.96,60.66,sole e caldo,M,78,26.0,70.0,True,True
+SF12 PhysicalScore,34.13,49.53,poco nuvoloso,M,73,27.0,60.0,True,True
+SF12 MentalScore,68.02,59.32,poco nuvoloso,M,73,27.0,60.0,True,True
+SF12 PhysicalScore,40.0,57.1,poco nuvoloso,M,74,26.0,67.0,True,True
+SF12 MentalScore,64.77,54.77,poco nuvoloso,M,74,26.0,67.0,True,True
+SF12 PhysicalScore,40.43,49.53,poco nuvoloso,F,72,28.0,56.0,True,True
+SF12 MentalScore,34.62,56.52,poco nuvoloso,F,72,28.0,56.0,True,True
+SF12 PhysicalScore,26.4,47.0,poco nuvoloso,F,68,28.0,56.0,True,True
+SF12 MentalScore,53.74,52.54,poco nuvoloso,F,68,28.0,56.0,True,True
+SF12 PhysicalScore,23.88,46.38,sole e caldo,F,80,28.0,63.0,True,True
+SF12 MentalScore,43.77,54.07,sole e caldo,F,80,28.0,63.0,True,True
+SF12 PhysicalScore,28.43,45.63,poco nuvoloso,M,72,24.0,73.0,True,False
+SF12 MentalScore,58.11,55.61,poco nuvoloso,M,72,24.0,73.0,True,False
+SF12 PhysicalScore,26.4,30.1,poco nuvoloso,M,59,29.0,65.0,True,True
+SF12 MentalScore,49.07,45.27,poco nuvoloso,M,59,29.0,65.0,True,True
+SF12 PhysicalScore,31.47,25.77,poco nuvoloso,M,58,21.0,68.0,True,True
+SF12 MentalScore,50.56,42.66,poco nuvoloso,M,58,21.0,68.0,True,True
+SF12 PhysicalScore,39.49,32.79,temporale e schiarite,F,62,19.0,86.0,False,True
+SF12 MentalScore,58.24,56.24,temporale e schiarite,F,62,19.0,86.0,False,True
+SF12 PhysicalScore,25.04,50.44,poco nuvoloso,F,62,24.0,73.0,True,False
+SF12 MentalScore,54.16,54.66,poco nuvoloso,F,62,24.0,73.0,True,False
+SF12 PhysicalScore,43.01,54.51,nubi sparse,F,73,19.0,82.0,False,True
+SF12 MentalScore,49.3,58.3,nubi sparse,F,73,19.0,82.0,False,True
+SF12 PhysicalScore,29.97,37.57,poco nuvoloso,M,66,23.0,75.0,True,True
+SF12 MentalScore,30.81,41.61,poco nuvoloso,M,66,23.0,75.0,True,True
+SF12 PhysicalScore,34.39,45.79,poco nuvoloso,F,72,28.0,56.0,True,True
+SF12 MentalScore,48.86,56.16,poco nuvoloso,F,72,28.0,56.0,True,True
+SF12 PhysicalScore,25.75,44.05,sereno,F,67,24.0,72.0,True,True
+SF12 MentalScore,45.7,55.1,sereno,F,67,24.0,72.0,True,True
+SF12 PhysicalScore,37.46,39.86,sole e caldo,F,78,24.0,73.0,True,True
+SF12 MentalScore,49.44,36.34,sole e caldo,F,78,24.0,73.0,True,True
+SF12 PhysicalScore,23.8,44.0,poco nuvoloso,F,71,21.0,78.0,False,True
+SF12 MentalScore,55.81,60.51,poco nuvoloso,F,71,21.0,78.0,False,True
+SF12 PhysicalScore,31.29,36.69,poco nuvoloso,M,69,22.0,78.0,True,False
+SF12 MentalScore,58.28,45.08,poco nuvoloso,M,69,22.0,78.0,True,False
+SF12 PhysicalScore,34.31,59.81,sereno,M,66,17.0,67.0,False,False
+SF12 MentalScore,43.06,42.26,sereno,M,66,17.0,67.0,False,False
+SF12 PhysicalScore,24.77,53.07,nubi sparse,M,50,13.0,63.0,False,True
+SF12 MentalScore,69.62,60.22,nubi sparse,M,50,13.0,63.0,False,True
+SF12 PhysicalScore,33.62,53.32,poco nuvoloso,F,75,23.0,76.0,True,True
+SF12 MentalScore,49.9,58.5,poco nuvoloso,F,75,23.0,76.0,True,True
+SF12 PhysicalScore,25.38,52.08,poco nuvoloso,M,58,25.0,72.0,True,True
+SF12 MentalScore,52.57,62.17,poco nuvoloso,M,58,25.0,72.0,True,True
+SF12 PhysicalScore,34.14,39.54,sereno,F,80,17.0,67.0,False,True
+SF12 MentalScore,31.05,61.95,sereno,F,80,17.0,67.0,False,True
+SF12 PhysicalScore,29.88,52.28,sereno,M,55,15.0,66.0,False,True
+SF12 MentalScore,38.61,59.01,sereno,M,55,15.0,66.0,False,True
+SF12 PhysicalScore,23.78,30.88,poco nuvoloso,F,44,23.0,78.0,False,False
+SF12 MentalScore,59.12,62.92,poco nuvoloso,F,44,23.0,78.0,False,False
+SF12 PhysicalScore,30.17,35.97,poco nuvoloso,M,57,22.0,66.0,True,True
+SF12 MentalScore,30.14,58.34,poco nuvoloso,M,57,22.0,66.0,True,True
+SF12 PhysicalScore,26.09,47.69,sereno,F,64,24.0,72.0,True,True
+SF12 MentalScore,50.8,61.6,sereno,F,64,24.0,72.0,True,True
+SF12 PhysicalScore,23.24,38.64,pioggia e schiarite,M,82,18.0,95.0,False,True
+SF12 MentalScore,28.28,39.18,pioggia e schiarite,M,82,18.0,95.0,False,True
+SF12 PhysicalScore,32.15,41.15,sereno,M,55,19.0,55.0,False,True
+SF12 MentalScore,50.72,40.62,sereno,M,55,19.0,55.0,False,True
+SF12 PhysicalScore,23.69,51.39,sereno,F,65,24.0,72.0,True,True
+SF12 MentalScore,60.18,62.58,sereno,F,65,24.0,72.0,True,True
+SF12 PhysicalScore,30.39,34.99,sereno,F,78,15.0,51.0,False,True
+SF12 MentalScore,40.88,35.98,sereno,F,78,15.0,51.0,False,True
+SF12 PhysicalScore,35.38,55.38,sereno,M,76,23.0,73.0,True,True
+SF12 MentalScore,67.94,50.34,sereno,M,76,23.0,73.0,True,True
+SF12 PhysicalScore,36.92,38.52,pioggia e schiarite,F,69,14.0,85.0,False,True
+SF12 MentalScore,33.24,45.34,pioggia e schiarite,F,69,14.0,85.0,False,True
+SF12 PhysicalScore,20.26,28.16,poco nuvoloso,F,79,18.0,71.0,False,True
+SF12 MentalScore,44.01,66.41,poco nuvoloso,F,79,18.0,71.0,False,True
+SF12 PhysicalScore,24.12,34.72,sereno,F,71,17.0,67.0,False,True
+SF12 MentalScore,45.02,51.42,sereno,F,71,17.0,67.0,False,True
+SF12 PhysicalScore,25.83,45.93,sereno,M,46,23.0,73.0,True,True
+SF12 MentalScore,50.21,31.11,sereno,M,46,23.0,73.0,True,True
+SF12 PhysicalScore,32.1,50.8,sereno,M,85,17.0,79.0,False,False
+SF12 MentalScore,54.56,54.16,sereno,M,85,17.0,79.0,False,False
+SF12 PhysicalScore,20.75,52.95,pioggia mista a neve e schiarite,M,71,3.0,90.0,False,True
+SF12 MentalScore,66.21,60.31,pioggia mista a neve e schiarite,M,71,3.0,90.0,False,True
+SF12 PhysicalScore,25.91,41.71,poco nuvoloso,M,66,18.0,78.0,False,True
+SF12 MentalScore,59.64,43.34,poco nuvoloso,M,66,18.0,78.0,False,True
+SF12 PhysicalScore,24.85,27.75,pioggia e schiarite,F,50,10.0,73.0,False,True
+SF12 MentalScore,27.27,42.57,pioggia e schiarite,F,50,10.0,73.0,False,True
+SF12 PhysicalScore,35.77,53.87,pioggia debole,M,69,1.0,99.0,False,True
+SF12 MentalScore,44.75,60.75,pioggia debole,M,69,1.0,99.0,False,True
+SF12 PhysicalScore,37.66,42.76,nebbia al mattino,F,56,6.0,53.0,False,True
+SF12 MentalScore,55.49,42.89,nebbia al mattino,F,56,6.0,53.0,False,True
+SF12 PhysicalScore,31.52,53.02,pioggia debole,M,72,1.0,99.0,False,True
+SF12 MentalScore,47.26,61.56,pioggia debole,M,72,1.0,99.0,False,True
+SF12 PhysicalScore,29.4,54.1,sereno,F,79,11.0,44.0,False,True
+SF12 MentalScore,58.82,59.82,sereno,F,79,11.0,44.0,False,True
+SF12 PhysicalScore,31.1,38.3,pioggia e schiarite,F,37,4.0,91.0,False,True
+SF12 MentalScore,33.25,42.75,pioggia e schiarite,F,37,4.0,91.0,False,True
+SF12 PhysicalScore,40.63,44.23,pioggia e schiarite,F,74,2.0,97.0,False,True
+SF12 MentalScore,37.64,63.14,pioggia e schiarite,F,74,2.0,97.0,False,True
+SF12 PhysicalScore,25.84,25.04,nubi sparse,F,77,15.0,96.0,False,True
+SF12 MentalScore,53.87,55.37,nubi sparse,F,77,15.0,96.0,False,True
+SF12 PhysicalScore,37.54,59.14,nebbia al mattino,M,72,6.0,81.0,False,False
+SF12 MentalScore,54.3,42.7,nebbia al mattino,M,72,6.0,81.0,False,False
+SF12 PhysicalScore,34.07,37.37,poco nuvoloso,F,77,0.0,89.0,False,False
+SF12 MentalScore,53.55,32.85,poco nuvoloso,F,77,0.0,89.0,False,False
+SF12 PhysicalScore,32.46,53.86,pioggia debole,F,74,1.0,99.0,False,True
+SF12 MentalScore,59.7,59.9,pioggia debole,F,74,1.0,99.0,False,True
+SF12 PhysicalScore,33.24,45.74,poco nuvoloso,F,68,5.0,68.0,False,True
+SF12 MentalScore,47.24,56.64,poco nuvoloso,F,68,5.0,68.0,False,True
+SF12 PhysicalScore,29.23,36.53,nebbia al mattino,F,69,2.0,97.0,False,False
+SF12 MentalScore,60.19,51.29,nebbia al mattino,F,69,2.0,97.0,False,False
+SF12 PhysicalScore,42.85,52.95,pioggia e schiarite,M,70,2.0,97.0,False,True
+SF12 MentalScore,52.55,60.85,pioggia e schiarite,M,70,2.0,97.0,False,True
+SF12 PhysicalScore,31.14,27.94,poco nuvoloso,F,83,5.0,90.0,False,True
+SF12 MentalScore,35.82,39.52,poco nuvoloso,F,83,5.0,90.0,False,True
+SF12 PhysicalScore,39.61,37.41,pioggia debole,F,67,5.0,100.0,False,False
+SF12 MentalScore,65.52,63.22,pioggia debole,F,67,5.0,100.0,False,False
+SF12 PhysicalScore,31.54,52.34,nebbia al mattino,F,62,7.0,94.0,False,True
+SF12 MentalScore,67.57,29.87,nebbia al mattino,F,62,7.0,94.0,False,True
+SF12 PhysicalScore,31.13,37.63,nebbia al mattino,F,68,2.0,97.0,False,False
+SF12 MentalScore,47.44,62.84,nebbia al mattino,F,68,2.0,97.0,False,False
+SF12 PhysicalScore,23.13,49.93,nebbia al mattino,F,62,7.0,82.0,False,True
+SF12 MentalScore,29.2,58.3,nebbia al mattino,F,62,7.0,82.0,False,True
+SF12 PhysicalScore,47.78,42.08,nebbia,F,79,3.0,100.0,False,False
+SF12 MentalScore,57.2,57.1,nebbia,F,79,3.0,100.0,False,False
+SF12 PhysicalScore,33.07,45.47,pioggia e schiarite,F,75,6.0,96.0,False,True
+SF12 MentalScore,65.1,58.4,pioggia e schiarite,F,75,6.0,96.0,False,True
+SF12 PhysicalScore,28.49,48.89,nebbia al mattino,F,63,2.0,97.0,False,True
+SF12 MentalScore,67.24,56.24,nebbia al mattino,F,63,2.0,97.0,False,True
+SF12 PhysicalScore,26.07,47.37,poco nuvoloso,F,67,6.0,80.0,False,True
+SF12 MentalScore,60.15,51.45,poco nuvoloso,F,67,6.0,80.0,False,True
+SF12 PhysicalScore,35.54,48.14,pioggia e schiarite,M,56,16.0,75.0,False,True
+SF12 MentalScore,44.29,49.79,pioggia e schiarite,M,56,16.0,75.0,False,True
+SF12 PhysicalScore,30.81,51.71,pioggia e schiarite,F,52,6.0,96.0,False,True
+SF12 MentalScore,46.27,53.17,pioggia e schiarite,F,52,6.0,96.0,False,True
+SF12 PhysicalScore,31.69,42.89,nebbia al mattino,M,53,3.0,97.0,False,True
+SF12 MentalScore,62.88,39.98,nebbia al mattino,M,53,3.0,97.0,False,True
+SF12 PhysicalScore,25.29,36.79,nebbia al mattino,F,46,4.0,73.0,False,True
+SF12 MentalScore,61.48,60.48,nebbia al mattino,F,46,4.0,73.0,False,True
+SF12 PhysicalScore,28.97,31.47,sereno,M,69,1.0,42.0,False,True
+SF12 MentalScore,56.07,35.97,sereno,M,69,1.0,42.0,False,True
+SF12 PhysicalScore,41.2,46.1,nebbia al mattino,M,70,-1.0,96.0,False,True
+SF12 MentalScore,58.19,58.09,nebbia al mattino,M,70,-1.0,96.0,False,True
+SF12 PhysicalScore,30.66,49.66,nebbia al mattino,M,56,4.0,87.0,False,True
+SF12 MentalScore,64.69,57.69,nebbia al mattino,M,56,4.0,87.0,False,True
+SF12 PhysicalScore,23.33,47.33,sereno,M,71,6.0,59.0,False,True
+SF12 MentalScore,53.45,54.15,sereno,M,71,6.0,59.0,False,True
+SF12 PhysicalScore,52.12,35.62,sereno,F,59,6.0,49.0,False,True
+SF12 MentalScore,57.08,43.68,sereno,F,59,6.0,49.0,False,True
+SF12 PhysicalScore,37.43,54.53,sereno,M,62,1.0,56.0,False,True
+SF12 MentalScore,54.08,55.78,sereno,M,62,1.0,56.0,False,True
+SF12 PhysicalScore,37.93,48.13,nubi sparse,M,65,3.0,92.0,False,True
+SF12 MentalScore,65.39,61.09,nubi sparse,M,65,3.0,92.0,False,True
+SF12 PhysicalScore,36.34,36.34,sereno,F,66,11.0,44.0,False,False
+SF12 MentalScore,35.57,53.57,sereno,F,66,11.0,44.0,False,False
+SF12 PhysicalScore,28.62,41.72,sereno,M,56,6.0,59.0,False,True
+SF12 MentalScore,63.24,55.44,sereno,M,56,6.0,59.0,False,True
+SF12 PhysicalScore,22.44,50.34,sereno,F,47,6.0,59.0,False,True
+SF12 MentalScore,40.38,58.38,sereno,F,47,6.0,59.0,False,True
+SF12 PhysicalScore,42.83,56.63,nebbia al mattino,F,60,2.0,81.0,False,True
+SF12 MentalScore,39.27,52.07,nebbia al mattino,F,60,2.0,81.0,False,True
+SF12 PhysicalScore,31.88,54.88,nubi sparse,F,70,9.0,85.0,False,True
+SF12 MentalScore,40.75,49.45,nubi sparse,F,70,9.0,85.0,False,True
+SF12 PhysicalScore,22.94,44.34,pioggia e schiarite,M,61,5.0,71.0,False,False
+SF12 MentalScore,71.15,60.75,pioggia e schiarite,M,61,5.0,71.0,False,False
+SF12 PhysicalScore,31.53,39.13,nebbia al mattino,F,70,1.0,86.0,False,True
+SF12 MentalScore,48.24,53.34,nebbia al mattino,F,70,1.0,86.0,False,True
+SF12 PhysicalScore,36.77,43.07,pioggia e schiarite,F,72,4.0,94.0,False,True
+SF12 MentalScore,53.42,47.72,pioggia e schiarite,F,72,4.0,94.0,False,True
+SF12 PhysicalScore,24.18,33.18,nebbia al mattino,F,66,4.0,78.0,False,True
+SF12 MentalScore,63.73,47.53,nebbia al mattino,F,66,4.0,78.0,False,True
+SF12 PhysicalScore,41.94,52.54,nebbia,M,73,2.0,98.0,False,True
+SF12 MentalScore,37.79,52.39,nebbia,M,73,2.0,98.0,False,True
+SF12 PhysicalScore,23.83,26.43,poco nuvoloso,F,65,13.0,40.0,False,True
+SF12 MentalScore,38.32,56.72,poco nuvoloso,F,65,13.0,40.0,False,True
+SF12 PhysicalScore,31.06,36.66,sereno,M,73,7.0,74.0,False,False
+SF12 MentalScore,52.18,55.38,sereno,M,73,7.0,74.0,False,False
+SF12 PhysicalScore,34.26,51.26,poco nuvoloso,F,50,2.0,80.0,False,True
+SF12 MentalScore,63.68,52.78,poco nuvoloso,F,50,2.0,80.0,False,True
+SF12 PhysicalScore,27.17,44.17,nubi sparse,M,83,4.0,79.0,False,False
+SF12 MentalScore,57.56,60.16,nubi sparse,M,83,4.0,79.0,False,False
+SF12 PhysicalScore,28.71,36.21,nebbia al mattino,F,46,2.0,90.0,False,False
+SF12 MentalScore,32.58,48.58,nebbia al mattino,F,46,2.0,90.0,False,False
+SF12 PhysicalScore,25.33,36.23,sereno,F,67,5.0,66.0,False,True
+SF12 MentalScore,63.86,58.96,sereno,F,67,5.0,66.0,False,True
+SF12 PhysicalScore,19.92,29.42,pioggia debole,F,77,14.0,92.0,False,True
+SF12 MentalScore,55.6,61.1,pioggia debole,F,77,14.0,92.0,False,True
+SF12 PhysicalScore,24.95,28.15,sereno,F,76,9.0,69.0,False,False
+SF12 MentalScore,58.64,44.64,sereno,F,76,9.0,69.0,False,False
+SF12 PhysicalScore,29.98,53.88,poco nuvoloso,M,84,15.0,59.0,False,True
+SF12 MentalScore,62.57,59.67,poco nuvoloso,M,84,15.0,59.0,False,True
+SF12 PhysicalScore,43.75,39.05,sereno,M,61,9.0,69.0,False,False
+SF12 MentalScore,45.63,53.83,sereno,M,61,9.0,69.0,False,False
+SF12 PhysicalScore,24.51,22.21,poco nuvoloso,F,75,27.0,62.0,True,True
+SF12 MentalScore,65.73,65.93,poco nuvoloso,F,75,27.0,62.0,True,True
+SF12 PhysicalScore,32.68,27.38,poco nuvoloso,F,76,9.0,52.0,False,True
+SF12 MentalScore,21.32,41.42,poco nuvoloso,F,76,9.0,52.0,False,True
+SF12 PhysicalScore,31.91,38.51,poco nuvoloso,M,68,22.0,54.0,True,True
+SF12 MentalScore,63.17,60.87,poco nuvoloso,M,68,22.0,54.0,True,True
+SF12 PhysicalScore,40.68,40.38,sereno,M,63,6.0,59.0,False,True
+SF12 MentalScore,66.75,65.95,sereno,M,63,6.0,59.0,False,True
+SF12 PhysicalScore,34.89,56.89,sole e caldo,F,76,27.0,58.0,True,True
+SF12 MentalScore,45.19,60.19,sole e caldo,F,76,27.0,58.0,True,True
+SF12 PhysicalScore,25.31,34.41,pioggia debole,F,97,16.0,90.0,False,True
+SF12 MentalScore,61.57,55.57,pioggia debole,F,97,16.0,90.0,False,True
+SF12 PhysicalScore,19.86,37.36,poco nuvoloso,M,80,12.0,70.0,False,True
+SF12 MentalScore,51.79,55.19,poco nuvoloso,M,80,12.0,70.0,False,True
+SF12 PhysicalScore,32.91,41.81,pioggia e schiarite,F,68,13.0,92.0,False,True
+SF12 MentalScore,51.63,36.93,pioggia e schiarite,F,68,13.0,92.0,False,True
+SF12 PhysicalScore,18.64,53.34,sereno,M,72,7.0,56.0,False,True
+SF12 MentalScore,65.47,54.77,sereno,M,72,7.0,56.0,False,True
+SF12 PhysicalScore,32.69,35.69,sereno,F,50,11.0,55.0,False,True
+SF12 MentalScore,62.35,54.05,sereno,F,50,11.0,55.0,False,True
+SF12 PhysicalScore,21.22,25.32,sereno,F,74,15.0,31.0,False,True
+SF12 MentalScore,36.37,30.87,sereno,F,74,15.0,31.0,False,True
+SF12 PhysicalScore,49.51,43.11,sereno,F,75,12.0,55.0,False,True
+SF12 MentalScore,60.9,63.5,sereno,F,75,12.0,55.0,False,True
+SF12 PhysicalScore,26.46,48.16,pioggia e schiarite,M,80,13.0,92.0,False,True
+SF12 MentalScore,37.67,37.77,pioggia e schiarite,M,80,13.0,92.0,False,True
+SF12 PhysicalScore,33.34,38.94,pioggia e schiarite,M,72,12.0,84.0,False,True
+SF12 MentalScore,38.1,47.1,pioggia e schiarite,M,72,12.0,84.0,False,True
+SF12 PhysicalScore,38.85,54.05,poco nuvoloso,F,83,11.0,65.0,False,True
+SF12 MentalScore,50.63,52.53,poco nuvoloso,F,83,11.0,65.0,False,True
+SF12 PhysicalScore,25.3,28.4,sereno,M,66,13.0,69.0,False,False
+SF12 MentalScore,54.45,51.55,sereno,M,66,13.0,69.0,False,False
+SF12 PhysicalScore,32.17,37.67,poco nuvoloso,F,79,11.0,65.0,False,True
+SF12 MentalScore,53.6,62.8,poco nuvoloso,F,79,11.0,65.0,False,True
+SF12 PhysicalScore,35.85,45.75,pioggia e schiarite,F,68,13.0,92.0,False,True
+SF12 MentalScore,45.63,63.93,pioggia e schiarite,F,68,13.0,92.0,False,True
+SF12 PhysicalScore,26.93,44.13,sereno,M,74,8.0,47.0,False,False
+SF12 MentalScore,43.49,45.39,sereno,M,74,8.0,47.0,False,False
+SF12 PhysicalScore,29.77,40.27,pioggia e schiarite,F,67,17.0,88.0,False,True
+SF12 MentalScore,36.16,40.46,pioggia e schiarite,F,67,17.0,88.0,False,True
+SF12 PhysicalScore,29.41,25.61,poco nuvoloso,F,76,15.0,70.0,False,True
+SF12 MentalScore,41.38,48.28,poco nuvoloso,F,76,15.0,70.0,False,True
+SF12 PhysicalScore,24.6,41.6,temporale e schiarite,F,75,19.0,68.0,False,True
+SF12 MentalScore,70.46,53.66,temporale e schiarite,F,75,19.0,68.0,False,True
+SF12 PhysicalScore,26.83,33.93,pioggia e schiarite,M,88,12.0,89.0,False,True
+SF12 MentalScore,50.75,60.75,pioggia e schiarite,M,88,12.0,89.0,False,True
+SF12 PhysicalScore,27.77,36.17,poco nuvoloso,F,62,15.0,59.0,False,True
+SF12 MentalScore,44.16,42.66,poco nuvoloso,F,62,15.0,59.0,False,True
+SF12 PhysicalScore,32.09,36.39,pioggia e schiarite,F,67,15.0,90.0,False,True
+SF12 MentalScore,31.41,50.01,pioggia e schiarite,F,67,15.0,90.0,False,True
+SF12 PhysicalScore,33.75,33.75,poco nuvoloso,M,69,10.0,50.0,False,True
+SF12 MentalScore,62.7,60.5,poco nuvoloso,M,69,10.0,50.0,False,True
+SF12 PhysicalScore,34.85,53.35,poco nuvoloso,M,55,17.0,31.0,False,True
+SF12 MentalScore,45.99,53.79,poco nuvoloso,M,55,17.0,31.0,False,True
+SF12 PhysicalScore,39.85,33.75,pioggia e schiarite,M,44,16.0,75.0,False,True
+SF12 MentalScore,24.83,58.93,pioggia e schiarite,M,44,16.0,75.0,False,True
+SF12 PhysicalScore,24.36,35.16,pioggia,F,72,11.0,88.0,False,True
+SF12 MentalScore,50.13,54.93,pioggia,F,72,11.0,88.0,False,True
+SF12 PhysicalScore,37.59,24.19,pioggia e schiarite,M,80,15.0,90.0,False,True
+SF12 MentalScore,49.82,62.72,pioggia e schiarite,M,80,15.0,90.0,False,True
+SF12 PhysicalScore,27.69,31.89,pioggia e schiarite,F,54,17.0,88.0,False,True
+SF12 MentalScore,22.45,35.15,pioggia e schiarite,F,54,17.0,88.0,False,True
+SF12 PhysicalScore,44.04,37.94,pioggia e schiarite,F,69,12.0,84.0,False,True
+SF12 MentalScore,46.87,46.97,pioggia e schiarite,F,69,12.0,84.0,False,True
+SF12 PhysicalScore,42.22,49.32,pioggia debole,F,79,16.0,90.0,False,True
+SF12 MentalScore,54.87,44.47,pioggia debole,F,79,16.0,90.0,False,True
+SF12 PhysicalScore,29.28,38.18,nubi sparse,F,80,12.0,66.0,False,True
+SF12 MentalScore,45.49,46.29,nubi sparse,F,80,12.0,66.0,False,True
+SF12 PhysicalScore,23.08,42.18,poco nuvoloso,F,71,15.0,59.0,False,True
+SF12 MentalScore,63.21,64.61,poco nuvoloso,F,71,15.0,59.0,False,True
+SF12 PhysicalScore,44.86,31.86,sereno,F,77,18.0,69.0,False,True
+SF12 MentalScore,32.53,52.53,sereno,F,77,18.0,69.0,False,True
+SF12 PhysicalScore,46.71,55.51,sereno,M,75,17.0,41.0,False,True
+SF12 MentalScore,42.44,60.24,sereno,M,75,17.0,41.0,False,True
+SF12 PhysicalScore,29.84,54.94,poco nuvoloso,F,55,15.0,59.0,False,True
+SF12 MentalScore,38.76,61.86,poco nuvoloso,F,55,15.0,59.0,False,True
+SF12 PhysicalScore,51.12,36.12,poco nuvoloso,F,60,17.0,31.0,False,True
+SF12 MentalScore,51.42,34.32,poco nuvoloso,F,60,17.0,31.0,False,True
+SF12 PhysicalScore,27.69,40.89,nubi sparse,M,73,13.0,72.0,False,False
+SF12 MentalScore,29.69,59.89,nubi sparse,M,73,13.0,72.0,False,False
+SF12 PhysicalScore,40.63,55.63,poco nuvoloso,M,74,15.0,52.0,False,True
+SF12 MentalScore,62.15,59.45,poco nuvoloso,M,74,15.0,52.0,False,True
+SF12 PhysicalScore,29.22,50.22,pioggia e schiarite,M,63,16.0,68.0,False,True
+SF12 MentalScore,51.72,56.72,pioggia e schiarite,M,63,16.0,68.0,False,True
+SF12 PhysicalScore,29.08,51.38,poco nuvoloso,F,84,15.0,77.0,False,True
+SF12 MentalScore,54.95,57.55,poco nuvoloso,F,84,15.0,77.0,False,True
+SF12 PhysicalScore,52.9,55.9,sereno,M,77,12.0,63.0,False,True
+SF12 MentalScore,59.39,59.39,sereno,M,77,12.0,63.0,False,True
+SF12 PhysicalScore,33.44,49.04,pioggia e schiarite,F,59,12.0,84.0,False,True
+SF12 MentalScore,35.11,33.11,pioggia e schiarite,F,59,12.0,84.0,False,True
+SF12 PhysicalScore,29.32,44.62,poco nuvoloso,M,79,13.0,70.0,False,True
+SF12 MentalScore,69.15,64.35,poco nuvoloso,M,79,13.0,70.0,False,True
+SF12 PhysicalScore,37.62,53.32,pioggia e schiarite,M,59,16.0,75.0,False,True
+SF12 MentalScore,40.5,56.4,pioggia e schiarite,M,59,16.0,75.0,False,True
+SF12 PhysicalScore,35.41,38.51,poco nuvoloso,F,73,25.0,51.0,True,True
+SF12 MentalScore,43.0,31.8,poco nuvoloso,F,73,25.0,51.0,True,True
+SF12 PhysicalScore,32.06,45.76,sole e caldo,M,69,28.0,58.0,True,True
+SF12 MentalScore,65.8,55.3,sole e caldo,M,69,28.0,58.0,True,True
+SF12 PhysicalScore,23.76,49.26,pioggia e schiarite,M,63,16.0,75.0,False,True
+SF12 MentalScore,34.2,61.9,pioggia e schiarite,M,63,16.0,75.0,False,True
+SF12 PhysicalScore,31.31,45.21,pioggia e schiarite,M,46,15.0,90.0,False,True
+SF12 MentalScore,53.25,58.95,pioggia e schiarite,M,46,15.0,90.0,False,True
+SF12 PhysicalScore,28.04,35.04,poco nuvoloso,F,75,12.0,64.0,False,True
+SF12 MentalScore,41.34,32.14,poco nuvoloso,F,75,12.0,64.0,False,True
+SF12 PhysicalScore,34.21,28.41,poco nuvoloso,F,66,13.0,71.0,False,True
+SF12 MentalScore,41.19,37.39,poco nuvoloso,F,66,13.0,71.0,False,True
+SF12 PhysicalScore,25.95,49.75,poco nuvoloso,F,58,30.0,65.0,True,True
+SF12 MentalScore,43.54,63.14,poco nuvoloso,F,58,30.0,65.0,True,True
+SF12 PhysicalScore,25.47,50.67,poco nuvoloso,F,63,12.0,64.0,False,False
+SF12 MentalScore,31.02,53.52,poco nuvoloso,F,63,12.0,64.0,False,False
+SF12 PhysicalScore,52.42,52.42,pioggia,M,66,14.0,90.0,False,True
+SF12 MentalScore,48.15,50.65,pioggia,M,66,14.0,90.0,False,True
+SF12 PhysicalScore,51.36,37.36,poco nuvoloso,F,62,13.0,62.0,False,False
+SF12 MentalScore,51.22,35.52,poco nuvoloso,F,62,13.0,62.0,False,False
+SF12 PhysicalScore,27.0,33.2,pioggia e schiarite,M,79,12.0,84.0,False,True
+SF12 MentalScore,63.12,51.42,pioggia e schiarite,M,79,12.0,84.0,False,True
+SF12 PhysicalScore,31.61,37.91,poco nuvoloso,F,76,14.0,66.0,False,True
+SF12 MentalScore,29.9,48.2,poco nuvoloso,F,76,14.0,66.0,False,True
+SF12 PhysicalScore,45.93,34.33,sereno,M,81,12.0,55.0,False,True
+SF12 MentalScore,56.77,57.77,sereno,M,81,12.0,55.0,False,True
+SF12 PhysicalScore,17.86,51.76,poco nuvoloso,M,68,19.0,62.0,False,True
+SF12 MentalScore,61.58,62.58,poco nuvoloso,M,68,19.0,62.0,False,True
+SF12 PhysicalScore,45.77,36.77,pioggia e schiarite,M,85,16.0,68.0,False,True
+SF12 MentalScore,17.91,35.71,pioggia e schiarite,M,85,16.0,68.0,False,True
+SF12 PhysicalScore,24.36,25.66,sole e caldo,F,89,25.0,55.0,True,True
+SF12 MentalScore,52.62,20.82,sole e caldo,F,89,25.0,55.0,True,True
+SF12 PhysicalScore,24.68,50.18,pioggia e schiarite,F,79,17.0,88.0,False,True
+SF12 MentalScore,70.23,62.23,pioggia e schiarite,F,79,17.0,88.0,False,True
+SF12 PhysicalScore,30.32,43.82,sole e caldo,F,81,28.0,58.0,True,True
+SF12 MentalScore,50.07,22.77,sole e caldo,F,81,28.0,58.0,True,True
+SF12 PhysicalScore,49.39,37.39,poco nuvoloso,M,69,12.0,64.0,False,True
+SF12 MentalScore,58.14,39.34,poco nuvoloso,M,69,12.0,64.0,False,True
+SF12 PhysicalScore,27.79,49.09,sole e caldo,M,58,31.0,64.0,True,True
+SF12 MentalScore,53.39,59.19,sole e caldo,M,58,31.0,64.0,True,True
+SF12 PhysicalScore,21.58,33.38,poco nuvoloso,M,63,28.0,46.0,True,True
+SF12 MentalScore,45.25,52.45,poco nuvoloso,M,63,28.0,46.0,True,True
+SF12 PhysicalScore,24.22,34.02,poco nuvoloso,F,53,15.0,59.0,False,True
+SF12 MentalScore,60.85,62.05,poco nuvoloso,F,53,15.0,59.0,False,True
+SF12 PhysicalScore,19.85,24.65,poco nuvoloso,F,81,22.0,65.0,True,True
+SF12 MentalScore,56.53,57.33,poco nuvoloso,F,81,22.0,65.0,True,True
+SF12 PhysicalScore,30.29,54.09,poco nuvoloso,M,77,24.0,67.0,True,True
+SF12 MentalScore,63.28,60.98,poco nuvoloso,M,77,24.0,67.0,True,True
+SF12 PhysicalScore,26.44,36.34,poco nuvoloso,F,69,24.0,63.0,True,True
+SF12 MentalScore,36.9,48.8,poco nuvoloso,F,69,24.0,63.0,True,True
+SF12 PhysicalScore,35.22,43.72,poco nuvoloso,F,54,12.0,70.0,False,True
+SF12 MentalScore,38.32,54.82,poco nuvoloso,F,54,12.0,70.0,False,True
+SF12 PhysicalScore,29.16,27.16,poco nuvoloso,F,84,24.0,69.0,True,True
+SF12 MentalScore,51.2,50.6,poco nuvoloso,F,84,24.0,69.0,True,True
+SF12 PhysicalScore,29.95,38.85,poco nuvoloso,F,38,15.0,59.0,False,True
+SF12 MentalScore,42.6,29.3,poco nuvoloso,F,38,15.0,59.0,False,True
+SF12 PhysicalScore,39.57,39.37,poco nuvoloso,F,79,15.0,59.0,False,True
+SF12 MentalScore,41.37,59.07,poco nuvoloso,F,79,15.0,59.0,False,True
+SF12 PhysicalScore,20.77,47.37,pioggia e schiarite,F,68,17.0,88.0,False,True
+SF12 MentalScore,30.21,53.71,pioggia e schiarite,F,68,17.0,88.0,False,True
+SF12 PhysicalScore,36.71,48.01,poco nuvoloso,M,75,26.0,64.0,True,True
+SF12 MentalScore,47.24,51.04,poco nuvoloso,M,75,26.0,64.0,True,True
+SF12 PhysicalScore,44.63,35.83,poco nuvoloso,M,69,27.0,54.0,True,True
+SF12 MentalScore,47.97,21.97,poco nuvoloso,M,69,27.0,54.0,True,True
+SF12 PhysicalScore,41.82,32.32,poco nuvoloso,F,56,12.0,64.0,False,False
+SF12 MentalScore,44.33,49.93,poco nuvoloso,F,56,12.0,64.0,False,False
+SF12 PhysicalScore,25.57,49.37,sole e caldo,M,65,24.0,52.0,True,True
+SF12 MentalScore,38.25,62.05,sole e caldo,M,65,24.0,52.0,True,True
+SF12 PhysicalScore,25.33,52.03,poco nuvoloso,F,72,24.0,67.0,True,True
+SF12 MentalScore,37.62,61.82,poco nuvoloso,F,72,24.0,67.0,True,True
+SF12 PhysicalScore,31.68,40.08,poco nuvoloso,F,65,17.0,72.0,False,False
+SF12 MentalScore,48.66,58.86,poco nuvoloso,F,65,17.0,72.0,False,False
+SF12 PhysicalScore,52.78,53.98,poco nuvoloso,M,58,25.0,60.0,True,True
+SF12 MentalScore,59.71,61.41,poco nuvoloso,M,58,25.0,60.0,True,True
+SF12 PhysicalScore,30.96,53.66,poco nuvoloso,M,86,28.0,46.0,True,True
+SF12 MentalScore,59.68,63.68,poco nuvoloso,M,86,28.0,46.0,True,True
+SF12 PhysicalScore,23.13,30.83,poco nuvoloso,F,58,30.0,65.0,True,True
+SF12 MentalScore,70.86,47.96,poco nuvoloso,F,58,30.0,65.0,True,True
+SF12 PhysicalScore,43.13,55.23,temporale e schiarite,M,78,25.0,62.0,True,True
+SF12 MentalScore,60.44,59.04,temporale e schiarite,M,78,25.0,62.0,True,True
+SF12 PhysicalScore,26.43,35.03,sole e caldo,F,72,30.0,59.0,True,True
+SF12 MentalScore,30.01,58.51,sole e caldo,F,72,30.0,59.0,True,True
+SF12 PhysicalScore,33.47,58.17,pioggia e schiarite,F,73,17.0,88.0,False,True
+SF12 MentalScore,60.32,48.12,pioggia e schiarite,F,73,17.0,88.0,False,True
+SF12 PhysicalScore,23.92,26.22,poco nuvoloso,F,89,24.0,69.0,True,True
+SF12 MentalScore,46.05,60.85,poco nuvoloso,F,89,24.0,69.0,True,True
+SF12 PhysicalScore,22.66,29.16,poco nuvoloso,F,51,21.0,69.0,False,True
+SF12 MentalScore,60.08,63.68,poco nuvoloso,F,51,21.0,69.0,False,True
+SF12 PhysicalScore,38.23,34.43,sole e caldo,F,75,25.0,55.0,True,True
+SF12 MentalScore,39.13,65.23,sole e caldo,F,75,25.0,55.0,True,True
+SF12 PhysicalScore,44.14,45.04,sole e caldo,M,66,28.0,58.0,True,True
+SF12 MentalScore,55.68,49.38,sole e caldo,M,66,28.0,58.0,True,True
+SF12 PhysicalScore,27.6,26.7,sole e caldo,F,69,28.0,57.0,True,True
+SF12 MentalScore,47.94,37.94,sole e caldo,F,69,28.0,57.0,True,True
+SF12 PhysicalScore,28.87,35.07,poco nuvoloso,F,74,22.0,62.0,True,True
+SF12 MentalScore,17.49,32.69,poco nuvoloso,F,74,22.0,62.0,True,True
+SF12 PhysicalScore,38.42,50.92,poco nuvoloso,F,70,27.0,54.0,True,True
+SF12 MentalScore,30.62,47.22,poco nuvoloso,F,70,27.0,54.0,True,True
+SF12 PhysicalScore,21.96,26.96,poco nuvoloso,F,79,25.0,65.0,True,True
+SF12 MentalScore,26.81,36.41,poco nuvoloso,F,79,25.0,65.0,True,True
+SF12 PhysicalScore,22.31,35.31,poco nuvoloso,F,62,24.0,69.0,True,True
+SF12 MentalScore,61.66,38.86,poco nuvoloso,F,62,24.0,69.0,True,True
+SF12 PhysicalScore,23.25,38.65,poco nuvoloso,F,82,25.0,65.0,True,True
+SF12 MentalScore,68.9,64.5,poco nuvoloso,F,82,25.0,65.0,True,True
+SF12 PhysicalScore,37.03,32.13,pioggia e schiarite,F,48,16.0,75.0,False,True
+SF12 MentalScore,34.51,57.41,pioggia e schiarite,F,48,16.0,75.0,False,True
+SF12 PhysicalScore,36.27,40.77,pioggia e schiarite,F,65,12.0,83.0,False,False
+SF12 MentalScore,35.39,59.49,pioggia e schiarite,F,65,12.0,83.0,False,False
+SF12 PhysicalScore,36.48,34.98,sereno,F,76,24.0,57.0,True,True
+SF12 MentalScore,43.17,43.97,sereno,F,76,24.0,57.0,True,True
+SF12 PhysicalScore,15.58,32.18,poco nuvoloso,F,52,22.0,62.0,True,True
+SF12 MentalScore,70.21,65.41,poco nuvoloso,F,52,22.0,62.0,True,True
+SF12 PhysicalScore,32.6,35.1,poco nuvoloso,M,72,27.0,54.0,True,True
+SF12 MentalScore,56.54,56.24,poco nuvoloso,M,72,27.0,54.0,True,True
+SF12 PhysicalScore,33.85,34.65,sole e caldo,F,75,24.0,66.0,True,True
+SF12 MentalScore,52.55,37.25,sole e caldo,F,75,24.0,66.0,True,True
+SF12 PhysicalScore,21.08,35.88,pioggia debole,F,58,15.0,77.0,False,True
+SF12 MentalScore,57.58,46.08,pioggia debole,F,58,15.0,77.0,False,True
+SF12 PhysicalScore,24.88,46.18,sole e caldo,F,67,25.0,55.0,True,True
+SF12 MentalScore,69.92,61.12,sole e caldo,F,67,25.0,55.0,True,True
+SF12 PhysicalScore,39.76,51.76,temporale e schiarite,M,61,27.0,57.0,True,True
+SF12 MentalScore,47.88,58.98,temporale e schiarite,M,61,27.0,57.0,True,True
+SF12 PhysicalScore,31.1,32.0,sole e caldo,F,58,30.0,59.0,True,True
+SF12 MentalScore,40.63,42.33,sole e caldo,F,58,30.0,59.0,True,True
+SF12 PhysicalScore,18.77,44.97,poco nuvoloso,F,69,25.0,51.0,True,True
+SF12 MentalScore,60.23,51.63,poco nuvoloso,F,69,25.0,51.0,True,True
+SF12 PhysicalScore,39.65,31.85,poco nuvoloso,M,64,24.0,56.0,True,True
+SF12 MentalScore,64.8,57.4,poco nuvoloso,M,64,24.0,56.0,True,True
+SF12 PhysicalScore,33.28,43.08,sole e caldo,F,79,30.0,59.0,True,True
+SF12 MentalScore,33.39,40.29,sole e caldo,F,79,30.0,59.0,True,True
+SF12 PhysicalScore,25.65,40.65,sereno,F,83,20.0,55.0,False,True
+SF12 MentalScore,45.67,31.07,sereno,F,83,20.0,55.0,False,True
+SF12 PhysicalScore,48.58,51.38,poco nuvoloso,F,80,28.0,55.0,True,True
+SF12 MentalScore,58.78,62.48,poco nuvoloso,F,80,28.0,55.0,True,True
+SF12 PhysicalScore,36.67,33.87,sole e caldo,M,46,28.0,57.0,True,True
+SF12 MentalScore,42.09,64.89,sole e caldo,M,46,28.0,57.0,True,True
+SF12 PhysicalScore,43.59,54.29,sole e caldo,F,66,28.0,57.0,True,True
+SF12 MentalScore,58.46,50.46,sole e caldo,F,66,28.0,57.0,True,True
+SF12 PhysicalScore,33.86,53.46,poco nuvoloso,F,63,27.0,61.0,True,True
+SF12 MentalScore,29.37,38.27,poco nuvoloso,F,63,27.0,61.0,True,True
+SF12 PhysicalScore,42.88,47.18,poco nuvoloso,F,79,28.0,55.0,True,True
+SF12 MentalScore,41.74,54.54,poco nuvoloso,F,79,28.0,55.0,True,True
+SF12 PhysicalScore,29.56,52.46,sereno,M,75,24.0,62.0,True,True
+SF12 MentalScore,51.09,61.09,sereno,M,75,24.0,62.0,True,True
+SF12 PhysicalScore,33.92,56.92,sereno,M,76,20.0,55.0,False,True
+SF12 MentalScore,62.03,57.23,sereno,M,76,20.0,55.0,False,True
+SF12 PhysicalScore,32.67,35.67,temporale e schiarite,F,74,27.0,57.0,True,True
+SF12 MentalScore,46.67,40.47,temporale e schiarite,F,74,27.0,57.0,True,True
+SF12 PhysicalScore,25.35,45.35,poco nuvoloso,M,72,15.0,80.0,False,True
+SF12 MentalScore,51.33,53.83,poco nuvoloso,M,72,15.0,80.0,False,True
+SF12 PhysicalScore,59.8,55.9,sole e caldo,M,61,24.0,52.0,True,True
+SF12 MentalScore,48.08,57.18,sole e caldo,M,61,24.0,52.0,True,True
+SF12 PhysicalScore,27.25,40.35,poco nuvoloso,F,71,24.0,67.0,True,True
+SF12 MentalScore,21.4,19.1,poco nuvoloso,F,71,24.0,67.0,True,True
+SF12 PhysicalScore,35.19,28.59,sereno,F,72,24.0,56.0,True,True
+SF12 MentalScore,47.31,45.51,sereno,F,72,24.0,56.0,True,True
+SF12 PhysicalScore,32.09,33.39,nubi sparse,F,62,25.0,52.0,True,False
+SF12 MentalScore,49.83,61.23,nubi sparse,F,62,25.0,52.0,True,False
+SF12 PhysicalScore,37.16,38.76,sole e caldo,F,55,26.0,66.0,True,True
+SF12 MentalScore,63.31,65.71,sole e caldo,F,55,26.0,66.0,True,True
+SF12 PhysicalScore,34.42,50.12,poco nuvoloso,M,53,25.0,56.0,True,True
+SF12 MentalScore,42.2,45.6,poco nuvoloso,M,53,25.0,56.0,True,True
+SF12 PhysicalScore,28.62,41.72,poco nuvoloso,F,72,25.0,65.0,True,True
+SF12 MentalScore,26.47,25.67,poco nuvoloso,F,72,25.0,65.0,True,True
+SF12 PhysicalScore,22.87,45.77,poco nuvoloso,F,78,27.0,54.0,True,True
+SF12 MentalScore,59.29,57.69,poco nuvoloso,F,78,27.0,54.0,True,True
+SF12 PhysicalScore,28.38,38.28,temporale e schiarite,F,57,27.0,66.0,True,True
+SF12 MentalScore,49.02,50.02,temporale e schiarite,F,57,27.0,66.0,True,True
+SF12 PhysicalScore,23.38,56.58,poco nuvoloso,F,79,25.0,51.0,True,True
+SF12 MentalScore,50.69,61.99,poco nuvoloso,F,79,25.0,51.0,True,True
+SF12 PhysicalScore,42.93,49.73,sole e caldo,F,71,24.0,58.0,True,True
+SF12 MentalScore,42.77,55.47,sole e caldo,F,71,24.0,58.0,True,True
+SF12 PhysicalScore,35.61,38.51,temporale e schiarite,F,64,27.0,57.0,True,True
+SF12 MentalScore,37.64,40.34,temporale e schiarite,F,64,27.0,57.0,True,True
+SF12 PhysicalScore,27.48,56.68,sereno,F,54,22.0,46.0,True,True
+SF12 MentalScore,33.25,54.55,sereno,F,54,22.0,46.0,True,True
+SF12 PhysicalScore,31.58,26.08,poco nuvoloso,M,48,25.0,56.0,True,True
+SF12 MentalScore,18.34,23.54,poco nuvoloso,M,48,25.0,56.0,True,True
+SF12 PhysicalScore,25.89,52.79,pioggia e schiarite,M,72,16.0,75.0,False,True
+SF12 MentalScore,71.31,51.91,pioggia e schiarite,M,72,16.0,75.0,False,True
+SF12 PhysicalScore,23.62,52.72,poco nuvoloso,M,78,25.0,63.0,True,True
+SF12 MentalScore,45.51,58.01,poco nuvoloso,M,78,25.0,63.0,True,True
+SF12 PhysicalScore,27.07,59.57,poco nuvoloso,F,54,22.0,57.0,True,True
+SF12 MentalScore,47.37,39.07,poco nuvoloso,F,54,22.0,57.0,True,True
+SF12 PhysicalScore,30.28,47.88,poco nuvoloso,M,62,28.0,40.0,True,True
+SF12 MentalScore,56.45,61.35,poco nuvoloso,M,62,28.0,40.0,True,True
+SF12 PhysicalScore,23.93,41.23,sole e caldo,F,83,28.0,57.0,True,True
+SF12 MentalScore,58.45,62.35,sole e caldo,F,83,28.0,57.0,True,True
+SF12 PhysicalScore,28.81,44.51,poco nuvoloso,F,81,25.0,56.0,True,True
+SF12 MentalScore,26.48,58.68,poco nuvoloso,F,81,25.0,56.0,True,True
+SF12 PhysicalScore,34.27,56.97,sole e caldo,F,70,24.0,58.0,True,True
+SF12 MentalScore,66.01,60.41,sole e caldo,F,70,24.0,58.0,True,True
+SF12 PhysicalScore,26.83,33.33,poco nuvoloso,F,63,29.0,64.0,True,True
+SF12 MentalScore,39.38,37.18,poco nuvoloso,F,63,29.0,64.0,True,True
+SF12 PhysicalScore,40.89,56.79,sole e caldo,M,80,27.0,46.0,True,True
+SF12 MentalScore,67.55,60.85,sole e caldo,M,80,27.0,46.0,True,True
+SF12 PhysicalScore,32.14,39.34,temporale e schiarite,F,80,27.0,57.0,True,True
+SF12 MentalScore,65.75,66.05,temporale e schiarite,F,80,27.0,57.0,True,True
+SF12 PhysicalScore,27.85,36.85,poco nuvoloso,F,81,25.0,61.0,True,True
+SF12 MentalScore,52.56,51.46,poco nuvoloso,F,81,25.0,61.0,True,True
+SF12 PhysicalScore,25.29,28.99,sole e caldo,F,47,28.0,58.0,True,True
+SF12 MentalScore,29.72,18.02,sole e caldo,F,47,28.0,58.0,True,True
+SF12 PhysicalScore,26.65,49.85,sole e caldo,M,71,28.0,58.0,True,True
+SF12 MentalScore,39.98,59.68,sole e caldo,M,71,28.0,58.0,True,True
+SF12 PhysicalScore,35.0,33.0,sole e caldo,F,84,27.0,57.0,True,True
+SF12 MentalScore,20.68,62.68,sole e caldo,F,84,27.0,57.0,True,True
+SF12 PhysicalScore,36.91,40.01,poco nuvoloso,F,79,27.0,52.0,True,True
+SF12 MentalScore,51.19,44.59,poco nuvoloso,F,79,27.0,52.0,True,True
+SF12 PhysicalScore,31.45,32.05,sole e caldo,F,67,28.0,58.0,True,True
+SF12 MentalScore,32.59,17.19,sole e caldo,F,67,28.0,58.0,True,True
+SF12 PhysicalScore,41.87,45.37,poco nuvoloso,F,72,25.0,61.0,True,True
+SF12 MentalScore,63.97,62.67,poco nuvoloso,F,72,25.0,61.0,True,True
+SF12 PhysicalScore,32.23,30.43,sole e caldo,F,70,30.0,66.0,True,True
+SF12 MentalScore,32.1,41.3,sole e caldo,F,70,30.0,66.0,True,True
+SF12 PhysicalScore,34.0,55.4,poco nuvoloso,M,60,28.0,55.0,True,True
+SF12 MentalScore,52.98,57.28,poco nuvoloso,M,60,28.0,55.0,True,True
+SF12 PhysicalScore,30.04,36.34,poco nuvoloso,F,59,28.0,55.0,True,True
+SF12 MentalScore,43.38,65.78,poco nuvoloso,F,59,28.0,55.0,True,True
+SF12 PhysicalScore,43.57,42.37,sole e caldo,F,77,28.0,58.0,True,True
+SF12 MentalScore,49.43,56.73,sole e caldo,F,77,28.0,58.0,True,True
+SF12 PhysicalScore,30.34,37.24,sole e caldo,F,69,27.0,57.0,True,True
+SF12 MentalScore,46.38,44.88,sole e caldo,F,69,27.0,57.0,True,True
+SF12 PhysicalScore,31.35,46.15,sereno,F,74,14.0,53.0,False,True
+SF12 MentalScore,54.4,44.7,sereno,F,74,14.0,53.0,False,True
+SF12 PhysicalScore,25.44,48.04,poco nuvoloso,M,55,25.0,56.0,True,True
+SF12 MentalScore,33.1,49.0,poco nuvoloso,M,55,25.0,56.0,True,True
+SF12 PhysicalScore,35.28,32.88,nubi sparse,F,76,13.0,85.0,False,True
+SF12 MentalScore,48.41,61.21,nubi sparse,F,76,13.0,85.0,False,True
+SF12 PhysicalScore,32.24,35.54,poco nuvoloso,F,77,30.0,54.0,True,True
+SF12 MentalScore,28.44,33.44,poco nuvoloso,F,77,30.0,54.0,True,True
+SF12 PhysicalScore,38.52,40.02,poco nuvoloso,M,39,30.0,65.0,True,True
+SF12 MentalScore,60.57,60.07,poco nuvoloso,M,39,30.0,65.0,True,True
+SF12 PhysicalScore,33.25,52.45,poco nuvoloso,M,79,29.0,64.0,True,True
+SF12 MentalScore,57.3,62.5,poco nuvoloso,M,79,29.0,64.0,True,True
+SF12 PhysicalScore,36.45,52.95,sereno,M,40,27.0,57.0,True,True
+SF12 MentalScore,15.43,61.33,sereno,M,40,27.0,57.0,True,True
+SF12 PhysicalScore,40.27,55.07,poco nuvoloso,F,65,30.0,59.0,True,True
+SF12 MentalScore,65.11,60.11,poco nuvoloso,F,65,30.0,59.0,True,True
+SF12 PhysicalScore,25.85,46.45,sole e caldo,F,86,28.0,58.0,True,True
+SF12 MentalScore,54.44,41.34,sole e caldo,F,86,28.0,58.0,True,True
+SF12 PhysicalScore,24.86,25.36,poco nuvoloso,F,80,24.0,57.0,False,True
+SF12 MentalScore,27.85,23.35,poco nuvoloso,F,80,24.0,57.0,False,True
+SF12 PhysicalScore,39.25,38.35,sereno,M,52,24.0,62.0,True,True
+SF12 MentalScore,45.54,42.44,sereno,M,52,24.0,62.0,True,True
+SF12 PhysicalScore,33.62,35.12,poco nuvoloso,M,67,23.0,68.0,True,True
+SF12 MentalScore,57.92,60.42,poco nuvoloso,M,67,23.0,68.0,True,True
+SF12 PhysicalScore,26.54,38.14,poco nuvoloso,M,52,28.0,55.0,True,True
+SF12 MentalScore,37.86,48.66,poco nuvoloso,M,52,28.0,55.0,True,True
+SF12 PhysicalScore,31.77,41.97,poco nuvoloso,F,57,29.0,57.0,True,True
+SF12 MentalScore,63.75,50.65,poco nuvoloso,F,57,29.0,57.0,True,True
+SF12 PhysicalScore,30.64,36.04,sole e caldo,M,66,28.0,57.0,True,True
+SF12 MentalScore,40.83,37.43,sole e caldo,M,66,28.0,57.0,True,True
+SF12 PhysicalScore,28.6,40.3,sole e caldo,F,71,27.0,55.0,True,True
+SF12 MentalScore,68.11,59.51,sole e caldo,F,71,27.0,55.0,True,True
+SF12 PhysicalScore,27.11,47.61,sole e caldo,F,52,27.0,58.0,True,True
+SF12 MentalScore,62.64,59.74,sole e caldo,F,52,27.0,58.0,True,True
+SF12 PhysicalScore,36.82,55.92,poco nuvoloso,F,66,25.0,61.0,True,True
+SF12 MentalScore,42.4,62.6,poco nuvoloso,F,66,25.0,61.0,True,True
+SF12 PhysicalScore,38.66,43.76,sereno,F,57,9.0,45.0,False,True
+SF12 MentalScore,48.47,54.47,sereno,F,57,9.0,45.0,False,True
+SF12 PhysicalScore,30.23,48.83,pioggia debole,F,70,8.0,90.0,False,True
+SF12 MentalScore,28.32,37.32,pioggia debole,F,70,8.0,90.0,False,True
+SF12 PhysicalScore,31.54,37.14,sole e caldo,M,66,27.0,58.0,True,True
+SF12 MentalScore,27.45,40.15,sole e caldo,M,66,27.0,58.0,True,True
+SF12 PhysicalScore,23.95,34.65,nebbia al mattino,F,69,19.0,90.0,False,True
+SF12 MentalScore,17.41,55.11,nebbia al mattino,F,69,19.0,90.0,False,True
+SF12 PhysicalScore,29.95,34.95,poco nuvoloso,M,42,29.0,67.0,True,True
+SF12 MentalScore,43.78,57.58,poco nuvoloso,M,42,29.0,67.0,True,True
+SF12 PhysicalScore,18.22,24.62,poco nuvoloso,M,63,29.0,64.0,True,True
+SF12 MentalScore,57.66,51.16,poco nuvoloso,M,63,29.0,64.0,True,True
+SF12 PhysicalScore,22.89,45.59,poco nuvoloso,M,71,30.0,54.0,True,True
+SF12 MentalScore,54.13,64.43,poco nuvoloso,M,71,30.0,54.0,True,True
+SF12 PhysicalScore,48.83,54.33,pioggia e schiarite,M,72,20.0,74.0,False,True
+SF12 MentalScore,53.85,60.65,pioggia e schiarite,M,72,20.0,74.0,False,True
+SF12 PhysicalScore,47.8,45.3,poco nuvoloso,M,72,25.0,61.0,True,True
+SF12 MentalScore,39.64,62.94,poco nuvoloso,M,72,25.0,61.0,True,True
+SF12 PhysicalScore,33.0,56.8,sole e caldo,M,73,31.0,54.0,True,True
+SF12 MentalScore,62.88,61.58,sole e caldo,M,73,31.0,54.0,True,True
+SF12 PhysicalScore,27.48,31.58,pioggia e schiarite,F,78,20.0,74.0,False,True
+SF12 MentalScore,27.73,35.03,pioggia e schiarite,F,78,20.0,74.0,False,True
+SF12 PhysicalScore,26.01,31.11,poco nuvoloso,F,71,25.0,70.0,True,True
+SF12 MentalScore,39.56,45.76,poco nuvoloso,F,71,25.0,70.0,True,True
+SF12 PhysicalScore,27.25,24.55,poco nuvoloso,M,72,26.0,63.0,True,True
+SF12 MentalScore,46.72,55.32,poco nuvoloso,M,72,26.0,63.0,True,True
+SF12 PhysicalScore,24.7,36.5,poco nuvoloso,M,54,25.0,61.0,True,True
+SF12 MentalScore,55.82,64.02,poco nuvoloso,M,54,25.0,61.0,True,True
+SF12 PhysicalScore,23.2,42.7,temporale e schiarite,M,69,24.0,81.0,True,True
+SF12 MentalScore,52.44,64.34,temporale e schiarite,M,69,24.0,81.0,True,True
+SF12 PhysicalScore,21.83,34.83,poco nuvoloso,F,55,27.0,74.0,True,True
+SF12 MentalScore,42.77,36.67,poco nuvoloso,F,55,27.0,74.0,True,True
+SF12 PhysicalScore,33.7,43.3,poco nuvoloso,F,60,26.0,62.0,True,True
+SF12 MentalScore,67.62,59.72,poco nuvoloso,F,60,26.0,62.0,True,True
+SF12 PhysicalScore,36.06,55.96,poco nuvoloso,M,66,30.0,68.0,True,True
+SF12 MentalScore,62.95,55.25,poco nuvoloso,M,66,30.0,68.0,True,True
+SF12 PhysicalScore,46.7,63.0,poco nuvoloso,F,61,24.0,60.0,True,True
+SF12 MentalScore,30.39,33.69,poco nuvoloso,F,61,24.0,60.0,True,True
+SF12 PhysicalScore,25.0,36.6,sole e caldo,F,72,24.0,58.0,True,True
+SF12 MentalScore,63.44,56.94,sole e caldo,F,72,24.0,58.0,True,True
+SF12 PhysicalScore,44.85,48.65,sole e caldo,F,65,24.0,55.0,True,True
+SF12 MentalScore,48.96,58.36,sole e caldo,F,65,24.0,55.0,True,True
+SF12 PhysicalScore,45.22,48.32,pioggia debole,F,73,8.0,97.0,False,True
+SF12 MentalScore,27.0,24.7,pioggia debole,F,73,8.0,97.0,False,True
+SF12 PhysicalScore,30.48,55.68,nubi sparse,M,77,7.0,94.0,False,True
+SF12 MentalScore,40.21,60.11,nubi sparse,M,77,7.0,94.0,False,True
+SF12 PhysicalScore,51.84,42.64,nebbia al mattino,M,56,9.0,75.0,False,True
+SF12 MentalScore,44.8,53.8,nebbia al mattino,M,56,9.0,75.0,False,True
+SF12 PhysicalScore,24.25,26.95,pioggia debole,F,52,9.0,93.0,False,True
+SF12 MentalScore,23.92,45.72,pioggia debole,F,52,9.0,93.0,False,True
+SF12 PhysicalScore,33.98,51.38,pioggia e schiarite,M,60,7.0,93.0,False,True
+SF12 MentalScore,47.32,30.12,pioggia e schiarite,M,60,7.0,93.0,False,True
+SF12 PhysicalScore,45.92,56.42,sereno,M,56,26.0,80.0,True,True
+SF12 MentalScore,56.13,58.13,sereno,M,56,26.0,80.0,True,True
+SF12 PhysicalScore,38.48,47.08,sole e caldo,F,50,30.0,42.0,True,True
+SF12 MentalScore,48.74,27.84,sole e caldo,F,50,30.0,42.0,True,True
+SF12 PhysicalScore,24.83,52.23,poco nuvoloso,M,69,27.0,73.0,True,True
+SF12 MentalScore,65.24,57.14,poco nuvoloso,M,69,27.0,73.0,True,True
+SF12 PhysicalScore,30.44,55.34,pioggia e schiarite,M,69,21.0,70.0,False,True
+SF12 MentalScore,43.32,60.82,pioggia e schiarite,M,69,21.0,70.0,False,True
+SF12 PhysicalScore,22.01,51.61,poco nuvoloso,M,71,26.0,75.0,True,True
+SF12 MentalScore,65.68,59.68,poco nuvoloso,M,71,26.0,75.0,True,True
+SF12 PhysicalScore,23.24,54.54,poco nuvoloso,F,77,19.0,56.0,False,True
+SF12 MentalScore,62.13,58.13,poco nuvoloso,F,77,19.0,56.0,False,True
+SF12 PhysicalScore,23.9,41.7,poco nuvoloso,M,85,24.0,63.0,True,True
+SF12 MentalScore,46.15,38.85,poco nuvoloso,M,85,24.0,63.0,True,True
+SF12 PhysicalScore,43.82,52.62,pioggia e schiarite,F,65,21.0,70.0,False,True
+SF12 MentalScore,65.27,61.47,pioggia e schiarite,F,65,21.0,70.0,False,True
+SF12 PhysicalScore,19.27,28.17,sereno,F,76,21.0,73.0,False,True
+SF12 MentalScore,35.14,27.84,sereno,F,76,21.0,73.0,False,True
+SF12 PhysicalScore,32.52,33.12,poco nuvoloso,F,65,22.0,60.0,True,True
+SF12 MentalScore,39.05,56.35,poco nuvoloso,F,65,22.0,60.0,True,True
+SF12 PhysicalScore,46.98,41.98,sereno,M,70,5.0,77.0,False,True
+SF12 MentalScore,53.64,63.94,sereno,M,70,5.0,77.0,False,True
+SF12 PhysicalScore,28.78,35.98,pioggia,F,70,7.0,95.0,False,True
+SF12 MentalScore,27.66,39.36,pioggia,F,70,7.0,95.0,False,True
+SF12 PhysicalScore,21.23,54.63,pioggia debole,M,68,8.0,97.0,False,True
+SF12 MentalScore,62.98,60.68,pioggia debole,M,68,8.0,97.0,False,True
+SF12 PhysicalScore,25.15,43.65,nebbia al mattino,F,71,3.0,88.0,False,True
+SF12 MentalScore,42.62,30.52,nebbia al mattino,F,71,3.0,88.0,False,True
+SF12 PhysicalScore,33.98,28.68,poco nuvoloso,M,78,19.0,84.0,False,True
+SF12 MentalScore,15.18,51.88,poco nuvoloso,M,78,19.0,84.0,False,True
+SF12 PhysicalScore,41.87,37.67,poco nuvoloso,F,75,25.0,64.0,True,True
+SF12 MentalScore,43.2,41.4,poco nuvoloso,F,75,25.0,64.0,True,True
+SF12 PhysicalScore,31.29,56.69,poco nuvoloso,M,58,15.0,78.0,False,True
+SF12 MentalScore,62.06,49.66,poco nuvoloso,M,58,15.0,78.0,False,True
+SF12 PhysicalScore,31.55,24.65,pioggia debole,M,53,8.0,97.0,False,True
+SF12 MentalScore,33.03,29.73,pioggia debole,M,53,8.0,97.0,False,True
+SF12 PhysicalScore,20.67,32.77,poco nuvoloso,F,45,25.0,56.0,True,False
+SF12 MentalScore,57.87,59.57,poco nuvoloso,F,45,25.0,56.0,True,False
+SF12 PhysicalScore,32.34,52.44,sole e caldo,F,77,26.0,62.0,True,True
+SF12 MentalScore,45.13,57.13,sole e caldo,F,77,26.0,62.0,True,True
+SF12 PhysicalScore,41.27,54.57,pioggia debole,F,75,8.0,90.0,False,True
+SF12 MentalScore,45.05,25.95,pioggia debole,F,75,8.0,90.0,False,True
+SF12 PhysicalScore,26.35,50.95,poco nuvoloso,M,63,29.0,71.0,True,True
+SF12 MentalScore,44.96,59.96,poco nuvoloso,M,63,29.0,71.0,True,True
+SF12 PhysicalScore,33.14,51.44,poco nuvoloso,M,74,28.0,46.0,True,True
+SF12 MentalScore,66.18,54.48,poco nuvoloso,M,74,28.0,46.0,True,True
+SF12 PhysicalScore,32.41,49.51,pioggia debole,F,79,8.0,97.0,False,True
+SF12 MentalScore,46.96,63.36,pioggia debole,F,79,8.0,97.0,False,True
+SF12 PhysicalScore,25.63,49.63,pioggia e schiarite,F,67,12.0,88.0,False,True
+SF12 MentalScore,44.35,48.65,pioggia e schiarite,F,67,12.0,88.0,False,True
+SF12 PhysicalScore,47.75,30.15,poco nuvoloso,F,59,22.0,72.0,False,True
+SF12 MentalScore,46.88,41.08,poco nuvoloso,F,59,22.0,72.0,False,True
+SF12 PhysicalScore,21.78,40.18,poco nuvoloso,M,76,14.0,83.0,False,True
+SF12 MentalScore,50.72,61.32,poco nuvoloso,M,76,14.0,83.0,False,True
+SF12 PhysicalScore,38.1,40.9,poco nuvoloso,F,76,7.0,75.0,False,True
+SF12 MentalScore,38.51,31.21,poco nuvoloso,F,76,7.0,75.0,False,True
+SF12 PhysicalScore,24.04,48.74,pioggia e schiarite,F,77,5.0,87.0,False,True
+SF12 MentalScore,33.47,54.57,pioggia e schiarite,F,77,5.0,87.0,False,True
+SF12 PhysicalScore,40.7,48.4,poco nuvoloso,F,72,16.0,69.0,False,False
+SF12 MentalScore,49.85,64.05,poco nuvoloso,F,72,16.0,69.0,False,False
+SF12 PhysicalScore,27.65,33.65,pioggia e schiarite,M,80,14.0,97.0,False,True
+SF12 MentalScore,47.15,57.75,pioggia e schiarite,M,80,14.0,97.0,False,True
+SF12 PhysicalScore,31.08,30.68,poco nuvoloso,F,64,20.0,80.0,False,True
+SF12 MentalScore,49.78,67.88,poco nuvoloso,F,64,20.0,80.0,False,True
+SF12 PhysicalScore,27.78,27.98,nebbia al mattino,M,81,9.0,75.0,False,True
+SF12 MentalScore,48.73,64.13,nebbia al mattino,M,81,9.0,75.0,False,True
+SF12 PhysicalScore,32.23,50.83,pioggia debole,F,77,8.0,97.0,False,True
+SF12 MentalScore,49.54,53.24,pioggia debole,F,77,8.0,97.0,False,True
+SF12 PhysicalScore,24.04,37.34,coperto,M,75,14.0,83.0,False,True
+SF12 MentalScore,58.0,66.7,coperto,M,75,14.0,83.0,False,True
+SF12 PhysicalScore,30.23,36.33,sereno,M,65,20.0,76.0,True,True
+SF12 MentalScore,67.76,64.96,sereno,M,65,20.0,76.0,True,True
+SF12 PhysicalScore,45.93,44.43,pioggia e schiarite,M,61,13.0,89.0,False,True
+SF12 MentalScore,52.45,61.05,pioggia e schiarite,M,61,13.0,89.0,False,True
+SF12 PhysicalScore,27.53,54.23,neve e schiarite,M,56,2.0,92.0,False,True
+SF12 MentalScore,53.32,55.12,neve e schiarite,M,56,2.0,92.0,False,True
+SF12 PhysicalScore,53.78,26.28,pioggia debole,M,79,9.0,95.0,False,True
+SF12 MentalScore,52.8,52.7,pioggia debole,M,79,9.0,95.0,False,True
+SF12 PhysicalScore,44.42,52.32,nebbia al mattino,F,66,23.0,74.0,True,True
+SF12 MentalScore,49.75,59.05,nebbia al mattino,F,66,23.0,74.0,True,True
+SF12 PhysicalScore,31.7,57.6,pioggia debole,M,62,8.0,90.0,False,True
+SF12 MentalScore,60.9,57.9,pioggia debole,M,62,8.0,90.0,False,True
+SF12 PhysicalScore,38.09,50.49,poco nuvoloso,F,80,7.0,75.0,False,True
+SF12 MentalScore,28.76,51.16,poco nuvoloso,F,80,7.0,75.0,False,True
+SF12 PhysicalScore,39.41,39.51,nebbia al mattino,F,79,3.0,88.0,False,True
+SF12 MentalScore,49.36,61.26,nebbia al mattino,F,79,3.0,88.0,False,True
+SF12 PhysicalScore,39.51,49.51,pioggia e schiarite,M,80,10.0,92.0,False,True
+SF12 MentalScore,53.65,43.75,pioggia e schiarite,M,80,10.0,92.0,False,True
+SF12 PhysicalScore,29.68,27.68,coperto,F,70,14.0,83.0,False,True
+SF12 MentalScore,38.11,34.21,coperto,F,70,14.0,83.0,False,True
+SF12 PhysicalScore,28.11,40.01,poco nuvoloso,M,75,16.0,82.0,False,True
+SF12 MentalScore,54.12,55.42,poco nuvoloso,M,75,16.0,82.0,False,True
+SF12 PhysicalScore,39.27,57.77,pioggia debole,F,70,8.0,90.0,False,True
+SF12 MentalScore,61.2,38.4,pioggia debole,F,70,8.0,90.0,False,True
+SF12 PhysicalScore,30.55,42.15,nebbia al mattino,F,86,9.0,75.0,False,True
+SF12 MentalScore,33.76,56.06,nebbia al mattino,F,86,9.0,75.0,False,True
+SF12 PhysicalScore,35.0,51.9,nebbia al mattino,F,73,1.0,89.0,False,True
+SF12 MentalScore,48.84,41.54,nebbia al mattino,F,73,1.0,89.0,False,True
+SF12 PhysicalScore,46.2,49.8,pioggia debole,M,67,8.0,100.0,False,True
+SF12 MentalScore,52.25,29.85,pioggia debole,M,67,8.0,100.0,False,True
+SF12 PhysicalScore,28.01,23.21,pioggia,M,52,8.0,89.0,False,True
+SF12 MentalScore,27.49,24.09,pioggia,M,52,8.0,89.0,False,True
+SF12 PhysicalScore,45.44,42.84,pioggia debole,F,76,9.0,93.0,False,True
+SF12 MentalScore,49.26,44.96,pioggia debole,F,76,9.0,93.0,False,True
+SF12 PhysicalScore,43.83,33.53,nebbia al mattino,F,73,18.0,91.0,False,True
+SF12 MentalScore,33.05,35.45,nebbia al mattino,F,73,18.0,91.0,False,True
+SF12 PhysicalScore,20.7,31.9,poco nuvoloso,M,48,19.0,86.0,False,True
+SF12 MentalScore,53.45,50.35,poco nuvoloso,M,48,19.0,86.0,False,True
+SF12 PhysicalScore,31.64,45.24,poco nuvoloso,F,79,17.0,71.0,False,True
+SF12 MentalScore,23.73,33.83,poco nuvoloso,F,79,17.0,71.0,False,True
+SF12 PhysicalScore,22.82,36.52,nebbia al mattino,M,62,12.0,90.0,False,True
+SF12 MentalScore,50.72,37.92,nebbia al mattino,M,62,12.0,90.0,False,True
+SF12 PhysicalScore,25.01,37.11,poco nuvoloso,F,71,16.0,69.0,False,True
+SF12 MentalScore,41.25,50.15,poco nuvoloso,F,71,16.0,69.0,False,True
+SF12 PhysicalScore,23.76,37.46,pioggia e schiarite,F,65,9.0,79.0,False,True
+SF12 MentalScore,50.36,56.76,pioggia e schiarite,F,65,9.0,79.0,False,True
+SF12 PhysicalScore,46.49,62.39,poco nuvoloso,F,76,7.0,75.0,False,True
+SF12 MentalScore,40.27,17.87,poco nuvoloso,F,76,7.0,75.0,False,True
+SF12 PhysicalScore,32.5,57.2,nebbia al mattino,F,79,9.0,75.0,False,True
+SF12 MentalScore,25.9,54.4,nebbia al mattino,F,79,9.0,75.0,False,True
+SF12 PhysicalScore,31.2,38.9,nebbia al mattino,F,87,8.0,89.0,False,True
+SF12 MentalScore,62.58,61.18,nebbia al mattino,F,87,8.0,89.0,False,True
+SF12 PhysicalScore,26.75,54.15,nebbia al mattino,M,70,3.0,88.0,False,True
+SF12 MentalScore,69.03,52.93,nebbia al mattino,M,70,3.0,88.0,False,True
+SF12 PhysicalScore,33.73,53.43,pioggia debole,M,43,10.0,94.0,False,True
+SF12 MentalScore,59.72,60.82,pioggia debole,M,43,10.0,94.0,False,True
+SF12 PhysicalScore,31.1,32.4,nebbia al mattino,F,32,-1.0,94.0,False,True
+SF12 MentalScore,39.26,51.26,nebbia al mattino,F,32,-1.0,94.0,False,True
+SF12 PhysicalScore,49.39,43.29,pioggia e schiarite,F,67,8.0,91.0,False,True
+SF12 MentalScore,52.75,41.95,pioggia e schiarite,F,67,8.0,91.0,False,True
+SF12 PhysicalScore,36.91,53.71,pioggia debole,M,64,8.0,100.0,False,True
+SF12 MentalScore,41.05,46.05,pioggia debole,M,64,8.0,100.0,False,True
+SF12 PhysicalScore,38.56,52.96,pioggia debole,M,67,8.0,97.0,False,True
+SF12 MentalScore,62.28,59.48,pioggia debole,M,67,8.0,97.0,False,True
+SF12 PhysicalScore,34.24,46.04,poco nuvoloso,M,82,5.0,69.0,False,True
+SF12 MentalScore,39.51,49.71,poco nuvoloso,M,82,5.0,69.0,False,True
+SF12 PhysicalScore,27.91,43.01,nebbia al mattino,F,75,6.0,96.0,False,True
+SF12 MentalScore,33.15,40.95,nebbia al mattino,F,75,6.0,96.0,False,True
+SF12 PhysicalScore,37.98,42.78,coperto,M,74,14.0,83.0,False,False
+SF12 MentalScore,49.68,60.28,coperto,M,74,14.0,83.0,False,False
+SF12 PhysicalScore,21.0,38.5,nebbia al mattino,F,56,1.0,99.0,False,True
+SF12 MentalScore,46.09,50.29,nebbia al mattino,F,56,1.0,99.0,False,True
+SF12 PhysicalScore,25.11,42.91,pioggia e schiarite,F,73,12.0,89.0,False,True
+SF12 MentalScore,55.45,53.05,pioggia e schiarite,F,73,12.0,89.0,False,True
+SF12 PhysicalScore,24.82,42.12,pioggia e schiarite,F,67,7.0,94.0,False,True
+SF12 MentalScore,48.74,55.54,pioggia e schiarite,F,67,7.0,94.0,False,True
+SF12 PhysicalScore,31.08,29.98,nebbia al mattino,F,79,3.0,89.0,False,True
+SF12 MentalScore,33.86,47.66,nebbia al mattino,F,79,3.0,89.0,False,True
+SF12 PhysicalScore,27.59,55.29,nebbia al mattino,F,64,3.0,89.0,False,True
+SF12 MentalScore,44.85,50.05,nebbia al mattino,F,64,3.0,89.0,False,True
+SF12 PhysicalScore,45.26,48.56,pioggia e schiarite,F,70,10.0,93.0,False,True
+SF12 MentalScore,58.28,55.48,pioggia e schiarite,F,70,10.0,93.0,False,True
+SF12 PhysicalScore,24.3,51.7,poco nuvoloso,M,68,20.0,74.0,False,True
+SF12 MentalScore,45.34,55.54,poco nuvoloso,M,68,20.0,74.0,False,True
+SF12 PhysicalScore,20.85,40.75,pioggia,M,57,8.0,100.0,False,True
+SF12 MentalScore,31.52,48.52,pioggia,M,57,8.0,100.0,False,True
+SF12 PhysicalScore,20.11,40.61,nebbia al mattino,F,84,12.0,90.0,False,True
+SF12 MentalScore,68.6,62.7,nebbia al mattino,F,84,12.0,90.0,False,True
+SF12 PhysicalScore,36.11,16.21,pioggia debole,M,49,9.0,93.0,False,False
+SF12 MentalScore,64.8,63.0,pioggia debole,M,49,9.0,93.0,False,False
+SF12 PhysicalScore,30.68,49.28,sereno,F,53,6.0,68.0,False,True
+SF12 MentalScore,41.19,65.39,sereno,F,53,6.0,68.0,False,True
+SF12 PhysicalScore,29.92,34.32,pioggia debole,F,63,10.0,94.0,False,True
+SF12 MentalScore,43.83,48.63,pioggia debole,F,63,10.0,94.0,False,True
+SF12 PhysicalScore,21.51,41.21,coperto,M,56,14.0,83.0,False,True
+SF12 MentalScore,62.34,60.04,coperto,M,56,14.0,83.0,False,True
+SF12 PhysicalScore,25.72,31.02,pioggia e schiarite,F,68,3.0,87.0,False,True
+SF12 MentalScore,30.18,42.98,pioggia e schiarite,F,68,3.0,87.0,False,True
+SF12 PhysicalScore,27.75,34.95,pioggia debole,F,77,8.0,97.0,False,True
+SF12 MentalScore,51.53,37.33,pioggia debole,F,77,8.0,97.0,False,True
+SF12 PhysicalScore,43.41,43.71,nebbia al mattino,F,79,3.0,88.0,False,True
+SF12 MentalScore,39.17,45.57,nebbia al mattino,F,79,3.0,88.0,False,True
+SF12 PhysicalScore,40.9,47.9,sereno,F,69,9.0,45.0,False,True
+SF12 MentalScore,52.32,54.32,sereno,F,69,9.0,45.0,False,True
+SF12 PhysicalScore,25.21,39.41,nebbia al mattino,M,57,3.0,89.0,False,True
+SF12 MentalScore,47.84,38.34,nebbia al mattino,M,57,3.0,89.0,False,True
+SF12 PhysicalScore,42.28,57.58,pioggia e schiarite,M,64,13.0,89.0,False,True
+SF12 MentalScore,33.85,54.95,pioggia e schiarite,M,64,13.0,89.0,False,True
+SF12 PhysicalScore,32.12,34.12,neve e schiarite,F,84,2.0,92.0,False,True
+SF12 MentalScore,32.46,34.36,neve e schiarite,F,84,2.0,92.0,False,True
+SF12 PhysicalScore,26.33,41.73,pioggia e schiarite,F,68,8.0,95.0,False,True
+SF12 MentalScore,42.77,43.17,pioggia e schiarite,F,68,8.0,95.0,False,True
+SF12 PhysicalScore,18.32,54.32,sereno,M,77,17.0,80.0,False,True
+SF12 MentalScore,58.54,59.34,sereno,M,77,17.0,80.0,False,True
+SF12 PhysicalScore,23.55,39.25,nebbia al mattino,F,72,12.0,90.0,False,True
+SF12 MentalScore,63.54,63.94,nebbia al mattino,F,72,12.0,90.0,False,True
+SF12 PhysicalScore,25.8,54.6,pioggia e schiarite,M,69,8.0,95.0,False,True
+SF12 MentalScore,44.94,60.04,pioggia e schiarite,M,69,8.0,95.0,False,True
+SF12 PhysicalScore,28.2,49.6,nebbia al mattino,F,76,10.0,90.0,False,True
+SF12 MentalScore,34.45,62.35,nebbia al mattino,F,76,10.0,90.0,False,True
+SF12 PhysicalScore,27.56,36.76,nebbia al mattino,F,74,1.0,89.0,False,True
+SF12 MentalScore,53.31,56.31,nebbia al mattino,F,74,1.0,89.0,False,True
+SF12 PhysicalScore,46.98,53.48,poco nuvoloso,M,58,10.0,89.0,False,True
+SF12 MentalScore,36.49,59.69,poco nuvoloso,M,58,10.0,89.0,False,True
+SF12 PhysicalScore,30.51,34.31,pioggia e schiarite,M,83,13.0,89.0,False,True
+SF12 MentalScore,33.15,41.15,pioggia e schiarite,M,83,13.0,89.0,False,True
+SF12 PhysicalScore,22.33,52.33,pioggia e schiarite,M,83,3.0,87.0,False,True
+SF12 MentalScore,61.98,52.28,pioggia e schiarite,M,83,3.0,87.0,False,True
+SF12 PhysicalScore,30.76,56.96,pioggia e schiarite,F,76,12.0,89.0,False,True
+SF12 MentalScore,59.85,40.45,pioggia e schiarite,F,76,12.0,89.0,False,True
+SF12 PhysicalScore,50.71,39.71,pioggia e schiarite,M,84,3.0,87.0,False,True
+SF12 MentalScore,38.31,38.51,pioggia e schiarite,M,84,3.0,87.0,False,True
+SF12 PhysicalScore,38.93,49.93,poco nuvoloso,F,80,9.0,58.0,False,True
+SF12 MentalScore,39.21,52.81,poco nuvoloso,F,80,9.0,58.0,False,True
+SF12 PhysicalScore,37.91,29.41,poco nuvoloso,F,72,10.0,93.0,False,True
+SF12 MentalScore,46.07,42.97,poco nuvoloso,F,72,10.0,93.0,False,True
+SF12 PhysicalScore,26.94,32.24,nebbia al mattino,F,64,6.0,94.0,False,True
+SF12 MentalScore,62.65,44.85,nebbia al mattino,F,64,6.0,94.0,False,True
+SF12 PhysicalScore,51.06,36.66,pioggia e schiarite,F,74,11.0,90.0,False,True
+SF12 MentalScore,51.61,58.51,pioggia e schiarite,F,74,11.0,90.0,False,True
+SF12 PhysicalScore,28.34,33.74,sereno,F,80,10.0,57.0,False,True
+SF12 MentalScore,51.83,19.43,sereno,F,80,10.0,57.0,False,True
+SF12 PhysicalScore,29.11,36.11,pioggia e schiarite,F,38,8.0,95.0,False,True
+SF12 MentalScore,40.18,31.88,pioggia e schiarite,F,38,8.0,95.0,False,True
+SF12 PhysicalScore,29.1,43.5,nebbia al mattino,F,79,2.0,81.0,False,False
+SF12 MentalScore,38.64,58.64,nebbia al mattino,F,79,2.0,81.0,False,False
+SF12 PhysicalScore,31.78,48.68,sereno,F,61,10.0,57.0,False,True
+SF12 MentalScore,60.05,63.25,sereno,F,61,10.0,57.0,False,True
+SF12 PhysicalScore,31.47,42.97,sereno,M,46,9.0,59.0,False,True
+SF12 MentalScore,44.13,54.83,sereno,M,46,9.0,59.0,False,True
+SF12 PhysicalScore,25.22,39.52,pioggia e schiarite,M,65,8.0,95.0,False,True
+SF12 MentalScore,51.9,61.3,pioggia e schiarite,M,65,8.0,95.0,False,True
+SF12 PhysicalScore,43.92,48.82,poco nuvoloso,M,72,13.0,83.0,False,False
+SF12 MentalScore,48.99,37.29,poco nuvoloso,M,72,13.0,83.0,False,False
+SF12 PhysicalScore,35.25,40.05,pioggia e schiarite,F,67,7.0,93.0,False,False
+SF12 MentalScore,33.68,33.68,pioggia e schiarite,F,67,7.0,93.0,False,False
+SF12 PhysicalScore,44.63,53.83,pioggia e schiarite,F,79,10.0,93.0,False,True
+SF12 MentalScore,63.53,57.13,pioggia e schiarite,F,79,10.0,93.0,False,True
+SF12 PhysicalScore,36.63,33.93,pioggia debole,F,61,10.0,100.0,False,True
+SF12 MentalScore,38.44,40.74,pioggia debole,F,61,10.0,100.0,False,True
+SF12 PhysicalScore,33.83,34.73,pioggia e schiarite,F,68,10.0,93.0,False,False
+SF12 MentalScore,26.73,38.43,pioggia e schiarite,F,68,10.0,93.0,False,False
+SF12 PhysicalScore,39.51,35.31,pioggia e schiarite,M,57,10.0,93.0,False,False
+SF12 MentalScore,49.97,51.67,pioggia e schiarite,M,57,10.0,93.0,False,False
+SF12 PhysicalScore,42.73,33.63,nebbia al mattino,F,71,2.0,87.0,False,False
+SF12 MentalScore,52.39,49.49,nebbia al mattino,F,71,2.0,87.0,False,False
+SF12 PhysicalScore,33.57,41.27,pioggia e schiarite,F,67,10.0,92.0,False,True
+SF12 MentalScore,49.02,36.62,pioggia e schiarite,F,67,10.0,92.0,False,True
+SF12 PhysicalScore,24.99,36.29,pioggia e schiarite,F,71,8.0,95.0,False,True
+SF12 MentalScore,54.14,19.64,pioggia e schiarite,F,71,8.0,95.0,False,True
+SF12 PhysicalScore,38.76,50.96,sereno,M,74,3.0,74.0,False,True
+SF12 MentalScore,58.88,61.38,sereno,M,74,3.0,74.0,False,True
+SF12 PhysicalScore,27.74,48.64,sereno,F,86,10.0,57.0,False,True
+SF12 MentalScore,64.78,52.88,sereno,F,86,10.0,57.0,False,True
+SF12 PhysicalScore,25.77,34.97,nebbia al mattino,F,76,6.0,87.0,False,True
+SF12 MentalScore,39.69,42.09,nebbia al mattino,F,76,6.0,87.0,False,True
+SF12 PhysicalScore,29.49,49.99,poco nuvoloso,M,79,4.0,86.0,False,False
+SF12 MentalScore,66.1,61.8,poco nuvoloso,M,79,4.0,86.0,False,False
+SF12 PhysicalScore,32.96,33.46,neve e schiarite,F,81,2.0,92.0,False,False
+SF12 MentalScore,69.74,60.84,neve e schiarite,F,81,2.0,92.0,False,False
+SF12 PhysicalScore,38.99,38.69,pioggia,F,58,10.0,96.0,False,False
+SF12 MentalScore,66.71,56.91,pioggia,F,58,10.0,96.0,False,False
+SF12 PhysicalScore,43.51,54.21,sereno,F,70,8.0,64.0,False,True
+SF12 MentalScore,40.18,60.38,sereno,F,70,8.0,64.0,False,True
+SF12 PhysicalScore,51.01,34.91,pioggia e schiarite,M,54,7.0,89.0,False,True
+SF12 MentalScore,54.94,49.24,pioggia e schiarite,M,54,7.0,89.0,False,True
+SF12 PhysicalScore,47.42,47.62,nebbia al mattino,F,50,3.0,93.0,False,True
+SF12 MentalScore,64.19,64.29,nebbia al mattino,F,50,3.0,93.0,False,True
+SF12 PhysicalScore,31.89,37.29,sereno,F,76,10.0,57.0,False,True
+SF12 MentalScore,21.89,27.39,sereno,F,76,10.0,57.0,False,True
+SF12 PhysicalScore,47.93,37.13,poco nuvoloso,M,66,4.0,86.0,False,True
+SF12 MentalScore,45.95,49.85,poco nuvoloso,M,66,4.0,86.0,False,True
+SF12 PhysicalScore,25.11,44.31,sereno,F,78,2.0,86.0,False,False
+SF12 MentalScore,60.76,53.86,sereno,F,78,2.0,86.0,False,False
+SF12 PhysicalScore,30.11,38.61,nubi sparse,F,48,7.0,92.0,False,False
+SF12 MentalScore,65.77,52.27,nubi sparse,F,48,7.0,92.0,False,False
+SF12 PhysicalScore,36.66,55.36,poco nuvoloso,F,84,5.0,89.0,False,True
+SF12 MentalScore,47.61,50.41,poco nuvoloso,F,84,5.0,89.0,False,True
+SF12 PhysicalScore,30.9,46.7,pioggia e schiarite,M,69,7.0,92.0,False,True
+SF12 MentalScore,48.75,59.95,pioggia e schiarite,M,69,7.0,92.0,False,True
+SF12 PhysicalScore,23.99,35.19,nebbia al mattino,F,69,3.0,89.0,False,True
+SF12 MentalScore,43.59,39.39,nebbia al mattino,F,69,3.0,89.0,False,True
+SF12 PhysicalScore,47.09,39.09,nebbia,M,83,0.0,99.0,False,True
+SF12 MentalScore,61.54,50.64,nebbia,M,83,0.0,99.0,False,True
+SF12 PhysicalScore,28.88,48.78,nebbia,M,77,0.0,99.0,False,True
+SF12 MentalScore,68.3,60.4,nebbia,M,77,0.0,99.0,False,True
+SF12 PhysicalScore,30.22,38.72,pioggia e schiarite,F,67,5.0,92.0,False,True
+SF12 MentalScore,24.51,35.41,pioggia e schiarite,F,67,5.0,92.0,False,True
+SF12 PhysicalScore,31.07,38.27,pioggia e schiarite,F,69,10.0,98.0,False,True
+SF12 MentalScore,62.72,59.52,pioggia e schiarite,F,69,10.0,98.0,False,True
+SF12 PhysicalScore,27.73,56.13,poco nuvoloso,F,81,5.0,89.0,False,True
+SF12 MentalScore,59.59,49.99,poco nuvoloso,F,81,5.0,89.0,False,True
+SF12 PhysicalScore,37.13,53.43,poco nuvoloso,M,64,9.0,30.0,False,True
+SF12 MentalScore,53.24,60.04,poco nuvoloso,M,64,9.0,30.0,False,True
+SF12 PhysicalScore,15.44,51.84,nebbia,F,89,0.0,99.0,False,True
+SF12 MentalScore,53.4,55.0,nebbia,F,89,0.0,99.0,False,True
+SF12 PhysicalScore,43.03,33.33,pioggia e schiarite,M,70,7.0,89.0,False,True
+SF12 MentalScore,48.19,45.59,pioggia e schiarite,M,70,7.0,89.0,False,True
+SF12 PhysicalScore,29.39,52.59,sereno,M,79,3.0,76.0,False,False
+SF12 MentalScore,47.17,60.77,sereno,M,79,3.0,76.0,False,False
+SF12 PhysicalScore,28.17,51.47,sereno,F,83,2.0,86.0,False,False
+SF12 MentalScore,42.72,51.02,sereno,F,83,2.0,86.0,False,False
+SF12 PhysicalScore,30.09,36.39,sereno,F,69,8.0,68.0,False,True
+SF12 MentalScore,43.96,64.46,sereno,F,69,8.0,68.0,False,True
+SF12 PhysicalScore,36.91,24.71,pioggia debole,M,82,5.0,81.0,False,False
+SF12 MentalScore,23.59,49.39,pioggia debole,M,82,5.0,81.0,False,False
+SF12 PhysicalScore,27.33,42.03,nebbia al mattino,M,66,7.0,80.0,False,True
+SF12 MentalScore,63.09,62.99,nebbia al mattino,M,66,7.0,80.0,False,True
+SF12 PhysicalScore,37.69,40.79,pioggia e schiarite,F,82,3.0,87.0,False,True
+SF12 MentalScore,17.91,42.41,pioggia e schiarite,F,82,3.0,87.0,False,True
+SF12 PhysicalScore,35.36,32.46,poco nuvoloso,F,66,10.0,93.0,False,True
+SF12 MentalScore,64.83,66.23,poco nuvoloso,F,66,10.0,93.0,False,True
+SF12 PhysicalScore,39.73,53.53,pioggia e schiarite,F,59,7.0,92.0,False,True
+SF12 MentalScore,57.79,61.29,pioggia e schiarite,F,59,7.0,92.0,False,True
+SF12 PhysicalScore,56.66,31.06,sereno,F,70,2.0,72.0,False,True
+SF12 MentalScore,52.02,58.32,sereno,F,70,2.0,72.0,False,True
+SF12 PhysicalScore,33.76,51.16,pioggia e schiarite,F,79,10.0,97.0,False,True
+SF12 MentalScore,39.96,35.16,pioggia e schiarite,F,79,10.0,97.0,False,True
+SF12 PhysicalScore,25.09,33.09,pioggia e schiarite,F,78,10.0,97.0,False,True
+SF12 MentalScore,36.6,60.6,pioggia e schiarite,F,78,10.0,97.0,False,True
+SF12 PhysicalScore,28.53,46.23,pioggia e schiarite,F,78,8.0,95.0,False,True
+SF12 MentalScore,24.72,36.32,pioggia e schiarite,F,78,8.0,95.0,False,True
+SF12 PhysicalScore,32.99,33.49,nebbia al mattino,F,81,6.0,91.0,False,False
+SF12 MentalScore,42.59,38.19,nebbia al mattino,F,81,6.0,91.0,False,False
+SF12 PhysicalScore,36.35,28.85,pioggia e schiarite,F,77,6.0,93.0,False,True
+SF12 MentalScore,57.96,60.56,pioggia e schiarite,F,77,6.0,93.0,False,True
+SF12 PhysicalScore,27.49,52.99,sereno,F,80,3.0,74.0,False,True
+SF12 MentalScore,20.6,60.5,sereno,F,80,3.0,74.0,False,True
+SF12 PhysicalScore,34.01,43.31,nebbia al mattino,F,73,8.0,77.0,False,True
+SF12 MentalScore,37.77,54.27,nebbia al mattino,F,73,8.0,77.0,False,True
+SF12 PhysicalScore,38.16,37.86,nebbia,M,79,0.0,99.0,False,True
+SF12 MentalScore,49.0,62.1,nebbia,M,79,0.0,99.0,False,True
+SF12 PhysicalScore,30.14,55.74,nebbia al mattino,M,78,1.0,99.0,False,True
+SF12 MentalScore,70.49,61.89,nebbia al mattino,M,78,1.0,99.0,False,True
+SF12 PhysicalScore,24.85,48.95,nebbia al mattino,M,79,1.0,99.0,False,False
+SF12 MentalScore,58.72,61.02,nebbia al mattino,M,79,1.0,99.0,False,False
+SF12 PhysicalScore,21.25,28.65,nebbia al mattino,F,61,1.0,99.0,False,False
+SF12 MentalScore,65.53,65.33,nebbia al mattino,F,61,1.0,99.0,False,False
+SF12 PhysicalScore,28.93,45.53,nebbia al mattino,F,82,1.0,99.0,False,False
+SF12 MentalScore,35.38,58.38,nebbia al mattino,F,82,1.0,99.0,False,False
+SF12 PhysicalScore,30.73,35.63,nebbia al mattino,F,68,3.0,88.0,False,True
+SF12 MentalScore,58.9,64.5,nebbia al mattino,F,68,3.0,88.0,False,True
+SF12 PhysicalScore,22.64,23.14,poco nuvoloso,M,54,6.0,80.0,False,True
+SF12 MentalScore,45.26,34.56,poco nuvoloso,M,54,6.0,80.0,False,True
+SF12 PhysicalScore,31.72,30.72,sereno,F,84,3.0,76.0,False,False
+SF12 MentalScore,34.31,17.51,sereno,F,84,3.0,76.0,False,False
+SF12 PhysicalScore,29.65,26.85,nebbia al mattino,F,77,5.0,83.0,False,True
+SF12 MentalScore,25.59,30.49,nebbia al mattino,F,77,5.0,83.0,False,True
+SF12 PhysicalScore,33.12,32.12,nebbia al mattino,F,59,7.0,80.0,False,False
+SF12 MentalScore,48.58,40.38,nebbia al mattino,F,59,7.0,80.0,False,False
+SF12 PhysicalScore,32.98,25.68,sereno,M,42,3.0,76.0,False,False
+SF12 MentalScore,47.48,46.38,sereno,M,42,3.0,76.0,False,False
+SF12 PhysicalScore,30.72,33.62,poco nuvoloso,F,55,10.0,30.0,False,False
+SF12 MentalScore,40.53,35.43,poco nuvoloso,F,55,10.0,30.0,False,False
+SF12 PhysicalScore,34.9,52.6,poco nuvoloso,F,81,4.0,77.0,False,False
+SF12 MentalScore,30.14,61.44,poco nuvoloso,F,81,4.0,77.0,False,False
+SF12 PhysicalScore,23.27,38.77,nebbia al mattino,M,58,14.0,88.0,False,True
+SF12 MentalScore,42.77,33.37,nebbia al mattino,M,58,14.0,88.0,False,True
+SF12 PhysicalScore,32.76,37.56,sereno,F,60,11.0,23.0,False,True
+SF12 MentalScore,29.22,60.22,sereno,F,60,11.0,23.0,False,True
+SF12 PhysicalScore,25.33,33.73,poco nuvoloso,F,60,9.0,74.0,False,True
+SF12 MentalScore,61.61,59.31,poco nuvoloso,F,60,9.0,74.0,False,True
+SF12 PhysicalScore,21.13,46.23,nebbia,F,83,0.0,99.0,False,True
+SF12 MentalScore,61.09,59.59,nebbia,F,83,0.0,99.0,False,True
+SF12 PhysicalScore,39.57,47.07,poco nuvoloso,F,74,4.0,77.0,False,False
+SF12 MentalScore,28.09,34.79,poco nuvoloso,F,74,4.0,77.0,False,False
+SF12 PhysicalScore,42.43,43.33,sereno,M,76,5.0,48.0,False,True
+SF12 MentalScore,46.14,50.84,sereno,M,76,5.0,48.0,False,True
+SF12 PhysicalScore,33.99,42.99,nebbia al mattino,F,77,3.0,88.0,False,True
+SF12 MentalScore,50.23,58.13,nebbia al mattino,F,77,3.0,88.0,False,True
+SF12 PhysicalScore,39.58,39.98,pioggia e schiarite,F,82,5.0,92.0,False,True
+SF12 MentalScore,58.41,43.81,pioggia e schiarite,F,82,5.0,92.0,False,True
+SF12 PhysicalScore,41.86,30.46,nebbia al mattino,M,75,3.0,88.0,False,True
+SF12 MentalScore,28.39,29.09,nebbia al mattino,M,75,3.0,88.0,False,True
+SF12 PhysicalScore,50.14,50.04,pioggia e schiarite,M,70,7.0,98.0,False,True
+SF12 MentalScore,57.7,51.7,pioggia e schiarite,M,70,7.0,98.0,False,True
+SF12 PhysicalScore,24.5,41.3,sereno,F,78,3.0,76.0,False,False
+SF12 MentalScore,38.66,67.36,sereno,F,78,3.0,76.0,False,False
+SF12 PhysicalScore,34.73,41.63,pioggia e schiarite,F,74,5.0,92.0,False,True
+SF12 MentalScore,47.85,39.35,pioggia e schiarite,F,74,5.0,92.0,False,True
+SF12 PhysicalScore,45.86,32.76,nebbia al mattino,F,62,2.0,85.0,False,False
+SF12 MentalScore,55.42,40.12,nebbia al mattino,F,62,2.0,85.0,False,False
+SF12 PhysicalScore,47.01,58.21,pioggia e schiarite,M,67,5.0,92.0,False,True
+SF12 MentalScore,58.94,59.94,pioggia e schiarite,M,67,5.0,92.0,False,True
+SF12 PhysicalScore,33.23,55.93,nebbia al mattino,M,67,3.0,85.0,False,True
+SF12 MentalScore,60.98,56.88,nebbia al mattino,M,67,3.0,85.0,False,True
+SF12 PhysicalScore,43.15,34.75,nebbia al mattino,F,73,3.0,88.0,False,False
+SF12 MentalScore,42.03,35.63,nebbia al mattino,F,73,3.0,88.0,False,False
+SF12 PhysicalScore,34.5,54.1,pioggia debole,F,76,5.0,81.0,False,False
+SF12 MentalScore,38.24,47.34,pioggia debole,F,76,5.0,81.0,False,False
+SF12 PhysicalScore,26.35,27.85,sereno,F,82,2.0,77.0,False,False
+SF12 MentalScore,25.14,32.44,sereno,F,82,2.0,77.0,False,False
+SF12 PhysicalScore,49.19,36.49,pioggia e schiarite,F,47,5.0,92.0,False,False
+SF12 MentalScore,57.12,49.02,pioggia e schiarite,F,47,5.0,92.0,False,False
+SF12 PhysicalScore,34.3,37.9,pioggia e schiarite,M,60,14.0,72.0,False,True
+SF12 MentalScore,44.54,37.84,pioggia e schiarite,M,60,14.0,72.0,False,True
+SF12 PhysicalScore,24.58,25.18,nebbia al mattino,F,83,1.0,89.0,False,True
+SF12 MentalScore,33.4,32.1,nebbia al mattino,F,83,1.0,89.0,False,True
+SF12 PhysicalScore,51.18,44.98,nebbia al mattino,F,65,1.0,89.0,False,True
+SF12 MentalScore,57.15,63.65,nebbia al mattino,F,65,1.0,89.0,False,True
+SF12 PhysicalScore,33.93,51.73,nebbia al mattino,F,65,1.0,89.0,False,True
+SF12 MentalScore,61.06,57.46,nebbia al mattino,F,65,1.0,89.0,False,True
+SF12 PhysicalScore,39.06,40.96,nebbia al mattino,F,78,1.0,89.0,False,True
+SF12 MentalScore,38.47,60.97,nebbia al mattino,F,78,1.0,89.0,False,True
+SF12 PhysicalScore,32.26,47.86,sereno,M,61,10.0,51.0,False,True
+SF12 MentalScore,41.83,54.83,sereno,M,61,10.0,51.0,False,True
+SF12 PhysicalScore,23.16,43.76,nebbia al mattino,F,67,8.0,77.0,False,True
+SF12 MentalScore,48.37,62.17,nebbia al mattino,F,67,8.0,77.0,False,True
+SF12 PhysicalScore,35.43,38.73,sereno,F,51,7.0,56.0,False,True
+SF12 MentalScore,53.01,52.81,sereno,F,51,7.0,56.0,False,True
+SF12 PhysicalScore,44.64,50.24,sereno,M,58,3.0,83.0,False,True
+SF12 MentalScore,64.67,62.77,sereno,M,58,3.0,83.0,False,True
+SF12 PhysicalScore,32.14,48.34,nebbia al mattino,F,83,8.0,77.0,False,True
+SF12 MentalScore,26.76,56.66,nebbia al mattino,F,83,8.0,77.0,False,True
+SF12 PhysicalScore,32.76,52.06,nebbia al mattino,F,65,7.0,74.0,False,True
+SF12 MentalScore,49.23,57.93,nebbia al mattino,F,65,7.0,74.0,False,True
+SF12 PhysicalScore,31.36,37.46,sereno,F,66,10.0,35.0,False,False
+SF12 MentalScore,26.1,35.0,sereno,F,66,10.0,35.0,False,False
+SF12 PhysicalScore,27.68,29.28,nebbia al mattino,F,81,9.0,66.0,False,True
+SF12 MentalScore,43.22,29.42,nebbia al mattino,F,81,9.0,66.0,False,True
+SF12 PhysicalScore,41.21,40.61,nebbia al mattino,F,54,10.0,50.0,False,True
+SF12 MentalScore,50.62,58.32,nebbia al mattino,F,54,10.0,50.0,False,True
+SF12 PhysicalScore,40.96,54.46,sereno,M,61,3.0,76.0,False,True
+SF12 MentalScore,56.62,60.22,sereno,M,61,3.0,76.0,False,True
+SF12 PhysicalScore,33.73,35.63,poco nuvoloso,F,55,5.0,85.0,False,True
+SF12 MentalScore,46.38,39.38,poco nuvoloso,F,55,5.0,85.0,False,True
+SF12 PhysicalScore,30.85,33.75,sereno,M,54,6.0,70.0,False,True
+SF12 MentalScore,49.11,38.41,sereno,M,54,6.0,70.0,False,True
+SF12 PhysicalScore,35.49,42.89,sereno,M,72,8.0,66.0,False,True
+SF12 MentalScore,34.83,56.93,sereno,M,72,8.0,66.0,False,True
+SF12 PhysicalScore,39.26,35.56,nebbia al mattino,M,60,1.0,95.0,False,True
+SF12 MentalScore,65.87,59.17,nebbia al mattino,M,60,1.0,95.0,False,True
+SF12 PhysicalScore,28.58,25.28,nebbia al mattino,F,76,1.0,89.0,False,False
+SF12 MentalScore,53.6,34.2,nebbia al mattino,F,76,1.0,89.0,False,False
+SF12 PhysicalScore,30.4,38.1,sereno,F,84,8.0,33.0,False,True
+SF12 MentalScore,38.65,63.55,sereno,F,84,8.0,33.0,False,True
+SF12 PhysicalScore,22.97,33.07,nebbia al mattino,F,87,7.0,74.0,False,True
+SF12 MentalScore,56.59,45.99,nebbia al mattino,F,87,7.0,74.0,False,True
+SF12 PhysicalScore,27.94,40.14,pioggia e schiarite,F,81,6.0,97.0,False,True
+SF12 MentalScore,51.22,34.32,pioggia e schiarite,F,81,6.0,97.0,False,True
+SF12 PhysicalScore,40.41,45.41,sereno,M,72,5.0,48.0,False,True
+SF12 MentalScore,62.4,55.8,sereno,M,72,5.0,48.0,False,True
+SF12 PhysicalScore,35.44,34.74,pioggia e schiarite,F,76,5.0,92.0,False,True
+SF12 MentalScore,36.5,56.7,pioggia e schiarite,F,76,5.0,92.0,False,True
+SF12 PhysicalScore,33.27,47.77,pioggia e schiarite,F,75,10.0,95.0,False,True
+SF12 MentalScore,52.44,52.44,pioggia e schiarite,F,75,10.0,95.0,False,True
+SF12 PhysicalScore,27.55,37.75,poco nuvoloso,F,71,5.0,79.0,False,True
+SF12 MentalScore,45.88,48.38,poco nuvoloso,F,71,5.0,79.0,False,True
+SF12 PhysicalScore,25.29,36.69,poco nuvoloso,F,69,5.0,85.0,False,True
+SF12 MentalScore,16.77,26.67,poco nuvoloso,F,69,5.0,85.0,False,True
+SF12 PhysicalScore,50.36,40.06,nebbia al mattino,F,75,5.0,83.0,False,True
+SF12 MentalScore,52.48,44.28,nebbia al mattino,F,75,5.0,83.0,False,True
+SF12 PhysicalScore,24.59,43.19,sereno,M,61,10.0,35.0,False,True
+SF12 MentalScore,67.05,63.05,sereno,M,61,10.0,35.0,False,True
+SF12 PhysicalScore,21.02,23.42,pioggia debole,M,81,3.0,100.0,False,True
+SF12 MentalScore,22.39,51.29,pioggia debole,M,81,3.0,100.0,False,True
+SF12 PhysicalScore,43.27,42.37,nebbia al mattino,F,60,9.0,66.0,False,False
+SF12 MentalScore,57.39,60.09,nebbia al mattino,F,60,9.0,66.0,False,False
+SF12 PhysicalScore,38.2,49.2,nebbia al mattino,M,72,9.0,66.0,False,True
+SF12 MentalScore,45.14,61.74,nebbia al mattino,M,72,9.0,66.0,False,True
+SF12 PhysicalScore,37.5,37.9,nebbia al mattino,M,79,3.0,88.0,False,True
+SF12 MentalScore,54.89,41.69,nebbia al mattino,M,79,3.0,88.0,False,True
+SF12 PhysicalScore,43.47,35.97,nebbia al mattino,F,81,9.0,66.0,False,True
+SF12 MentalScore,30.41,65.61,nebbia al mattino,F,81,9.0,66.0,False,True
+SF12 PhysicalScore,54.52,54.02,pioggia e schiarite,M,37,7.0,92.0,False,True
+SF12 MentalScore,61.35,60.45,pioggia e schiarite,M,37,7.0,92.0,False,True
+SF12 PhysicalScore,35.48,48.18,pioggia e schiarite,F,78,5.0,92.0,False,True
+SF12 MentalScore,49.32,60.02,pioggia e schiarite,F,78,5.0,92.0,False,True
+SF12 PhysicalScore,38.81,38.01,nebbia al mattino,F,76,10.0,57.0,False,True
+SF12 MentalScore,31.06,49.16,nebbia al mattino,F,76,10.0,57.0,False,True
+SF12 PhysicalScore,25.62,42.02,nebbia al mattino,F,71,1.0,99.0,False,True
+SF12 MentalScore,59.53,52.23,nebbia al mattino,F,71,1.0,99.0,False,True
+SF12 PhysicalScore,28.63,52.53,nebbia al mattino,F,77,9.0,66.0,False,True
+SF12 MentalScore,62.7,57.4,nebbia al mattino,F,77,9.0,66.0,False,True
+SF12 PhysicalScore,44.52,49.92,poco nuvoloso,F,57,10.0,85.0,False,True
+SF12 MentalScore,44.03,44.23,poco nuvoloso,F,57,10.0,85.0,False,True
+SF12 PhysicalScore,28.58,52.78,sereno,M,62,9.0,67.0,False,True
+SF12 MentalScore,58.94,54.24,sereno,M,62,9.0,67.0,False,True
+SF12 PhysicalScore,25.37,25.87,nebbia al mattino,F,67,3.0,88.0,False,True
+SF12 MentalScore,46.66,47.56,nebbia al mattino,F,67,3.0,88.0,False,True
+SF12 PhysicalScore,39.55,36.75,poco nuvoloso,F,83,4.0,63.0,False,True
+SF12 MentalScore,44.16,39.86,poco nuvoloso,F,83,4.0,63.0,False,True
+SF12 PhysicalScore,29.54,33.14,poco nuvoloso,F,72,6.0,77.0,False,True
+SF12 MentalScore,34.68,36.88,poco nuvoloso,F,72,6.0,77.0,False,True
+SF12 PhysicalScore,34.14,36.54,poco nuvoloso,M,67,4.0,77.0,False,True
+SF12 MentalScore,50.91,47.31,poco nuvoloso,M,67,4.0,77.0,False,True
+SF12 PhysicalScore,50.86,60.76,sereno,M,61,3.0,74.0,False,True
+SF12 MentalScore,57.61,49.11,sereno,M,61,3.0,74.0,False,True
+SF12 PhysicalScore,28.72,30.22,pioggia e schiarite,F,63,13.0,83.0,False,True
+SF12 MentalScore,54.49,62.89,pioggia e schiarite,F,63,13.0,83.0,False,True
+SF12 PhysicalScore,35.88,55.58,sereno,M,72,8.0,59.0,False,True
+SF12 MentalScore,66.85,59.25,sereno,M,72,8.0,59.0,False,True
+SF12 PhysicalScore,41.28,50.08,pioggia e schiarite,F,65,8.0,59.0,False,False
+SF12 MentalScore,56.0,54.7,pioggia e schiarite,F,65,8.0,59.0,False,False
+SF12 PhysicalScore,30.53,38.83,nebbia al mattino,F,57,9.0,66.0,False,True
+SF12 MentalScore,49.25,55.55,nebbia al mattino,F,57,9.0,66.0,False,True
+SF12 PhysicalScore,27.7,17.2,pioggia e schiarite,F,68,7.0,92.0,False,True
+SF12 MentalScore,32.86,51.96,pioggia e schiarite,F,68,7.0,92.0,False,True
+SF12 PhysicalScore,32.09,30.59,pioggia e schiarite,M,71,7.0,92.0,False,True
+SF12 MentalScore,58.78,53.08,pioggia e schiarite,M,71,7.0,92.0,False,True
+SF12 PhysicalScore,20.46,45.66,nebbia al mattino,F,86,8.0,77.0,False,True
+SF12 MentalScore,21.61,46.01,nebbia al mattino,F,86,8.0,77.0,False,True
+SF12 PhysicalScore,35.38,42.28,sereno,F,68,5.0,48.0,False,True
+SF12 MentalScore,34.73,43.03,sereno,F,68,5.0,48.0,False,True
+SF12 PhysicalScore,32.62,50.02,pioggia e schiarite,F,74,5.0,92.0,False,True
+SF12 MentalScore,41.88,27.38,pioggia e schiarite,F,74,5.0,92.0,False,True
+SF12 PhysicalScore,36.71,42.21,nebbia al mattino,F,85,9.0,66.0,False,True
+SF12 MentalScore,38.03,28.43,nebbia al mattino,F,85,9.0,66.0,False,True
+SF12 PhysicalScore,48.38,45.98,sereno,M,79,10.0,35.0,False,True
+SF12 MentalScore,60.05,58.55,sereno,M,79,10.0,35.0,False,True
+SF12 PhysicalScore,27.92,29.02,sereno,F,58,10.0,51.0,False,True
+SF12 MentalScore,37.28,54.78,sereno,F,58,10.0,51.0,False,True
+SF12 PhysicalScore,51.87,51.17,sereno,F,76,3.0,74.0,False,True
+SF12 MentalScore,47.14,57.74,sereno,F,76,3.0,74.0,False,True
+SF12 PhysicalScore,18.33,24.43,pioggia e schiarite,F,92,7.0,53.0,False,False
+SF12 MentalScore,70.09,41.39,pioggia e schiarite,F,92,7.0,53.0,False,False
+SF12 PhysicalScore,37.38,25.38,poco nuvoloso,F,82,5.0,89.0,False,False
+SF12 MentalScore,50.24,55.84,poco nuvoloso,F,82,5.0,89.0,False,False
+SF12 PhysicalScore,36.51,55.01,poco nuvoloso,F,70,6.0,77.0,False,True
+SF12 MentalScore,66.08,56.68,poco nuvoloso,F,70,6.0,77.0,False,True
+SF12 PhysicalScore,31.54,41.14,pioggia e schiarite,F,81,5.0,92.0,False,True
+SF12 MentalScore,45.93,35.63,pioggia e schiarite,F,81,5.0,92.0,False,True
+SF12 PhysicalScore,44.62,47.62,nebbia al mattino,M,69,9.0,88.0,False,True
+SF12 MentalScore,63.55,63.15,nebbia al mattino,M,69,9.0,88.0,False,True
+SF12 PhysicalScore,31.53,38.13,sereno,M,67,10.0,35.0,False,True
+SF12 MentalScore,52.01,56.91,sereno,M,67,10.0,35.0,False,True
+SF12 PhysicalScore,26.21,40.81,poco nuvoloso,F,79,4.0,63.0,False,True
+SF12 MentalScore,42.47,51.47,poco nuvoloso,F,79,4.0,63.0,False,True
+SF12 PhysicalScore,31.43,47.63,nebbia al mattino,F,69,8.0,67.0,False,True
+SF12 MentalScore,46.03,48.63,nebbia al mattino,F,69,8.0,67.0,False,True
+SF12 PhysicalScore,49.47,55.27,nebbia al mattino,M,76,3.0,88.0,False,True
+SF12 MentalScore,55.97,62.47,nebbia al mattino,M,76,3.0,88.0,False,True
+SF12 PhysicalScore,44.96,58.46,poco nuvoloso,M,60,7.0,31.0,False,True
+SF12 MentalScore,58.54,57.44,poco nuvoloso,M,60,7.0,31.0,False,True
+SF12 PhysicalScore,15.3,28.2,nebbia al mattino,F,71,9.0,66.0,False,True
+SF12 MentalScore,57.67,62.67,nebbia al mattino,F,71,9.0,66.0,False,True
+SF12 PhysicalScore,31.0,41.4,nebbia al mattino,F,69,10.0,50.0,False,True
+SF12 MentalScore,52.4,57.2,nebbia al mattino,F,69,10.0,50.0,False,True
+SF12 PhysicalScore,23.87,39.67,nebbia al mattino,F,70,9.0,66.0,False,True
+SF12 MentalScore,49.33,27.13,nebbia al mattino,F,70,9.0,66.0,False,True
+SF12 PhysicalScore,20.9,39.7,nebbia al mattino,F,88,5.0,83.0,False,True
+SF12 MentalScore,44.6,37.9,nebbia al mattino,F,88,5.0,83.0,False,True
+SF12 PhysicalScore,30.82,52.32,pioggia debole,F,65,5.0,81.0,False,True
+SF12 MentalScore,35.27,40.97,pioggia debole,F,65,5.0,81.0,False,True
+SF12 PhysicalScore,26.17,33.07,poco nuvoloso,F,85,4.0,77.0,False,True
+SF12 MentalScore,31.27,53.37,poco nuvoloso,F,85,4.0,77.0,False,True
+SF12 PhysicalScore,40.01,65.01,sereno,F,83,5.0,48.0,False,True
+SF12 MentalScore,37.5,24.2,sereno,F,83,5.0,48.0,False,True
+SF12 PhysicalScore,24.59,29.39,nebbia al mattino,F,83,1.0,89.0,False,True
+SF12 MentalScore,49.33,40.03,nebbia al mattino,F,83,1.0,89.0,False,True
+SF12 PhysicalScore,45.18,49.68,nebbia al mattino,F,66,7.0,74.0,False,True
+SF12 MentalScore,44.95,34.65,nebbia al mattino,F,66,7.0,74.0,False,True
+SF12 PhysicalScore,22.88,50.58,sereno,F,75,10.0,23.0,False,True
+SF12 MentalScore,65.58,59.68,sereno,F,75,10.0,23.0,False,True
+SF12 PhysicalScore,34.44,51.04,nebbia al mattino,M,59,3.0,88.0,False,True
+SF12 MentalScore,42.02,56.22,nebbia al mattino,M,59,3.0,88.0,False,True
+SF12 PhysicalScore,34.67,50.07,poco nuvoloso,F,80,10.0,85.0,False,False
+SF12 MentalScore,33.52,49.72,poco nuvoloso,F,80,10.0,85.0,False,False
+SF12 PhysicalScore,21.34,53.74,poco nuvoloso,F,60,9.0,83.0,False,False
+SF12 MentalScore,58.67,60.17,poco nuvoloso,F,60,9.0,83.0,False,False
+SF12 PhysicalScore,50.29,43.79,pioggia e schiarite,M,55,10.0,95.0,False,True
+SF12 MentalScore,33.65,57.55,pioggia e schiarite,M,55,10.0,95.0,False,True
+SF12 PhysicalScore,37.59,45.99,poco nuvoloso,M,61,10.0,56.0,False,True
+SF12 MentalScore,36.64,47.84,poco nuvoloso,M,61,10.0,56.0,False,True
+SF12 PhysicalScore,29.07,43.87,poco nuvoloso,M,83,17.0,87.0,False,True
+SF12 MentalScore,59.66,60.66,poco nuvoloso,M,83,17.0,87.0,False,True
+SF12 PhysicalScore,33.28,54.98,nebbia al mattino,F,67,10.0,57.0,False,True
+SF12 MentalScore,51.46,59.06,nebbia al mattino,F,67,10.0,57.0,False,True
+SF12 PhysicalScore,33.27,46.37,pioggia e schiarite,M,80,7.0,92.0,False,True
+SF12 MentalScore,55.49,53.59,pioggia e schiarite,M,80,7.0,92.0,False,True
+SF12 PhysicalScore,23.3,44.6,pioggia e schiarite,F,84,7.0,80.0,False,True
+SF12 MentalScore,58.65,33.45,pioggia e schiarite,F,84,7.0,80.0,False,True
+SF12 PhysicalScore,22.38,25.88,poco nuvoloso,F,71,5.0,77.0,False,False
+SF12 MentalScore,52.56,55.86,poco nuvoloso,F,71,5.0,77.0,False,False
+SF12 PhysicalScore,30.63,50.83,sereno,M,72,8.0,33.0,False,False
+SF12 MentalScore,44.79,61.99,sereno,M,72,8.0,33.0,False,False
+SF12 PhysicalScore,26.48,33.58,pioggia e schiarite,F,82,10.0,95.0,False,True
+SF12 MentalScore,43.33,36.93,pioggia e schiarite,F,82,10.0,95.0,False,True
+SF12 PhysicalScore,40.87,51.27,sereno,F,71,13.0,54.0,False,True
+SF12 MentalScore,46.19,61.29,sereno,F,71,13.0,54.0,False,True
+SF12 PhysicalScore,26.23,21.13,nubi sparse,F,71,6.0,47.0,False,True
+SF12 MentalScore,40.18,55.58,nubi sparse,F,71,6.0,47.0,False,True
+SF12 PhysicalScore,32.04,29.14,nebbia al mattino,F,78,8.0,77.0,False,False
+SF12 MentalScore,20.0,33.1,nebbia al mattino,F,78,8.0,77.0,False,False
+SF12 PhysicalScore,20.34,43.04,sereno,M,71,8.0,68.0,False,True
+SF12 MentalScore,58.59,48.39,sereno,M,71,8.0,68.0,False,True
+SF12 PhysicalScore,35.32,34.32,nebbia al mattino,M,61,6.0,96.0,False,True
+SF12 MentalScore,45.66,44.36,nebbia al mattino,M,61,6.0,96.0,False,True
+SF12 PhysicalScore,24.72,38.22,nebbia al mattino,F,77,8.0,77.0,False,True
+SF12 MentalScore,35.77,31.97,nebbia al mattino,F,77,8.0,77.0,False,True
+SF12 PhysicalScore,44.02,54.12,sereno,F,78,6.0,67.0,False,True
+SF12 MentalScore,61.57,54.17,sereno,F,78,6.0,67.0,False,True
+SF12 PhysicalScore,20.55,36.55,poco nuvoloso,F,82,9.0,30.0,False,True
+SF12 MentalScore,51.5,50.4,poco nuvoloso,F,82,9.0,30.0,False,True
+SF12 PhysicalScore,39.22,31.32,poco nuvoloso,F,70,10.0,85.0,False,True
+SF12 MentalScore,46.45,47.15,poco nuvoloso,F,70,10.0,85.0,False,True
+SF12 PhysicalScore,43.72,56.02,poco nuvoloso,M,69,9.0,87.0,False,True
+SF12 MentalScore,65.82,57.52,poco nuvoloso,M,69,9.0,87.0,False,True
+SF12 PhysicalScore,55.12,55.12,sereno,M,71,5.0,48.0,False,True
+SF12 MentalScore,56.85,59.55,sereno,M,71,5.0,48.0,False,True
+SF12 PhysicalScore,23.91,53.51,nebbia al mattino,F,77,5.0,83.0,False,True
+SF12 MentalScore,61.84,56.34,nebbia al mattino,F,77,5.0,83.0,False,True
+SF12 PhysicalScore,43.78,41.98,poco nuvoloso,F,69,9.0,30.0,False,True
+SF12 MentalScore,40.62,58.12,poco nuvoloso,F,69,9.0,30.0,False,True
+SF12 PhysicalScore,40.92,38.82,nebbia al mattino,M,77,9.0,66.0,False,True
+SF12 MentalScore,51.69,55.59,nebbia al mattino,M,77,9.0,66.0,False,True
+SF12 PhysicalScore,26.8,24.4,sereno,F,73,9.0,61.0,False,True
+SF12 MentalScore,27.45,59.25,sereno,F,73,9.0,61.0,False,True
+SF12 PhysicalScore,54.87,53.17,nubi sparse,F,58,4.0,85.0,False,True
+SF12 MentalScore,61.85,61.95,nubi sparse,F,58,4.0,85.0,False,True
+SF12 PhysicalScore,23.91,35.11,poco nuvoloso,F,76,6.0,77.0,False,True
+SF12 MentalScore,25.66,35.76,poco nuvoloso,F,76,6.0,77.0,False,True
+SF12 PhysicalScore,49.02,47.52,sereno,M,78,2.0,75.0,False,True
+SF12 MentalScore,57.73,52.13,sereno,M,78,2.0,75.0,False,True
+SF12 PhysicalScore,43.47,38.17,nebbia al mattino,M,53,3.0,88.0,False,True
+SF12 MentalScore,55.78,59.38,nebbia al mattino,M,53,3.0,88.0,False,True
+SF12 PhysicalScore,21.35,33.55,nebbia al mattino,F,75,5.0,83.0,False,True
+SF12 MentalScore,34.08,58.28,nebbia al mattino,F,75,5.0,83.0,False,True
+SF12 PhysicalScore,42.17,44.87,poco nuvoloso,M,79,7.0,61.0,False,True
+SF12 MentalScore,57.55,51.65,poco nuvoloso,M,79,7.0,61.0,False,True
+SF12 PhysicalScore,35.88,54.78,sereno,M,45,2.0,95.0,False,True
+SF12 MentalScore,42.45,51.95,sereno,M,45,2.0,95.0,False,True
+SF12 PhysicalScore,37.36,39.56,nubi sparse,F,71,11.0,79.0,False,True
+SF12 MentalScore,43.43,56.73,nubi sparse,F,71,11.0,79.0,False,True
+SF12 PhysicalScore,29.57,43.07,pioggia debole,F,79,5.0,97.0,False,True
+SF12 MentalScore,56.4,58.1,pioggia debole,F,79,5.0,97.0,False,True
+SF12 PhysicalScore,35.14,38.44,nubi sparse,F,75,11.0,79.0,False,True
+SF12 MentalScore,36.72,54.92,nubi sparse,F,75,11.0,79.0,False,True
+SF12 PhysicalScore,37.76,36.76,nebbia al mattino,F,62,7.0,74.0,False,True
+SF12 MentalScore,33.93,51.53,nebbia al mattino,F,62,7.0,74.0,False,True
+SF12 PhysicalScore,40.02,49.82,nebbia al mattino,F,80,5.0,83.0,False,True
+SF12 MentalScore,64.61,63.11,nebbia al mattino,F,80,5.0,83.0,False,True
+SF12 PhysicalScore,19.82,27.52,sereno,F,75,5.0,48.0,False,False
+SF12 MentalScore,40.65,41.45,sereno,F,75,5.0,48.0,False,False
+SF12 PhysicalScore,22.34,42.14,sereno,F,53,20.0,47.0,False,True
+SF12 MentalScore,72.43,61.33,sereno,F,53,20.0,47.0,False,True
+SF12 PhysicalScore,27.21,26.41,pioggia debole,F,75,5.0,97.0,False,True
+SF12 MentalScore,36.19,50.69,pioggia debole,F,75,5.0,97.0,False,True
+SF12 PhysicalScore,29.89,34.49,sereno,F,77,7.0,50.0,False,True
+SF12 MentalScore,57.49,59.89,sereno,F,77,7.0,50.0,False,True
+SF12 PhysicalScore,38.38,50.28,poco nuvoloso,F,78,8.0,80.0,False,False
+SF12 MentalScore,36.93,56.43,poco nuvoloso,F,78,8.0,80.0,False,False
+SF12 PhysicalScore,41.09,33.29,pioggia e schiarite,F,59,8.0,72.0,False,True
+SF12 MentalScore,40.55,58.55,pioggia e schiarite,F,59,8.0,72.0,False,True
+SF12 PhysicalScore,39.64,46.94,poco nuvoloso,M,46,15.0,60.0,False,True
+SF12 MentalScore,60.2,58.1,poco nuvoloso,M,46,15.0,60.0,False,True
+SF12 PhysicalScore,50.27,54.37,nebbia al mattino,F,66,7.0,80.0,False,True
+SF12 MentalScore,59.92,57.32,nebbia al mattino,F,66,7.0,80.0,False,True
+SF12 PhysicalScore,23.79,42.99,poco nuvoloso,M,60,10.0,85.0,False,True
+SF12 MentalScore,61.64,53.64,poco nuvoloso,M,60,10.0,85.0,False,True
+SF12 PhysicalScore,44.82,46.42,poco nuvoloso,F,72,10.0,85.0,False,True
+SF12 MentalScore,64.48,62.98,poco nuvoloso,F,72,10.0,85.0,False,True
+SF12 PhysicalScore,52.38,53.38,poco nuvoloso,F,67,10.0,85.0,False,True
+SF12 MentalScore,56.49,57.19,poco nuvoloso,F,67,10.0,85.0,False,True
+SF12 PhysicalScore,44.9,40.3,nebbia al mattino,F,57,1.0,92.0,False,True
+SF12 MentalScore,56.78,39.28,nebbia al mattino,F,57,1.0,92.0,False,True
+SF12 PhysicalScore,32.5,40.9,pioggia e schiarite,M,62,5.0,85.0,False,True
+SF12 MentalScore,64.2,43.9,pioggia e schiarite,M,62,5.0,85.0,False,True
+SF12 PhysicalScore,36.84,40.64,sereno,M,51,5.0,65.0,False,False
+SF12 MentalScore,54.85,49.85,sereno,M,51,5.0,65.0,False,False
+SF12 PhysicalScore,31.46,45.76,sereno,F,70,10.0,35.0,False,True
+SF12 MentalScore,55.43,58.73,sereno,F,70,10.0,35.0,False,True
+SF12 PhysicalScore,27.61,37.31,nebbia al mattino,F,73,3.0,88.0,False,True
+SF12 MentalScore,36.38,39.08,nebbia al mattino,F,73,3.0,88.0,False,True
+SF12 PhysicalScore,32.52,55.22,poco nuvoloso,M,63,10.0,85.0,False,True
+SF12 MentalScore,57.38,60.48,poco nuvoloso,M,63,10.0,85.0,False,True
+SF12 PhysicalScore,45.52,54.82,pioggia e schiarite,M,73,8.0,82.0,False,True
+SF12 MentalScore,65.22,62.32,pioggia e schiarite,M,73,8.0,82.0,False,True
+SF12 PhysicalScore,37.5,42.0,poco nuvoloso,F,81,8.0,77.0,False,False
+SF12 MentalScore,47.27,59.17,poco nuvoloso,F,81,8.0,77.0,False,False
+SF12 PhysicalScore,28.0,49.0,sereno,F,77,9.0,61.0,False,False
+SF12 MentalScore,52.18,63.08,sereno,F,77,9.0,61.0,False,False
+SF12 PhysicalScore,30.2,30.7,pioggia e schiarite,F,56,10.0,95.0,False,False
+SF12 MentalScore,44.72,51.42,pioggia e schiarite,F,56,10.0,95.0,False,False
+SF12 PhysicalScore,21.42,38.42,nebbia al mattino,M,82,8.0,77.0,False,True
+SF12 MentalScore,45.69,60.39,nebbia al mattino,M,82,8.0,77.0,False,True
+SF12 PhysicalScore,30.24,41.54,poco nuvoloso,F,80,12.0,84.0,False,True
+SF12 MentalScore,49.3,31.2,poco nuvoloso,F,80,12.0,84.0,False,True
+SF12 PhysicalScore,29.38,49.08,sereno,M,76,10.0,35.0,False,True
+SF12 MentalScore,40.04,55.24,sereno,M,76,10.0,35.0,False,True
+SF12 PhysicalScore,27.39,51.49,pioggia e schiarite,F,70,5.0,85.0,False,False
+SF12 MentalScore,30.73,53.03,pioggia e schiarite,F,70,5.0,85.0,False,False
+SF12 PhysicalScore,51.67,58.07,sereno,M,54,10.0,35.0,False,True
+SF12 MentalScore,55.35,54.55,sereno,M,54,10.0,35.0,False,True
+SF12 PhysicalScore,33.03,30.83,pioggia debole,F,65,5.0,97.0,False,True
+SF12 MentalScore,53.34,51.04,pioggia debole,F,65,5.0,97.0,False,True
+SF12 PhysicalScore,46.8,53.4,sereno,M,56,7.0,39.0,False,True
+SF12 MentalScore,50.72,26.92,sereno,M,56,7.0,39.0,False,True
+SF12 PhysicalScore,40.61,56.01,pioggia e schiarite,M,63,8.0,82.0,False,True
+SF12 MentalScore,62.18,57.98,pioggia e schiarite,M,63,8.0,82.0,False,True
+SF12 PhysicalScore,52.55,44.85,nebbia al mattino,M,73,9.0,66.0,False,True
+SF12 MentalScore,51.29,60.99,nebbia al mattino,M,73,9.0,66.0,False,True
+SF12 PhysicalScore,48.23,46.73,poco nuvoloso,M,72,7.0,70.0,False,True
+SF12 MentalScore,48.11,58.11,poco nuvoloso,M,72,7.0,70.0,False,True
+SF12 PhysicalScore,23.41,37.31,sereno,M,79,2.0,77.0,False,True
+SF12 MentalScore,50.66,47.96,sereno,M,79,2.0,77.0,False,True
+SF12 PhysicalScore,24.57,35.97,nebbia al mattino,M,65,8.0,77.0,False,True
+SF12 MentalScore,49.9,38.9,nebbia al mattino,M,65,8.0,77.0,False,True
+SF12 PhysicalScore,29.67,50.67,pioggia e schiarite,M,61,8.0,82.0,False,True
+SF12 MentalScore,60.43,61.23,pioggia e schiarite,M,61,8.0,82.0,False,True
+SF12 PhysicalScore,33.61,55.31,pioggia e schiarite,M,73,11.0,85.0,False,True
+SF12 MentalScore,13.68,58.68,pioggia e schiarite,M,73,11.0,85.0,False,True
+SF12 PhysicalScore,34.43,35.53,nebbia al mattino,F,77,11.0,76.0,False,True
+SF12 MentalScore,35.85,48.45,nebbia al mattino,F,77,11.0,76.0,False,True
+SF12 PhysicalScore,42.86,47.56,poco nuvoloso,F,76,10.0,85.0,False,True
+SF12 MentalScore,44.31,35.61,poco nuvoloso,F,76,10.0,85.0,False,True
+SF12 PhysicalScore,41.23,53.33,poco nuvoloso,F,42,8.0,94.0,False,True
+SF12 MentalScore,57.09,54.29,poco nuvoloso,F,42,8.0,94.0,False,True
+SF12 PhysicalScore,13.01,20.01,pioggia e schiarite,F,79,8.0,82.0,False,True
+SF12 MentalScore,53.06,54.06,pioggia e schiarite,F,79,8.0,82.0,False,True
+SF12 PhysicalScore,49.11,51.51,nubi sparse,M,66,6.0,47.0,False,True
+SF12 MentalScore,45.44,56.84,nubi sparse,M,66,6.0,47.0,False,True
+SF12 PhysicalScore,24.14,33.04,pioggia e schiarite,M,91,7.0,53.0,False,False
+SF12 MentalScore,69.72,56.12,pioggia e schiarite,M,91,7.0,53.0,False,False
+SF12 PhysicalScore,32.56,25.56,poco nuvoloso,F,80,10.0,85.0,False,True
+SF12 MentalScore,38.59,48.89,poco nuvoloso,F,80,10.0,85.0,False,True
+SF12 PhysicalScore,29.36,48.06,poco nuvoloso,F,79,15.0,72.0,False,True
+SF12 MentalScore,57.21,58.21,poco nuvoloso,F,79,15.0,72.0,False,True
+SF12 PhysicalScore,28.37,41.57,pioggia e schiarite,F,58,7.0,81.0,False,True
+SF12 MentalScore,51.94,37.14,pioggia e schiarite,F,58,7.0,81.0,False,True
+SF12 PhysicalScore,40.98,44.78,poco nuvoloso,F,73,10.0,56.0,False,True
+SF12 MentalScore,54.45,57.05,poco nuvoloso,F,73,10.0,56.0,False,True
+SF12 PhysicalScore,24.78,52.18,poco nuvoloso,F,89,11.0,81.0,False,True
+SF12 MentalScore,42.1,48.8,poco nuvoloso,F,89,11.0,81.0,False,True
+SF12 PhysicalScore,35.0,56.1,nebbia al mattino,M,64,10.0,57.0,False,True
+SF12 MentalScore,50.58,59.08,nebbia al mattino,M,64,10.0,57.0,False,True
+SF12 PhysicalScore,35.05,34.75,sereno,F,77,6.0,49.0,False,True
+SF12 MentalScore,64.53,45.93,sereno,F,77,6.0,49.0,False,True
+SF12 PhysicalScore,34.05,43.45,sereno,F,55,9.0,49.0,False,True
+SF12 MentalScore,49.41,63.81,sereno,F,55,9.0,49.0,False,True
+SF12 PhysicalScore,43.4,42.6,poco nuvoloso,M,84,10.0,56.0,False,True
+SF12 MentalScore,28.13,45.63,poco nuvoloso,M,84,10.0,56.0,False,True
+SF12 PhysicalScore,27.87,57.07,poco nuvoloso,F,57,10.0,66.0,False,True
+SF12 MentalScore,65.36,59.96,poco nuvoloso,F,57,10.0,66.0,False,True
+SF12 PhysicalScore,32.47,42.87,pioggia e schiarite,M,50,7.0,80.0,False,True
+SF12 MentalScore,53.34,53.24,pioggia e schiarite,M,50,7.0,80.0,False,True
+SF12 PhysicalScore,39.38,34.48,sereno,F,77,12.0,64.0,False,True
+SF12 MentalScore,34.6,60.1,sereno,F,77,12.0,64.0,False,True
+SF12 PhysicalScore,40.99,33.89,poco nuvoloso,F,74,4.0,77.0,False,True
+SF12 MentalScore,50.5,56.6,poco nuvoloso,F,74,4.0,77.0,False,True
+SF12 PhysicalScore,20.5,50.9,pioggia e schiarite,F,80,7.0,81.0,False,True
+SF12 MentalScore,66.78,61.48,pioggia e schiarite,F,80,7.0,81.0,False,True
+SF12 PhysicalScore,22.25,48.75,sereno,M,85,10.0,35.0,False,True
+SF12 MentalScore,55.77,55.47,sereno,M,85,10.0,35.0,False,True
+SF12 PhysicalScore,44.31,54.01,nebbia al mattino,F,66,9.0,65.0,False,True
+SF12 MentalScore,52.17,59.27,nebbia al mattino,F,66,9.0,65.0,False,True
+SF12 PhysicalScore,31.66,40.86,pioggia e schiarite,F,81,8.0,82.0,False,True
+SF12 MentalScore,50.95,43.15,pioggia e schiarite,F,81,8.0,82.0,False,True
+SF12 PhysicalScore,23.11,25.81,sereno,F,68,5.0,63.0,False,False
+SF12 MentalScore,37.31,60.81,sereno,F,68,5.0,63.0,False,False
+SF12 PhysicalScore,30.04,31.64,pioggia e schiarite,M,55,12.0,70.0,False,True
+SF12 MentalScore,62.04,61.84,pioggia e schiarite,M,55,12.0,70.0,False,True
+SF12 PhysicalScore,31.78,49.28,nebbia al mattino,M,60,8.0,77.0,False,True
+SF12 MentalScore,18.7,57.8,nebbia al mattino,M,60,8.0,77.0,False,True
+SF12 PhysicalScore,55.65,41.45,pioggia e schiarite,M,68,5.0,85.0,False,True
+SF12 MentalScore,55.06,49.76,pioggia e schiarite,M,68,5.0,85.0,False,True
+SF12 PhysicalScore,36.37,55.77,pioggia e schiarite,M,71,8.0,82.0,False,True
+SF12 MentalScore,66.62,60.62,pioggia e schiarite,M,71,8.0,82.0,False,True
+SF12 PhysicalScore,33.02,36.82,poco nuvoloso,F,65,7.0,60.0,False,True
+SF12 MentalScore,31.15,48.35,poco nuvoloso,F,65,7.0,60.0,False,True
+SF12 PhysicalScore,33.54,37.94,pioggia debole,F,78,5.0,97.0,False,True
+SF12 MentalScore,29.2,49.4,pioggia debole,F,78,5.0,97.0,False,True
+SF12 PhysicalScore,16.48,34.38,pioggia e schiarite,M,68,7.0,92.0,False,True
+SF12 MentalScore,58.79,34.69,pioggia e schiarite,M,68,7.0,92.0,False,True
+SF12 PhysicalScore,37.86,46.06,pioggia e schiarite,F,65,17.0,66.0,False,False
+SF12 MentalScore,56.48,51.18,pioggia e schiarite,F,65,17.0,66.0,False,False
+SF12 PhysicalScore,42.89,35.29,poco nuvoloso,F,62,10.0,56.0,False,True
+SF12 MentalScore,46.56,44.46,poco nuvoloso,F,62,10.0,56.0,False,True
+SF12 PhysicalScore,32.47,41.67,poco nuvoloso,F,81,15.0,72.0,False,True
+SF12 MentalScore,40.81,40.51,poco nuvoloso,F,81,15.0,72.0,False,True
+SF12 PhysicalScore,27.49,36.59,pioggia e schiarite,F,77,6.0,91.0,False,True
+SF12 MentalScore,57.72,59.12,pioggia e schiarite,F,77,6.0,91.0,False,True
+SF12 PhysicalScore,13.4,35.8,sereno,M,52,12.0,64.0,False,True
+SF12 MentalScore,57.16,45.46,sereno,M,52,12.0,64.0,False,True
+SF12 PhysicalScore,28.88,41.08,sereno,M,71,8.0,68.0,False,True
+SF12 MentalScore,38.44,35.94,sereno,M,71,8.0,68.0,False,True
+SF12 PhysicalScore,39.19,47.09,sereno,M,56,8.0,74.0,False,True
+SF12 MentalScore,60.35,52.35,sereno,M,56,8.0,74.0,False,True
+SF12 PhysicalScore,31.32,49.42,poco nuvoloso,M,43,9.0,84.0,False,True
+SF12 MentalScore,67.14,65.34,poco nuvoloso,M,43,9.0,84.0,False,True
+SF12 PhysicalScore,26.12,29.22,poco nuvoloso,F,67,10.0,85.0,False,True
+SF12 MentalScore,37.42,39.52,poco nuvoloso,F,67,10.0,85.0,False,True
+SF12 PhysicalScore,43.24,27.34,sereno,F,61,10.0,73.0,False,True
+SF12 MentalScore,62.37,28.87,sereno,F,61,10.0,73.0,False,True
+SF12 PhysicalScore,44.01,46.91,sereno,F,67,8.0,65.0,False,True
+SF12 MentalScore,44.45,54.95,sereno,F,67,8.0,65.0,False,True
+SF12 PhysicalScore,23.08,55.58,sereno,F,50,8.0,71.0,False,True
+SF12 MentalScore,51.7,55.1,sereno,F,50,8.0,71.0,False,True
+SF12 PhysicalScore,47.68,48.88,nubi sparse,F,69,9.0,91.0,False,True
+SF12 MentalScore,45.52,51.42,nubi sparse,F,69,9.0,91.0,False,True
+SF12 PhysicalScore,37.1,55.7,sereno,F,70,8.0,71.0,False,True
+SF12 MentalScore,41.04,57.84,sereno,F,70,8.0,71.0,False,True
+SF12 PhysicalScore,23.49,46.09,sereno,M,78,8.0,65.0,False,True
+SF12 MentalScore,57.89,54.19,sereno,M,78,8.0,65.0,False,True
+SF12 PhysicalScore,32.9,51.8,pioggia debole,M,62,11.0,68.0,False,True
+SF12 MentalScore,50.62,59.22,pioggia debole,M,62,11.0,68.0,False,True
+SF12 PhysicalScore,35.37,38.17,sereno,M,65,10.0,29.0,False,True
+SF12 MentalScore,45.71,36.81,sereno,M,65,10.0,29.0,False,True
+SF12 PhysicalScore,29.62,45.22,pioggia e schiarite,M,72,7.0,82.0,False,False
+SF12 MentalScore,63.6,52.8,pioggia e schiarite,M,72,7.0,82.0,False,False
+SF12 PhysicalScore,43.02,47.42,sereno,F,64,10.0,69.0,False,True
+SF12 MentalScore,25.85,61.25,sereno,F,64,10.0,69.0,False,True
+SF12 PhysicalScore,38.41,50.21,sereno,F,68,8.0,69.0,False,True
+SF12 MentalScore,59.3,53.4,sereno,F,68,8.0,69.0,False,True
+SF12 PhysicalScore,36.93,55.63,nebbia al mattino,M,52,10.0,57.0,False,False
+SF12 MentalScore,59.21,57.81,nebbia al mattino,M,52,10.0,57.0,False,False
+SF12 PhysicalScore,21.75,43.55,pioggia e schiarite,M,62,5.0,83.0,False,True
+SF12 MentalScore,28.08,40.68,pioggia e schiarite,M,62,5.0,83.0,False,True
+SF12 PhysicalScore,27.19,42.29,sereno,M,81,12.0,64.0,False,True
+SF12 MentalScore,34.81,64.61,sereno,M,81,12.0,64.0,False,True
+SF12 PhysicalScore,29.47,30.17,pioggia e schiarite,M,76,7.0,81.0,False,True
+SF12 MentalScore,46.58,44.18,pioggia e schiarite,M,76,7.0,81.0,False,True
+SF12 PhysicalScore,28.18,29.48,sereno,M,68,9.0,74.0,False,False
+SF12 MentalScore,60.45,34.05,sereno,M,68,9.0,74.0,False,False
+SF12 PhysicalScore,31.87,38.07,poco nuvoloso,F,63,9.0,60.0,False,True
+SF12 MentalScore,46.54,36.74,poco nuvoloso,F,63,9.0,60.0,False,True
+SF12 PhysicalScore,37.71,35.71,nubi sparse,F,76,15.0,68.0,False,True
+SF12 MentalScore,66.81,63.21,nubi sparse,F,76,15.0,68.0,False,True
+SF12 PhysicalScore,21.5,53.5,poco nuvoloso,F,82,8.0,43.0,False,True
+SF12 MentalScore,72.32,60.82,poco nuvoloso,F,82,8.0,43.0,False,True
+SF12 PhysicalScore,22.01,52.81,poco nuvoloso,M,69,11.0,29.0,False,True
+SF12 MentalScore,60.73,57.83,poco nuvoloso,M,69,11.0,29.0,False,True
+SF12 PhysicalScore,39.55,55.15,nebbia al mattino,M,63,7.0,80.0,False,True
+SF12 MentalScore,57.19,53.39,nebbia al mattino,M,63,7.0,80.0,False,True
+SF12 PhysicalScore,32.69,52.29,poco nuvoloso,F,77,14.0,59.0,False,True
+SF12 MentalScore,30.56,44.06,poco nuvoloso,F,77,14.0,59.0,False,True
+SF12 PhysicalScore,34.86,29.36,nebbia al mattino,F,63,10.0,57.0,False,True
+SF12 MentalScore,29.01,46.21,nebbia al mattino,F,63,10.0,57.0,False,True
+SF12 PhysicalScore,38.57,53.07,nebbia al mattino,M,72,8.0,77.0,False,True
+SF12 MentalScore,56.39,59.69,nebbia al mattino,M,72,8.0,77.0,False,True
+SF12 PhysicalScore,38.07,56.47,pioggia debole,M,78,3.0,100.0,False,True
+SF12 MentalScore,33.42,58.92,pioggia debole,M,78,3.0,100.0,False,True
+SF12 PhysicalScore,46.45,51.25,pioggia debole,M,78,5.0,97.0,False,True
+SF12 MentalScore,42.79,35.09,pioggia debole,M,78,5.0,97.0,False,True
+SF12 PhysicalScore,38.76,50.86,nebbia al mattino,M,76,8.0,77.0,False,True
+SF12 MentalScore,54.47,49.37,nebbia al mattino,M,76,8.0,77.0,False,True
+SF12 PhysicalScore,31.07,47.47,sereno,F,68,14.0,50.0,False,True
+SF12 MentalScore,44.63,43.03,sereno,F,68,14.0,50.0,False,True
+SF12 PhysicalScore,23.27,36.37,poco nuvoloso,F,78,7.0,56.0,False,True
+SF12 MentalScore,63.73,58.73,poco nuvoloso,F,78,7.0,56.0,False,True
+SF12 PhysicalScore,25.65,30.85,sereno,F,68,7.0,50.0,False,False
+SF12 MentalScore,38.98,40.88,sereno,F,68,7.0,50.0,False,False
+SF12 PhysicalScore,31.61,37.61,sereno,F,62,18.0,58.0,False,True
+SF12 MentalScore,28.02,50.42,sereno,F,62,18.0,58.0,False,True
+SF12 PhysicalScore,43.6,42.4,nebbia al mattino,F,87,10.0,57.0,False,True
+SF12 MentalScore,44.73,33.83,nebbia al mattino,F,87,10.0,57.0,False,True
+SF12 PhysicalScore,32.09,43.99,pioggia e schiarite,F,63,8.0,72.0,False,True
+SF12 MentalScore,48.85,48.35,pioggia e schiarite,F,63,8.0,72.0,False,True
+SF12 PhysicalScore,41.09,40.59,poco nuvoloso,F,65,15.0,84.0,False,True
+SF12 MentalScore,53.66,67.46,poco nuvoloso,F,65,15.0,84.0,False,True
+SF12 PhysicalScore,56.47,42.97,poco nuvoloso,M,81,5.0,56.0,False,True
+SF12 MentalScore,61.61,59.51,poco nuvoloso,M,81,5.0,56.0,False,True
+SF12 PhysicalScore,43.19,54.39,sereno,F,75,10.0,69.0,False,True
+SF12 MentalScore,62.85,59.05,sereno,F,75,10.0,69.0,False,True
+SF12 PhysicalScore,38.9,57.2,nubi sparse,M,61,11.0,79.0,False,True
+SF12 MentalScore,52.94,54.24,nubi sparse,M,61,11.0,79.0,False,True
+SF12 PhysicalScore,36.53,42.73,pioggia e schiarite,F,68,7.0,81.0,False,True
+SF12 MentalScore,41.13,66.83,pioggia e schiarite,F,68,7.0,81.0,False,True
+SF12 PhysicalScore,40.41,39.11,sereno,F,69,10.0,69.0,False,True
+SF12 MentalScore,64.39,46.79,sereno,F,69,10.0,69.0,False,True
+SF12 PhysicalScore,28.99,34.19,poco nuvoloso,F,65,12.0,69.0,False,True
+SF12 MentalScore,44.99,56.49,poco nuvoloso,F,65,12.0,69.0,False,True
+SF12 PhysicalScore,29.99,51.79,sereno,M,48,7.0,53.0,False,True
+SF12 MentalScore,58.68,57.58,sereno,M,48,7.0,53.0,False,True
+SF12 PhysicalScore,30.61,38.61,sereno,F,45,5.0,63.0,False,True
+SF12 MentalScore,47.8,38.7,sereno,F,45,5.0,63.0,False,True
+SF12 PhysicalScore,28.34,37.44,pioggia debole,M,73,3.0,100.0,False,True
+SF12 MentalScore,59.59,51.49,pioggia debole,M,73,3.0,100.0,False,True
+SF12 PhysicalScore,31.52,51.92,sereno,M,63,9.0,67.0,False,True
+SF12 MentalScore,60.79,59.99,sereno,M,63,9.0,67.0,False,True
+SF12 PhysicalScore,27.56,56.26,nubi sparse,F,62,6.0,47.0,False,True
+SF12 MentalScore,71.12,62.32,nubi sparse,F,62,6.0,47.0,False,True
+SF12 PhysicalScore,22.87,35.97,sereno,F,87,9.0,56.0,False,True
+SF12 MentalScore,52.31,31.11,sereno,F,87,9.0,56.0,False,True
+SF12 PhysicalScore,34.87,40.07,poco nuvoloso,F,77,11.0,81.0,False,True
+SF12 MentalScore,36.88,44.18,poco nuvoloso,F,77,11.0,81.0,False,True
+SF12 PhysicalScore,37.59,51.99,sereno,F,67,9.0,67.0,False,True
+SF12 MentalScore,36.02,56.12,sereno,F,67,9.0,67.0,False,True
+SF12 PhysicalScore,30.53,29.33,pioggia,M,70,4.0,96.0,False,True
+SF12 MentalScore,26.49,36.39,pioggia,M,70,4.0,96.0,False,True
+SF12 PhysicalScore,27.95,49.75,sereno,F,66,10.0,69.0,False,True
+SF12 MentalScore,57.11,58.91,sereno,F,66,10.0,69.0,False,True
+SF12 PhysicalScore,50.56,47.86,sereno,F,78,9.0,67.0,False,True
+SF12 MentalScore,60.49,61.89,sereno,F,78,9.0,67.0,False,True
+SF12 PhysicalScore,29.91,34.51,nebbia al mattino,M,47,5.0,83.0,False,False
+SF12 MentalScore,42.93,28.63,nebbia al mattino,M,47,5.0,83.0,False,False
+SF12 PhysicalScore,44.44,53.44,pioggia e schiarite,F,68,18.0,70.0,False,True
+SF12 MentalScore,58.9,59.3,pioggia e schiarite,F,68,18.0,70.0,False,True
+SF12 PhysicalScore,31.36,31.26,sereno,M,78,12.0,52.0,False,False
+SF12 MentalScore,51.4,50.4,sereno,M,78,12.0,52.0,False,False
+SF12 PhysicalScore,28.2,35.4,poco nuvoloso,F,68,16.0,70.0,False,True
+SF12 MentalScore,57.17,53.07,poco nuvoloso,F,68,16.0,70.0,False,True
+SF12 PhysicalScore,49.27,52.27,pioggia e schiarite,F,58,12.0,77.0,False,True
+SF12 MentalScore,44.17,59.77,pioggia e schiarite,F,58,12.0,77.0,False,True
+SF12 PhysicalScore,48.69,39.29,sereno,F,72,16.0,45.0,False,True
+SF12 MentalScore,54.45,60.25,sereno,F,72,16.0,45.0,False,True
+SF12 PhysicalScore,29.93,49.73,poco nuvoloso,M,81,11.0,82.0,False,True
+SF12 MentalScore,41.27,37.67,poco nuvoloso,M,81,11.0,82.0,False,True
+SF12 PhysicalScore,46.81,54.11,nubi sparse,F,68,6.0,47.0,False,True
+SF12 MentalScore,62.64,60.84,nubi sparse,F,68,6.0,47.0,False,True
+SF12 PhysicalScore,25.43,34.03,sereno,F,79,17.0,55.0,False,True
+SF12 MentalScore,37.23,55.23,sereno,F,79,17.0,55.0,False,True
+SF12 PhysicalScore,30.84,31.14,pioggia e schiarite,M,84,7.0,53.0,False,True
+SF12 MentalScore,43.1,34.5,pioggia e schiarite,M,84,7.0,53.0,False,True
+SF12 PhysicalScore,36.8,36.0,pioggia e schiarite,F,79,7.0,81.0,False,True
+SF12 MentalScore,34.86,31.36,pioggia e schiarite,F,79,7.0,81.0,False,True
+SF12 PhysicalScore,26.41,27.21,pioggia e schiarite,F,72,7.0,80.0,False,True
+SF12 MentalScore,49.78,45.28,pioggia e schiarite,F,72,7.0,80.0,False,True
+SF12 PhysicalScore,27.53,36.93,pioggia e schiarite,F,83,12.0,70.0,False,True
+SF12 MentalScore,27.23,27.93,pioggia e schiarite,F,83,12.0,70.0,False,True
+SF12 PhysicalScore,32.52,31.02,sereno,F,69,9.0,49.0,False,True
+SF12 MentalScore,39.55,49.55,sereno,F,69,9.0,49.0,False,True
+SF12 PhysicalScore,29.93,38.93,sereno,F,72,15.0,56.0,False,True
+SF12 MentalScore,56.64,66.04,sereno,F,72,15.0,56.0,False,True
+SF12 PhysicalScore,46.97,57.37,sereno,M,91,10.0,69.0,False,True
+SF12 MentalScore,50.98,59.78,sereno,M,91,10.0,69.0,False,True
+SF12 PhysicalScore,45.37,24.27,poco nuvoloso,M,46,10.0,56.0,False,True
+SF12 MentalScore,52.01,53.31,poco nuvoloso,M,46,10.0,56.0,False,True
+SF12 PhysicalScore,30.1,34.6,poco nuvoloso,F,68,10.0,56.0,False,False
+SF12 MentalScore,58.56,64.06,poco nuvoloso,F,68,10.0,56.0,False,False
+SF12 PhysicalScore,31.77,36.87,nubi sparse,M,52,11.0,79.0,False,True
+SF12 MentalScore,44.9,58.5,nubi sparse,M,52,11.0,79.0,False,True
+SF12 PhysicalScore,35.83,35.33,sereno,M,77,9.0,49.0,False,True
+SF12 MentalScore,59.59,65.99,sereno,M,77,9.0,49.0,False,True
+SF12 PhysicalScore,40.04,40.34,sereno,F,71,9.0,56.0,False,True
+SF12 MentalScore,53.0,45.1,sereno,F,71,9.0,56.0,False,True
+SF12 PhysicalScore,44.85,50.75,poco nuvoloso,M,85,18.0,58.0,False,True
+SF12 MentalScore,51.67,51.27,poco nuvoloso,M,85,18.0,58.0,False,True
+SF12 PhysicalScore,57.29,52.09,sereno,M,56,8.0,69.0,False,True
+SF12 MentalScore,59.9,60.8,sereno,M,56,8.0,69.0,False,True
+SF12 PhysicalScore,27.01,51.41,pioggia e schiarite,F,71,12.0,70.0,False,True
+SF12 MentalScore,58.61,45.31,pioggia e schiarite,F,71,12.0,70.0,False,True
+SF12 PhysicalScore,35.67,36.17,sereno,F,80,9.0,67.0,False,True
+SF12 MentalScore,30.46,44.16,sereno,F,80,9.0,67.0,False,True
+SF12 PhysicalScore,42.82,51.42,poco nuvoloso,F,61,19.0,50.0,False,True
+SF12 MentalScore,52.63,56.33,poco nuvoloso,F,61,19.0,50.0,False,True
+SF12 PhysicalScore,26.88,34.58,sereno,F,61,16.0,43.0,False,True
+SF12 MentalScore,49.37,58.17,sereno,F,61,16.0,43.0,False,True
+SF12 PhysicalScore,43.93,57.03,sereno,F,73,9.0,67.0,False,True
+SF12 MentalScore,58.35,58.65,sereno,F,73,9.0,67.0,False,True
+SF12 PhysicalScore,18.53,51.83,poco nuvoloso,M,73,5.0,56.0,False,True
+SF12 MentalScore,65.36,62.06,poco nuvoloso,M,73,5.0,56.0,False,True
+SF12 PhysicalScore,32.69,32.09,sereno,F,84,11.0,29.0,False,True
+SF12 MentalScore,38.95,47.25,sereno,F,84,11.0,29.0,False,True
+SF12 PhysicalScore,40.5,31.5,sereno,F,61,13.0,54.0,False,True
+SF12 MentalScore,26.47,25.87,sereno,F,61,13.0,54.0,False,True
+SF12 PhysicalScore,50.96,37.76,poco nuvoloso,F,61,19.0,50.0,False,True
+SF12 MentalScore,63.04,42.54,poco nuvoloso,F,61,19.0,50.0,False,True
+SF12 PhysicalScore,39.06,56.76,sereno,M,75,15.0,42.0,False,True
+SF12 MentalScore,59.42,58.92,sereno,M,75,15.0,42.0,False,True
+SF12 PhysicalScore,35.85,38.85,poco nuvoloso,M,83,4.0,59.0,False,True
+SF12 MentalScore,60.29,46.29,poco nuvoloso,M,83,4.0,59.0,False,True
+SF12 PhysicalScore,32.42,44.22,pioggia e schiarite,F,48,15.0,84.0,False,True
+SF12 MentalScore,56.75,59.65,pioggia e schiarite,F,48,15.0,84.0,False,True
+SF12 PhysicalScore,48.06,37.36,sereno,F,63,12.0,64.0,False,True
+SF12 MentalScore,42.99,36.69,sereno,F,63,12.0,64.0,False,True
+SF12 PhysicalScore,36.4,55.1,poco nuvoloso,M,35,7.0,56.0,False,True
+SF12 MentalScore,64.75,60.55,poco nuvoloso,M,35,7.0,56.0,False,True
+SF12 PhysicalScore,31.91,28.71,sereno,F,72,17.0,48.0,False,True
+SF12 MentalScore,39.73,36.83,sereno,F,72,17.0,48.0,False,True
+SF12 PhysicalScore,45.29,56.09,poco nuvoloso,F,67,7.0,56.0,False,False
+SF12 MentalScore,59.96,54.86,poco nuvoloso,F,67,7.0,56.0,False,False
+SF12 PhysicalScore,40.36,50.56,nubi sparse,M,55,11.0,79.0,False,True
+SF12 MentalScore,55.19,46.59,nubi sparse,M,55,11.0,79.0,False,True
+SF12 PhysicalScore,48.58,54.58,sereno,M,76,13.0,63.0,False,True
+SF12 MentalScore,62.71,56.51,sereno,M,76,13.0,63.0,False,True
+SF12 PhysicalScore,26.32,32.52,poco nuvoloso,F,86,14.0,71.0,False,True
+SF12 MentalScore,66.05,57.45,poco nuvoloso,F,86,14.0,71.0,False,True
+SF12 PhysicalScore,30.93,39.23,sereno,F,51,11.0,67.0,False,True
+SF12 MentalScore,40.91,49.41,sereno,F,51,11.0,67.0,False,True
+SF12 PhysicalScore,49.53,31.03,poco nuvoloso,M,67,19.0,50.0,False,True
+SF12 MentalScore,52.32,51.32,poco nuvoloso,M,67,19.0,50.0,False,True
+SF12 PhysicalScore,23.17,53.57,sereno,M,75,8.0,65.0,False,True
+SF12 MentalScore,46.06,37.86,sereno,M,75,8.0,65.0,False,True
+SF12 PhysicalScore,20.65,30.15,poco nuvoloso,F,53,10.0,64.0,False,True
+SF12 MentalScore,47.71,60.31,poco nuvoloso,F,53,10.0,64.0,False,True
+SF12 PhysicalScore,34.73,56.63,sereno,M,61,17.0,55.0,False,True
+SF12 MentalScore,52.52,59.22,sereno,M,61,17.0,55.0,False,True
+SF12 PhysicalScore,31.36,55.86,poco nuvoloso,M,52,3.0,64.0,False,True
+SF12 MentalScore,62.03,56.53,poco nuvoloso,M,52,3.0,64.0,False,True
+SF12 PhysicalScore,29.0,41.1,poco nuvoloso,F,69,10.0,85.0,False,True
+SF12 MentalScore,38.45,61.15,poco nuvoloso,F,69,10.0,85.0,False,True
+SF12 PhysicalScore,34.89,52.79,sereno,F,57,15.0,49.0,False,True
+SF12 MentalScore,35.71,42.61,sereno,F,57,15.0,49.0,False,True
+SF12 PhysicalScore,30.45,33.05,sereno,M,60,9.0,49.0,False,True
+SF12 MentalScore,68.37,56.37,sereno,M,60,9.0,49.0,False,True
+SF12 PhysicalScore,32.27,37.87,sereno,F,66,17.0,36.0,False,True
+SF12 MentalScore,63.82,35.42,sereno,F,66,17.0,36.0,False,True
+SF12 PhysicalScore,40.74,52.04,poco nuvoloso,F,69,5.0,56.0,False,True
+SF12 MentalScore,48.36,52.86,poco nuvoloso,F,69,5.0,56.0,False,True
+SF12 PhysicalScore,50.32,36.42,poco nuvoloso,M,63,5.0,56.0,False,True
+SF12 MentalScore,60.56,45.46,poco nuvoloso,M,63,5.0,56.0,False,True
+SF12 PhysicalScore,36.91,42.41,poco nuvoloso,F,61,12.0,83.0,False,False
+SF12 MentalScore,34.79,40.49,poco nuvoloso,F,61,12.0,83.0,False,False
+SF12 PhysicalScore,41.01,36.91,pioggia e schiarite,M,56,13.0,73.0,False,True
+SF12 MentalScore,58.31,59.11,pioggia e schiarite,M,56,13.0,73.0,False,True
+SF12 PhysicalScore,37.4,54.3,pioggia e schiarite,F,60,8.0,82.0,False,True
+SF12 MentalScore,52.48,51.98,pioggia e schiarite,F,60,8.0,82.0,False,True
+SF12 PhysicalScore,41.16,38.26,sereno,F,78,13.0,54.0,False,True
+SF12 MentalScore,39.74,57.24,sereno,F,78,13.0,54.0,False,True
+SF12 PhysicalScore,34.49,41.69,sereno,F,72,14.0,50.0,False,True
+SF12 MentalScore,35.84,56.74,sereno,F,72,14.0,50.0,False,True
+SF12 PhysicalScore,43.83,50.63,pioggia debole,F,60,11.0,68.0,False,True
+SF12 MentalScore,52.96,50.16,pioggia debole,F,60,11.0,68.0,False,True
+SF12 PhysicalScore,27.43,35.43,sereno,M,51,18.0,39.0,False,True
+SF12 MentalScore,38.61,44.01,sereno,M,51,18.0,39.0,False,True
+SF12 PhysicalScore,30.54,44.84,sereno,M,74,15.0,56.0,False,True
+SF12 MentalScore,58.2,45.0,sereno,M,74,15.0,56.0,False,True
+SF12 PhysicalScore,43.14,37.84,poco nuvoloso,M,74,8.0,55.0,False,False
+SF12 MentalScore,57.86,47.46,poco nuvoloso,M,74,8.0,55.0,False,False
+SF12 PhysicalScore,30.96,26.46,sereno,F,81,14.0,50.0,False,False
+SF12 MentalScore,47.78,48.78,sereno,F,81,14.0,50.0,False,False
+SF12 PhysicalScore,52.26,55.56,sereno,M,69,15.0,56.0,False,True
+SF12 MentalScore,43.59,37.39,sereno,M,69,15.0,56.0,False,True
+SF12 PhysicalScore,48.08,41.98,pioggia e schiarite,M,68,13.0,81.0,False,True
+SF12 MentalScore,59.58,53.28,pioggia e schiarite,M,68,13.0,81.0,False,True
+SF12 PhysicalScore,42.0,32.1,pioggia e schiarite,M,68,16.0,77.0,False,True
+SF12 MentalScore,59.34,59.64,pioggia e schiarite,M,68,16.0,77.0,False,True
+SF12 PhysicalScore,50.31,55.11,pioggia e schiarite,M,81,20.0,78.0,False,True
+SF12 MentalScore,62.21,53.31,pioggia e schiarite,M,81,20.0,78.0,False,True
+SF12 PhysicalScore,29.11,63.91,sereno,F,76,16.0,41.0,False,True
+SF12 MentalScore,40.83,32.83,sereno,F,76,16.0,41.0,False,True
+SF12 PhysicalScore,41.78,37.88,sereno,F,75,9.0,56.0,False,True
+SF12 MentalScore,60.61,58.81,sereno,F,75,9.0,56.0,False,True
+SF12 PhysicalScore,24.96,37.06,poco nuvoloso,F,81,17.0,75.0,False,True
+SF12 MentalScore,37.66,62.26,poco nuvoloso,F,81,17.0,75.0,False,True
+SF12 PhysicalScore,39.29,48.59,pioggia e schiarite,F,78,17.0,68.0,False,True
+SF12 MentalScore,28.09,43.19,pioggia e schiarite,F,78,17.0,68.0,False,True
+SF12 PhysicalScore,51.87,55.97,sereno,F,70,16.0,40.0,False,True
+SF12 MentalScore,42.63,50.93,sereno,F,70,16.0,40.0,False,True
+SF12 PhysicalScore,33.21,29.01,poco nuvoloso,F,64,19.0,50.0,False,True
+SF12 MentalScore,51.79,48.29,poco nuvoloso,F,64,19.0,50.0,False,True
+SF12 PhysicalScore,37.08,39.88,sereno,F,72,15.0,55.0,False,True
+SF12 MentalScore,48.55,41.65,sereno,F,72,15.0,55.0,False,True
+SF12 PhysicalScore,30.68,45.38,sereno,M,73,17.0,55.0,False,True
+SF12 MentalScore,52.82,61.52,sereno,M,73,17.0,55.0,False,True
+SF12 PhysicalScore,42.4,32.5,sereno,F,85,14.0,61.0,False,False
+SF12 MentalScore,58.09,56.99,sereno,F,85,14.0,61.0,False,False
+SF12 PhysicalScore,29.67,33.57,sereno,F,70,14.0,54.0,False,True
+SF12 MentalScore,48.86,54.96,sereno,F,70,14.0,54.0,False,True
+SF12 PhysicalScore,30.13,51.93,poco nuvoloso,F,72,19.0,68.0,False,True
+SF12 MentalScore,27.03,51.53,poco nuvoloso,F,72,19.0,68.0,False,True
+SF12 PhysicalScore,30.64,52.94,pioggia e schiarite,M,82,17.0,68.0,False,True
+SF12 MentalScore,65.8,60.5,pioggia e schiarite,M,82,17.0,68.0,False,True
+SF12 PhysicalScore,43.45,43.85,pioggia debole,M,59,13.0,95.0,False,True
+SF12 MentalScore,63.18,58.48,pioggia debole,M,59,13.0,95.0,False,True
+SF12 PhysicalScore,28.32,38.32,poco nuvoloso,F,58,19.0,83.0,False,True
+SF12 MentalScore,40.77,47.47,poco nuvoloso,F,58,19.0,83.0,False,True
+SF12 PhysicalScore,43.86,47.86,sereno,F,74,18.0,38.0,False,True
+SF12 MentalScore,54.69,61.59,sereno,F,74,18.0,38.0,False,True
+SF12 PhysicalScore,23.45,39.65,nebbia al mattino,F,51,14.0,81.0,False,True
+SF12 MentalScore,56.66,58.56,nebbia al mattino,F,51,14.0,81.0,False,True
+SF12 PhysicalScore,34.89,45.29,sereno,F,65,21.0,71.0,True,True
+SF12 MentalScore,63.3,63.0,sereno,F,65,21.0,71.0,True,True
+SF12 PhysicalScore,33.67,49.27,pioggia e schiarite,M,54,18.0,70.0,False,False
+SF12 MentalScore,52.62,48.32,pioggia e schiarite,M,54,18.0,70.0,False,False
+SF12 PhysicalScore,18.16,42.96,poco nuvoloso,M,57,22.0,69.0,False,False
+SF12 MentalScore,63.87,61.67,poco nuvoloso,M,57,22.0,69.0,False,False
+SF12 PhysicalScore,25.82,45.32,poco nuvoloso,M,86,19.0,57.0,False,True
+SF12 MentalScore,62.43,59.93,poco nuvoloso,M,86,19.0,57.0,False,True
+SF12 PhysicalScore,31.37,36.57,sereno,F,67,22.0,50.0,True,True
+SF12 MentalScore,50.44,43.24,sereno,F,67,22.0,50.0,True,True
+SF12 PhysicalScore,31.39,40.39,poco nuvoloso,F,59,19.0,42.0,False,True
+SF12 MentalScore,33.7,33.7,poco nuvoloso,F,59,19.0,42.0,False,True
+SF12 PhysicalScore,32.58,44.18,poco nuvoloso,F,55,22.0,55.0,False,True
+SF12 MentalScore,44.08,56.38,poco nuvoloso,F,55,22.0,55.0,False,True
+SF12 PhysicalScore,28.12,32.72,poco nuvoloso,M,66,18.0,58.0,False,True
+SF12 MentalScore,56.0,47.8,poco nuvoloso,M,66,18.0,58.0,False,True
+SF12 PhysicalScore,31.46,36.26,poco nuvoloso,M,51,17.0,73.0,False,True
+SF12 MentalScore,58.55,63.35,poco nuvoloso,M,51,17.0,73.0,False,True
+SF12 PhysicalScore,41.1,39.3,poco nuvoloso,M,69,16.0,75.0,False,True
+SF12 MentalScore,58.2,57.1,poco nuvoloso,M,69,16.0,75.0,False,True
+SF12 PhysicalScore,26.16,40.16,poco nuvoloso,M,51,16.0,72.0,False,True
+SF12 MentalScore,33.4,29.8,poco nuvoloso,M,51,16.0,72.0,False,True
+SF12 PhysicalScore,43.35,34.85,poco nuvoloso,F,72,17.0,75.0,False,True
+SF12 MentalScore,44.28,43.78,poco nuvoloso,F,72,17.0,75.0,False,True
+SF12 PhysicalScore,20.99,29.29,pioggia e schiarite,F,56,20.0,78.0,False,True
+SF12 MentalScore,44.05,36.25,pioggia e schiarite,F,56,20.0,78.0,False,True
+SF12 PhysicalScore,26.35,41.55,poco nuvoloso,F,82,19.0,68.0,False,True
+SF12 MentalScore,49.55,42.45,poco nuvoloso,F,82,19.0,68.0,False,True
+SF12 PhysicalScore,31.23,25.63,sereno,M,82,19.0,51.0,False,True
+SF12 MentalScore,47.1,38.8,sereno,M,82,19.0,51.0,False,True
+SF12 PhysicalScore,44.92,48.82,sereno,M,73,21.0,71.0,True,True
+SF12 MentalScore,38.36,43.16,sereno,M,73,21.0,71.0,True,True
+SF12 PhysicalScore,38.24,38.34,poco nuvoloso,F,75,18.0,82.0,False,True
+SF12 MentalScore,63.62,52.42,poco nuvoloso,F,75,18.0,82.0,False,True
+SF12 PhysicalScore,20.27,30.67,sereno,F,54,22.0,57.0,True,True
+SF12 MentalScore,30.43,43.33,sereno,F,54,22.0,57.0,True,True
+SF12 PhysicalScore,29.75,43.75,sereno,F,69,21.0,51.0,False,True
+SF12 MentalScore,62.72,50.82,sereno,F,69,21.0,51.0,False,True
+SF12 PhysicalScore,28.78,45.18,poco nuvoloso,F,57,23.0,61.0,True,True
+SF12 MentalScore,37.4,34.5,poco nuvoloso,F,57,23.0,61.0,True,True
+SF12 PhysicalScore,27.63,39.33,sereno,F,58,21.0,71.0,True,True
+SF12 MentalScore,33.93,59.13,sereno,F,58,21.0,71.0,True,True
+SF12 PhysicalScore,29.01,49.81,nebbia al mattino,M,70,20.0,71.0,True,True
+SF12 MentalScore,57.54,62.34,nebbia al mattino,M,70,20.0,71.0,True,True
+SF12 PhysicalScore,32.2,37.1,nebbia al mattino,F,56,20.0,71.0,True,True
+SF12 MentalScore,48.84,50.94,nebbia al mattino,F,56,20.0,71.0,True,True
+SF12 PhysicalScore,36.47,43.47,sereno,M,69,23.0,55.0,False,True
+SF12 MentalScore,51.7,60.2,sereno,M,69,23.0,55.0,False,True
