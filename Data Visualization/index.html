@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400i,700,700i|Source+Code+Pro|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>Data Viz</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body style="overflow-x:hidden;">
+
+    <!-- Intro con titolo e immagine. Inserire immagine in /media/ con il nome cover.png
+    Al posto dei segna posto aggiungere il vostro nome e matricola negli <span> -->
+      <div class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text">
+              <h5 class="text-center">UNIMIB - 2021/2022</h5>
+              <h1 class="text-center">Vogliamo film più brevi?</h1>
+              <h4 class="text-center">Un progetto di
+                <span class="name">Fabrizio Cominetti (882737)</span>,
+                <span class="name">Davide Abete (882299)</span>,
+                <span class="name">Agazzi Ruben (844736)</span>
+              </h5>
+              </div>
+          </div>
+          </div>
+      </div>
+
+
+      <!-- Introduzione -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h5>Introduzione</h5>
+            <p>Nella società odierna, i servizi e i prodotti, specialmente quelli digitali ma non solo, competono per ottenere l'attenzione degli utenti in misura sempre maggiore. I social media, ad esempio, hanno proprio l'obiettivo di far trascorrere il maggiore tempo possibile agli utenti sulle proprie piattaforme.
+              In generale, vi è una sensazione condivisa di avere tempo sempre più limitato, a causa del bombardamento di informazioni a cui siamo sottoposti, la rapida crescita delle informazioni disponibili causa un depotenziamento dell'attenzione. Molti esperti sostengono che oggi il fattore limitante non è più l'informazione, ma proprio l'attenzione.<a href="https://blog.advmedialab.com/attention-economy#influenza-utenti">[1]</a>
+            </p>
+            <p>La tendenza citata è rinvenibile anche nel mondo della musica, caratterizzato da canzoni sempre più brevi e costruite in modo da catturare nell'immediato l'attenzione del consumatore.
+              Secondo un'analisi condotta dal data scientist Michael Tauberg, questo trend è osservabile da almeno due decadi, indipendentemente dal genere musicale.
+              La mediana corrispondente alla durata delle canzoni nella famosa classifica Billboard Hot 100 è scesa da oltre quattro minuti nel 2000 ad una durata di circa tre minuti e mezzo nel 2018.
+              Nell'ultimo periodo inoltre, il numero di canzoni nella stessa classifica di durata inferiore ai due minuti e trenta è aumentato dall'1% nel 2015 ad oltre il 6% nel 2018.  
+              Tra le cause principale possiamo trovare sicuramente l'avvento dello streaming, ma possiamo concludere che anche nel mondo della musica, gli artisti 'combattono' l'attention span attraverso la produzione di canzoni più brevi.<a href="https://qz.com/quartzy/1438412/the-reason-why-your-favorite-pop-songs-are-getting-shorter/">[2]</a>
+            </p>
+            <p>Nel mondo cinematografico è invece indiscutibile la crescita esponenziale avvenuta nella produzione di serie tv negli ultimi anni.
+              Basta prendere le serie tv presenti nel dataset selezionato, raggrupparle per anno di uscita e osservare come si passi dalle 3500 del 2003, alle oltre 10000 del 2020.
+            </p>
+            <p>I video sono diventati uno dei campi di battaglia più battuti per catturare l'attenzione degli acquirenti, scatenando una vera e propria corsa agli investimenti tra le aziende di media e comunicazioni.
+              Diverse aziende stanno effettuando enormi investimenti per costruire nuove piattaforme streaming di tipo D2C (direct-to-consumer), come ad esempio Disney di recente con Disney +.
+              Ma la concorrenza per l'attenzione degli acquirenti si estende oltre il solito ambito dello streaming. Un'ampia gamma di concorrenti (detti “attention challengers”), tra cui compaiono i social media e le società di gaming, stanno catturando in misura sempre più ampia l'attenzione degli acquirenti.<a href="https://blog.advmedialab.com/attention-economy#influenza-utenti">[1]</a>
+            </p>
+            <p>Dunque, in una realtà come quella odierna, in cui si producono sempre più contenuti digitali per un pubblico sempre più ampio che reagisce prestando sempre meno attenzione alle informazioni che riceve, e caratterizzata tra le altre cose dalla rapida diffusione delle serie TV in ambito cinematografico,
+              è vero che le persone preferiscono anche film più brevi? Questa considerazione ci ha guidati nella realizzazione di questo progetto e ci ha permesso di determinare la seguente domanda di ricerca: i film più brevi ricevono generalmente voti migliori?</p>
+            <!-- <p>In una realtà come quella di oggi, in cui si producono sempre più contenuti digitali per un pubblico sempre più ampio che reagisce prestando sempre meno attenzione alle informazioni che riceve e caratterizzata dall'avvento di canzoni più brevi e serie TV, è vero che le persone preferiscono anche film più brevi?
+              Questa considerazione ci ha guidati nella realizzazione di questo progetto e ci ha permesso di determinare la seguente domanda di ricerca: i film più brevi ricevono generalmente voti migliori?</p> -->
+            <h5>Obiettivo della visualizzazione</h5>
+            <p>L'obiettivo della visualizzazione consiste dunque nell'indagare la correlazione esistente tra il rating dei film e la loro durata, dati entrambi ottenuti dal sito ufficiale di IMDb.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Primo blocco di testo -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h5>Esplorazione dati</h5>
+            <p>La prima fase di esplorazione dati è stata realizzata per osservare la percentuale di film all'interno del dataset.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Prima Visualizzazione -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <img src="./media/waffle_cut.png" style="width: 500px; height:500px; margin-left:30%"/>
+          <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
+          Largezza consigliata per le immagini o per gli embed 1140px per 700px-->
+        </div>
+      </div>
+
+
+
+
+      <!-- Secondo blocco di testo -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <p>Di seguito focalizzeremo la nostra attenzione sulle due variabili di interesse per il nostro obiettivo presenti nel dataset.</p>
+            <p>Per prima cosa abbiamo preso in considerazione solo i film usciti durante l'anno 2021, e ne abbiamo ristretto il campo selezionando solo i film che hanno ottenuto un minimo di 15000 voti.</p>
+            <p>A questo punto, abbiamo realizzato due violin plot per analizzarne nel dettaglio la distribuzione. A sinistra osserviamo il violin plot relativo alla variabile 'runtimeMinutes', a destra invece il violin plot relativo alla variabile 'averageRating'.</p>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Seconda Visualizzazione -->
+      <div class="container viz">
+        <div class="row">
+          
+          <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
+          Largezza consigliata per le immagini o per gli embed 1140px per 700px-->
+          <embed type="text/html" src="./media/violin.html" width="550" height="600" />
+          <embed type="text/html" src="./media/violin2.html" width="550" height="600" />
+        </div>
+      </div>
+
+
+
+
+      <!-- Terzo blocco di testo -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h5>Visualizzazione finale</h5>
+            <p>La visualizzazione consiste in uno scatter plot avente sull'asse x la durata in minuti dei film e sull'asse y la media dei voti ottenuti su IMDb. 
+              Come si può notare dallo scatter plot è presenta una leggera correlazione positiva, il cui valore corrisponde a <i>0.4</i>
+              La correlazione visualizzata sembra constrastare l'idea iniziale per cui all'aumentare dei minuti il rating medio dovesse calare.
+              Nella visualizzazione sono identificabili alcuni punti di interesse, enfatizzati da frecce ed etichetta. Il film Zack Snyder's Justice League ad esempio, rappresenta un outlier in quanto ha una durata di 242 minuti.
+            </p>     
+            <p>L'area dei punti indica il numero di voti ottenuti su IMDb. Le dimensioni sono calcolate in base all'area e non in base al diametro. Le righe grigie rappresentano
+              rispettivamente la media dei valori sui due assi, le fasce azzurre rappresentano la deviazione standard dei valori sui due assi, e la retta di colore rosso corrisponde alla retta di correlazione.
+            </p>     
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Terza Visualizzazione -->
+      <div class="container viz">
+        <h3 style="text-align: center;"><b>Il rating medio NON diminuisce all'aumentare dei minuti</b></h3>
+        <h5 style="text-align: center;">L'area di ciascun punto è proporzionale al numero di voti ottenuti su IMDb.<br /> Il colore diventa più chiaro all'aumentare del numero di voti ricevuti.</h5>
+        <div class="row">
+          <!-- Incollare qui l'embed della visualizzazione o inserire l'immagine tramite <img src="media/nomefile.jpg">
+          Largezza consigliata per le immagini o per gli embed 1140px per 700px-->
+          <embed type="text/html" src="./media/scatter.html" width="1140" height="700" style="margin-left: 20%;" />
+
+        </div>
+      </div>
+
+      <!-- Quarto blocco di testo con le conlusioni-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h5>Conclusioni</h5>
+            <p>In conclusione, inizialmente avevamo ipotizzato che ad una durata crescente sarebbe corrisposto un rating medio decrescente ma, come abbiamo potuto osservare dalla visualizzazione di cui sopra, la nostra idea iniziale è stata smentita e ribaltata.
+              All'aumentare della durata del film infatti il rating medio tende a salire leggermente, con una correlazione pari a 0,4.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="howTo">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-2">
+
+              <!-- In questa parte descrivere il processo di raccolta, pulizia e visualizzazione dei dati. Che tipo di dati avevo? Che tipo di operazioni sono state effettuate per poter visualizzare i dati. Come si leggono le visualizzazioni?-->
+              <h5>Note Metodologiche</h5>
+              <p>Il processo di raccolta dati è avvenuto scaricando i dataset dal sito web ufficiale di IMDb.<br />
+                I dati sono stati modellati ed analizzati tramite l'utilizzo delle librerie <i>Pandas</i> e <i>Numpy</i>.<br />
+                Per quanto riguarda la pulizia dei dati, sono state rimosse dal dataset alcune colonne superflue e altre convertite nella corretta tipologia, per favorirne l'utilizzo.
+                Sono stati rimossi dal dataset i film con durata in minuti pari a 0. Sono poi stati inclusi nel dataset finale solo i film usciti durante il 2021, con almeno 15000 voti ottenuti.
+                A questo punto sono stati gestiti i valori mancanti nelle colonne d'interesse.<br />
+                La prima visualizzazione consiste in una rappresentazione visiva della percentuale di film all'interno del dataset, la seconda rappresenta
+                la distribuzione della durata in minuti dei film del 2021 e del rating medio, dopo averli filtrati, mentre l'ultima visualizzazione è uno scatter plot che
+                mette in relazione la durata in minuti e il rating ottenuto dai film. Le righe grigie rappresentano la media del rating dei film e della durata dei film,
+                le fasce azzurre rappresentano la deviazione standard del rating dei film e della durata dei film.
+              
+              </p>
+
+              <hr>
+
+              <!-- Seguire indicazioni prof Cabitza. Aggiungere immagini con taf img se necessario-->
+              <h5>Valutazione qualità</h5>
+              <p>La valutazione della qualità è stata effettuata coinvolgendo 3 individui per le considerazioni euristiche, 6 per il test utente e 12 per la compilazione del questionario psicometrico.</p>
+
+              <hr>
+
+              <h5>Euristiche considerate</h5>
+              <p>In seguito alla fase di valutazione euristica, a cui sono state sottoposte 3 persone, sono emerse le seguenti considerazioni: 
+                <ul><li>Le frecce erano inizialmente troppo piccole, sono state quindi rese più grandi.</li>
+                  <li>Posizionandosi su un punto dello scatter plot l'informazione riguardante la media dei voti presenta troppe cifre decimali pari a zero.</li>
+                  <li>Alcuni punti dello scatter plot sono sovrapposti quando la visualizzazione non è zoommata.</li>
+                </ul></p>
+
+              <hr>
+
+              <h5>Test utente</h5>
+              <p>Per il test utente sono state considerate le seguenti domande:
+                <ul><li>
+                  Qual è il valore massimo di rating dei film considerati? (tempo stimato: 11s)
+                </li>
+                <li>Il film <i>Zack Snyder's Justice league</i> è un outlier? (tempo stimato: 4s)</li>
+                <li>Qual è la durata minima fra i film considerati? (tempo stimato: 6s)</li>
+                <li>Il film <i>The cost of deception</i> è nella fascia di normalità del rating? (tempo stimato: 8s)</li>
+              </ul>
+              </p>
+              <p>
+                Sono stati ottenuti i seguenti risultati:
+                <img src="./media/test-utente-bar2.png" style="margin-left:25%" />
+                <embed src="./media/violin_tempo.html" width=700 height=400>
+              </p>
+
+              <hr>
+
+              <h5>Questionari psicometrici</h5>
+              <p>Per la valutazione psicometrica della qualità è stato utilizzato il questionario Cabitza-Locoro. In questa fase di valutazione sono state coinvolte 12 persone. I risultati ottenuti sono i seguenti:</p>
+              <embed src="./media/violin_psico.html" width=700 height=400>
+              </div>
+            <!-- Inserire i link di google spreadsheet/drive o i link ai file dentro la cartella data (ridotti possibilmente - max 5mb) al posto di # e dare un nome ai dataset.-->
+            <div class="col-md-3 col-md-offset-1 howToSide">
+            <h5>Dati utilizzati</h5>
+            <p><a href="https://datasets.imdbws.com/">Dataset IMDb</a></p>
+
+            <!-- Inserire i link agli strumenti utilizzati per la gestione dei dati e per la visualizzazione-->
+            <h5 id="tools">Strumenti utilizzati</h5>
+            <p><a href="https://www.python.org/">Python</a></p>
+            <p><a href="https://bokeh.org/">Bokeh</a></p>
+            <p><a href="https://plotly.com/">Plotly</a></p>
+            <p><a href="https://pypi.org/project/pywaffle/">PyWaffle</a></p>
+            <p><a href="https://matplotlib.org/">MatPlotLib</a></p>
+            <p><a href="https://pandas.pydata.org/">Pandas</a></p>
+            <p><a href="https://numpy.org/">Numpy</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script>$(document).ready(function () {
+    var trigger = $('.hamburger'),
+    overlay = $('.overlay'),
+    isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+    }
+
+    $('[data-toggle="offcanvas"]').click(function () {
+      $('#wrapper').toggleClass('toggled');
+    });
+  });
+  </script>
+
+</body>
+</html>

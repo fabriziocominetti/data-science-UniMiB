@@ -1,0 +1,111 @@
+/*-------------------------------*/
+/*            Typography            */
+/*-------------------------------*/
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 62px;
+  letter-spacing: -1px;
+  margin-top: 44px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0;
+  margin-bottom: 22px;
+}
+
+h4 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 44px;
+}
+
+h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'PT Serif', serif;
+  font-size: 22px;
+  line-height: 150%;
+  padding-bottom: 44px;
+}
+
+.intro {
+  background:
+  linear-gradient(
+      rgba(255, 255, 255, 0.50),
+      rgba(255, 255, 255, 1.0)
+    ),url(../media/cover.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  min-height: 550px;
+  background-color: #000;
+  padding-top: 85px;
+  margin-bottom: 70px;
+}
+
+
+.text {
+  padding-top: 20px;
+}
+
+.viz {
+  min-height: 400px;
+  border-top: 1px #d2d2d2 solid;
+  border-bottom: 1px #d2d2d2 solid;
+  margin: 20px auto 70px;
+}
+
+.viz img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.howTo {
+  background-color: #f5f5f5;
+  min-height: 300px;
+  padding-top: 44px;
+  padding-bottom: 88px;
+}
+
+.howTo p{
+  font-size: 16px;
+  line-height: 150%;
+  padding-bottom: 0px;
+}
+
+.howToSide p{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  padding-bottom: 0px;
+  letter-spacing: -1px;
+  margin: 0 0 0px;
+}
+
+#tools {
+  margin-top: 44px;
+}
+
+a {
+  color: #f95658;
+}
+
+a:hover {
+  color: #c74446;
+}
