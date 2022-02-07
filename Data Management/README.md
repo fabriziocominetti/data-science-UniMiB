@@ -1,6 +1,6 @@
 # Data Management
 
-mini project for the 'Data Management' course - UNIMIB
+project for the 'Data Management' course - UNIMIB
 
 -- Project status: [Completed]
 
