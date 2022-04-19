@@ -2,6 +2,8 @@
 
 project for the 'Foundations of Computer Science' course - UNIMIB
 
+(Published 1 year after the delivery for didactic reasons)
+
 -- Project status: [Completed]
 
 ## About
