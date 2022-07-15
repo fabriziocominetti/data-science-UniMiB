@@ -1,0 +1,57 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+
+
+
+```{r}
+require(forecast)
+```
+
+
+```{r}
+data = read.csv("./data/serie-storiche-ecommerce-pulito-no-buchi-temporali.csv")
+```
+```{r}
+new_data = data[c("totale","data")]
+head(new_data)
+nrow(new_data)
+
+```
+```{r}
+new_data_training = head(new_data, nrow(new_data)*0.8)
+new_data_test = tail(new_data, nrow(new_data)*0.2)
+nrow(new_data_training)
+```
+
+
+
+
+```{r}
+fit_arima = auto.arima(new_data_training$totale, trace=TRUE, seasonal = TRUE)
+```
+
+```{r}
+summary(fit_arima)
+```
+```{r}
+fvalues = forecast(fit_arima, nrow(new_data_test))
+print(fvalues)
+```
+
+```{r}
+library(Metrics) 
+rmse(new_data_test$totale, fvalues$pred)
+```
+
+
+```{r}
+plot(fvalues, main = " Plot with forecasting",col.main = "red")
+```
+

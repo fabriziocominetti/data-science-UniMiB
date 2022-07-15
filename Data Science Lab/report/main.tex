@@ -1,0 +1,392 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Article
+% LaTeX Template
+% Version 2.0 (28/2/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Frits Wenneker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt, a4paper, twocolumn]{article} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[USenglish,UKenglish,french,spanish,italian]{babel}
+\usepackage{graphicx}
+\graphicspath{ {./Immagini/} }
+
+\input{structure.tex} % Specifies the document structure and loads requires packages
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Data Science Lab: Vendite E-commerce} % The article title
+
+\author{
+    Ruben Agazzi 844736\\
+	Fabrizio Cominetti 882737\\
+	Davide Abete 882299\\
+	Tommaso Strada 829351\\
+	Alessandro Fasani 837301 % Authors
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\selectlanguage{italian}
+
+% \maketitle % Print the title
+
+\thispagestyle{firstpage} % Apply the page style for the first page (no headers and footers)
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+    \begin{abstract}
+      \noindent{L'obiettivo principale del progetto è quello di valutare e selezionare il miglior modello predittivo relativamente alle stime delle vendite di alcuni settori, precisamente Pesca, Calcio e Casual, di un attività di e-commerce.}\\
+      Il periodo preso in considerazione va dal giorno 01-01-2014 al giorno 31-12-2021.\\
+      Per un attività commerciale presente sulla rete è di fondamentale importanza prevedere le vendite che saranno effettuate nei periodi successivi per ogni settore a disposizione, in modo tale da organizzare disponibilità di magazzino e di spedizione.\\
+      I dati sono stati modellati in funzione dell'obiettivo e aggregati secondo diverse granularità, ovvero con frequenza annuale, trimestrale, mensile e settimanale, in modo tale da valutare le performance dei modelli presi in considerazione.\\
+      Come sarà possibile verificare nel proseguio del report, la granularità più efficace, relativamente agli obiettivi preposti dal progetto, è risultata quella annuale.\\
+      Il progetto è stato effettuato prendendo in considerazione i tre settori con maggiore disponibilità effettiva di osservazioni, ma i modelli utilizzati possono essere applicati anche ad altri settori, per realizzare in questo modo una panoramica completo sull'intero e-commerce.
+    \end{abstract}
+  \end{@twocolumnfalse}]
+
+\bigskip
+
+\clearpage
+% \lettrineabstract{x}
+\bigskip
+\tableofcontents
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Introduzione}
+La realizzazione di questo progetto ha visto come obiettivo principale quello di testare, valutare e decretare il miglior modello predittivo al fine di stimare le vendite in euro realizzate dai vari settori all'interno di un e-commerce.\\
+Prima di tutto, i dati sono stati pre-processati e 'puliti', in modo tale da renderli efficaci e ottimali rispetto allo scopo del progetto. I modelli predittivi, infatti, richiedevano un certo tipo di modellazione dei dati in input per utilizzarli al proprio interno e produrre delle previsioni.\\
+Una volta effettuato il pre-processing dei dati, il focus è passato sul test dei vari modelli, ognuno con le diverse granularità scelte in fase di programmazione.\\
+Il periodo scelto per l'analisi parte dal giorno 01-01-2014 e si protrae fino al giorno 31-12-2021. La scelta di questo periodo non è da considerarsi casuale, in quanto racchiude anche il periodo relativo alla pandemia, periodo che ha visto moltissime persone rivolgersi all'utilizzo di e-commerce, vista l'impossibilità di recarsi in negozi fisici.
+
+\subsection{Punti Principali}
+\begin{itemize}
+	\item Vendite: totale - in euro - di guadagno relativamente a ciascun settore, in base alle vendite effettuate in tale data.
+	\item Settori: divisione interna all'e-commerce che identifica le varie categorie di articoli in vendita.
+	\item Previsione: le previsioni effettuate sono caratterizzate da un ruolo primario all'interno del paper.
+\end{itemize}
+
+\section{Obiettivo}
+L'obiettivo del progetto è quello di identificare il miglior modello predittivo da fornire ai gestori dell'e-commerce in questione.\\
+Conoscere la previsione relativa agli incassi (in euro) dei vari settori all'interno del sito potrebbe infatti essere utile a diversi scopi all'interno dell'azienda, come ad esempio in fase di programmazione e ordini di materiale, ma anche per avere un'idea di quando applicare o meno determinati sconti e promozioni ai vari settori, con il fine di raggiungere gli obiettivi di vendita prefissati.\\
+Il periodo temporale selezionato è molto lungo, comprende infatti 8 anni di rilevazioni. I dati forniti si caratterizzavano di rilevazioni giornaliere, perciò abbiamo optato per questa scelta temporale in modo da sfruttare a pieno la lunghezza del periodo fornito.\\
+Il progetto può considerarsi rivolto direttamente ai gestori dell'e-commerce e a coloro che al suo interno valutano vendite e ricavi, così come programmazione e ordini.
+
+\section{Aspetti Metodologici}
+I modelli selezionati ed utilizzati all'interno del progetto sono i seguenti: ARIMA, TBATS, PROPHET, XGBOOST.\\
+Di seguito osserviamo i modelli in modo più approfondito da un punto di vista teorico.
+
+\subsection{ARIMA}
+In statistica per modello ARIMA (acronimo di AutoRegressive Integrated Moving Average) si intende una particolare tipologia di modelli atti ad indagare serie storiche che presentano caratteristiche particolari. Fa parte della famiglia dei processi lineari non stazionari.\\
+Un modello ARIMA(p,d,q) deriva da un modello ARMA(p,q) a cui sono state applicate le differenze di ordine d per renderlo stazionario. In caso di stagionalità nei dati si parla di modelli SARIMA o ARIMA(p,d,q)(P,D,Q).\\
+Dunque, il modello ARIMA nasce aggiungendo l'integrazione (I) alla combinazione dei modelli autoregressivo (AR) e a media mobile (MA). Il modello ARIMA è composto dalle seguenti componenti:
+\begin{description}
+	\item[P] l'ordine della componente autoregressiva
+	\item[D] grado della differenziazione
+	\item[Q] ordine della componente a media mobile
+\end{description}
+Siccome, appunto, un modello ARIMA integra la componente autoregressiva e di media mobile di una serie storica, può essere così definito:
+\[
+(1 - \sum_{i=1}^{p'}\alpha_iL^i)X_t = (1+\sum_{i=1}^{q}\theta_iL^i)	
+\]
+ Un modello integrato ARMA di ordine d è un processo stocastico che diventa stazionario dopo essere differenziato d volte.\\
+
+Abbiamo creato 12 diversi modelli, in modo da predire i valori settimanali, mensili, trimestrali e annuali dei 3 settori di vendita selezionati, ovver calcio, pesca e casual. I parametri dei modelli ARIMA e SARIMA sono trovati minimizzando l'AIC.
+
+I modelli ottenuti e i loro parametri sono i seguenti:
+\begin{itemize}
+	\item Annuale pesca: ARIMA model (0,1,0)(0,0,0)
+	\item Trimestrale pesca: ARIMA model (0,2,1)(0,0,0)
+	\item Mensile pesca: SARIMA model (0,1,1)(1,0,0)
+	\item Settimanale pesca: SARIMA model (2,1,2)(1,0,0)
+	\item Annuale calcio: ARIMA model (0,1,0)(0,0,0)
+	\item Trimestrale calcio: SARIMA model (0,0,1)(1,1,0)
+	\item Mensile calcio: SARIMA model (0,0,1)(0,1,0)
+	\item Settimanale calcio: SARIMA model (1,0,0)(1,0,0)
+	\item Annuale casual: ARIMA model (0,1,0)(0,0,0)
+	\item Trimestrale casual: SARIMA model (1,1,0)(1,0,0)
+	\item Mensile casual: SARIMA model (1,1,3)(1,0,0)
+	\item Settimanale casual: ARIMA model (1,0,0)(0,0,0)
+\end{itemize}
+
+\subsection{TBATS}
+Il modello TBATS è in grado di considerare e lavorare con stagionalità multiple e complesse.\\
+TBATS è l'acronimo di Trigonometric seasonality, Box-Cox transformation, ARMA errors, Trend and Seasonal components.\\
+In questo modello, ogni stagionalità è modellata su di una rappresentazione trigonometrica, basata sulla serie di Fourier. Uno dei principali vantaggi di questo approccio è che richiede solo due 'seed', indipendentemente dalla lunghezza del periodo. Un altro vantaggio è la possibilità di modellare effetti stagionali di lunghezza non intera. Ad esempio, data una serie di osservazioni giornaliere, è possibile modellare gli anni bisestili con una stagione di lunghezza 365,25.\\
+Il modello TBATS prende in considerazione varie alternative ed è in grado di adattarsi a diversi modelli. Prenderà in considerazione modelli con le seguenti caratteristiche:
+\begin{itemize}
+\item con e senza trasformazione Box-Cox
+\item con e senza Trend
+\item con e senza smorzamento del trend
+\item con e senza processo ARMA(p,q) utilizzato per modellare i residui
+\item modello non stagionale
+\item varie quantità di armoniche utilizzate per modellare gli effetti stagionali
+\end{itemize}
+Il modello finale sarà poi scelto utilizzando il criterio di informazione di Akaike (AIC).\\
+Nella figura sottostante possiamo osservare due formulazioni matematiche del modello in questione.
+
+\begin{figure}[H]
+  \caption{\protect\cite{dispensa}}
+  \begin{center}
+    \includegraphics{tbats.png}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \caption{\protect\cite{tbats}}
+  \begin{center}
+    \includegraphics{tbats2.png}
+  \end{center}
+\end{figure}
+
+\subsection{PROPHET}
+Prophet è un modello dedito alla previsione di serie storiche basata su modelli additivi, dove i trend non lineari sono analizzati con diverse stagionalità. Il modello decompone la serie storica in trend, stagionalità ed effetti di festività.\\
+Può essere quindi considerato un modello di regressione non lineare, della forma:\\
+$y(t) = g(t) + s(t) + h(t) + e(t)$\\
+dove:
+\begin{description}
+	\item[g(t)] descrive una tendenza a tratti lineare delle variazioni non periodiche nei dati delle serie temporali (o termine di crescita)
+	\item[s(t)] indica i vari modelli stagionali generati dai cambiamenti periodici come la stagionalità giornaliera, settimanale o annuale
+	\item[h(t)] rappresenta gli effetti festivi che si possono verificare su cadenze irregolari, ad esempio su un giorno o su un periodo di più giorni
+	\item[e(t)] sono termini di errore, ciò che non viene spiegato dal modello
+\end{description}
+\cite{mathprophet}\cite{fbprophet}
+
+In altri termini l’equazione può essere così scritta:
+\begin{figure}[H]
+  \caption{}
+  \begin{center}
+    \includegraphics[width=75mm,scale=0.5]{prophet.png}
+  \end{center}
+\end{figure}
+
+Il modello Prophet prevede due possibili modelli di tendenze per la componente g(t), un modello di crescita saturante e un modello lineare a tratti. La componente stagionale s(t) fornisce adattabilità al modello consentendo periodiche modifiche basate su cambiamenti della stagionalità infragiornaliere, giornaliere, settimanali e annuali. Questa componente per impostazione predefinita, prevede l'utilizzo dell’ordine 10 per la stagionalità annuale e l'ordine 3 per quella settimanale. La componente h(t) considera eventi prevedibili dell'anno, ad esempio  il Venerdì nero, il Superbowl o Natale. Per utilizzare questa funzione, l'utente deve fornire un elenco personalizzato di eventi festivi e l’incorporazione di questa lista nel modello è fatta supponendo che gli effetti delle vacanze siano indipendenti. Il modello viene stimato utilizzando un approccio bayesiano per consentire la selezione automatica dei change points e di altri parametri del modello, se non esplicitamente specificati. Date le sue caratteristiche performa meglio con le serie temporali che hanno forti effetti stagionali e numerose stagioni di dati storici. Il modello è caratterizzato da diversi vantaggi: è preciso e veloce, per questo viene utilizzato ad esempio in molte applicazioni su Facebook per produrre previsioni affidabili per la pianificazione e la definizione degli obiettivi, completamente automatico, in quanto fornisce una previsione ragionevole su dati disordinati senza sforzo manuale, genera previsioni adattabili fornendo molte possibilità agli utenti di modificare e regolare le previsioni al fine di migliorarle, gestisce bene le variazioni stagionali, ed infine, è robusto nei confronti dei valori anomali e resiliente ai dati mancanti.\\
+
+\subsection{XGBOOST}
+L'algoritmo XgBoost è un'implementazione del gradient Boosted Decision Tree utilizzato in larga parte per problemi di classificazione e regressione.\\ Sebbene sia nativamente adottato per il Machine Learning questo può altresì essere utilizzato per il time series forecasting previa una trasformazione del dataset in un problema di apprendimento supervisionato (dati di input e label). L'XGBRegressor utilizza un numero di Gradient Boosted Tree (riferito al parametro n\_estimators nel modello) per predire il valore della variabile dipendente.\\
+Nella previsione di una time series il modello utilizza uno step di lookback (nel codice indicato come shift\_giornaliero, shift\_mensile, etc.) per prevedere un numero di step nel futuro. La logica alla base di questo shift temporale utilizzato come variabile di input è applicare un fattore di possibile stagionalità delle vendite. Per esempio nell'aggregazione settimanale può essere usata la settimana precedente come variabile di input o la stessa settimana dell'anno prima.\\
+Inoltre, sempre data la sua funzione nativa nel machine learning, non è possibile utilizzare parametri che randomizzino il dataset (come un k-fold) durante la valutazione in quanto si perderebbe la funzione intrinseca della serie temporale. Per ovviare a questo problema si opta per un metodo statico di divisione del dataset (80-20 nel nostro caso).\\
+
+\section{Dati}
+Il dataset utilizzato per il progetto è il dataset "serie-storiche-ecommerce" ed è un file di tipo CSV (Comma Separated Values).\\
+Il file si presentava con un problema relativo alla divisione dell'importo in euro in due differenti colonne, è stata perciò effettuata una correzione per unire le due colonne citate in un unica colonna.\\
+Considerando la correzione effettuata, all'interno del file sono presenti le seguenti colonne:
+\begin{description}
+	\item[data] contenente la data di rilevazione nel seguente formato: DD/MM/YYYY
+	\item[totale] importo in euro dell'incasso di uno specifico settore in quel giorno
+	\item[settore] testo che identifica il settore dell'e-commerce di riferimento
+\end{description}
+Per ciascun settore è dunque presente il totale delle vendite (in euro) effettuate in quella data. Le rilevazioni sono dunque giornaliere e divise per settore. Sono pochi i settori che presentano una fetta consistente di rilevazioni, al contrario, per molti settori il numero di osservazioni è limitato.\\
+Le osservazioni mancanti sono state considerate come giorni con incasso nullo, quindi uguale a zero.
+% aggiungere immagini relative a numero di osservazioni dei settori
+\begin{figure}[H]
+  \caption{Frequenze 'pesca' per anno}
+  \begin{center}
+    \includegraphics[width=75mm,scale=0.5]{frequenze-pesca.png}
+  \end{center}
+\end{figure}
+\begin{figure}[H]
+  \caption{Frequenze 'calcio' per anno}
+  \begin{center}
+    \includegraphics[width=75mm,scale=0.5]{frequenze-calcio.png}
+  \end{center}
+\end{figure}
+\begin{figure}[H]
+  \caption{Frequenze 'casual' per anno}
+  \begin{center}
+    \includegraphics[width=75mm,scale=0.5]{frequenze-casual.png}
+  \end{center}
+\end{figure}
+
+Per questo motivo le analisi successive saranno effettuate considerando i settori con il maggior numero di osservazioni presenti: pesca, calcio e casual.\\
+I dati a disposizione coprono il periodo compreso tra il 2 febbraio 2013 e l'8 aprile 2022.\\
+Il file iniziale è composto da un totale di 25262 righe e dalle 3 colonne descritte sopra.
+
+\subsection{Manipolazione Dati}
+Durante la fase iniziale di esplorazione dei dati, abbiamo notato la presenza di molti valori mancanti all'interno del dataset, in particolare la maggior parte di questi valori appartenevano all'anno 2013. In questo caso abbiamo deciso di rimuovere completamente l'anno in questione in modo da avere dati continui sugli anni precedenti, evitando di allenare i modelli su dati frammentati e incompleti.\\
+Si è infine scelto di escludere i valori con anno 2022 dal progetto, in quanto incompleti e non utili a raggiungere gli obiettivi prefissati.
+\begin{figure}[H]
+  \caption{Plot serie storiche per settore}
+  \begin{center}
+    \includegraphics[width=75mm,scale=0.5]{plot_dati_settori.png}
+  \end{center}
+\end{figure}
+
+I procedimenti effettuati si possono riassumere dunque nel seguente elenco:
+\begin{itemize}
+	\item Unione di colonne erroneamente separate
+	\item Eliminazione osservazioni superflue
+	\item Selezione e divisione dei dataset in base ai settori scelti
+\end{itemize}
+
+\subsection{Aggreazione dei dati}
+Lo step successivo è stato dedicato alla creazione dei dataset che saranno utilizzati poi nei vari modelli.\\
+Una volta rimossi i valori precedenti abbiamo raggruppato i dati per i 3 settori di vendita scelti, ovvero pesca, calcio e casual. In seguito i vari dataset già raggruppati per settori sono stati ulteriormente aggregati in base a diversi periodi di tempo, in modo da avere una granularità dei dati più varia. In particolare sono stati creati dataset relativi alle vendite settimanali, mensili, trimestrali e annuali.
+
+\section{Analisi per settore}
+Ora seguirà una breve analisi dei risultati, divisa per settore di vendita, in particolare indicheremo il modello migliore ottenuto per lo specifico settore di vendita. In seguito presenteremo i risultati completi.\\
+Come già specificato, per ciascun settore sono state effettuate previsioni e valutazioni con le quattro diverse aggregazioni temporali.\\
+Per realizzare gli obiettivi prefissati, si è scelto di dividere i dati di train e test seguendo una proporzione 80-20(\%).
+
+\subsection{Analisi Pesca}
+Nel contesto degli algoritmi usati per il settore di vendita "Pesca", al netto dei raggruppamenti, il modello che ha avuto risultati migliori è 'XGBoost', in particolare applicato su una aggregazione 'annuale' dei dati. Il modello in questione ha avuto un MAPE(Mean Absolute Percentage Error) pari a 4.3\%.
+\begin{figure}[H]
+  \caption{XGBoost Pesca Annuale}
+  \begin{center}
+    \includegraphics[width=75mm,scale=0.5]{pesca_annuale_4.31_xgbost_noValori}
+  \end{center}
+\end{figure}
+
+Per quanto riguarda invece i risultati con aggregazione trimestrale, è sempre XGBoost ad ottenere la migliore previsione, così come nel caso di aggregazione settimanale. Il discorso cambia invece con aggregazione mensile, dove è il modello Prophet ad ottenere la migliore precisione. Il settore pesca è quello in cui si ottengono i migliori risultati rispetto agli altri settori.
+
+\subsection{Analisi Calcio}
+Per quanto riguarda i dati relativi al settore di vendita "Calcio", il modello migliore tra quelli utilizzati è 'XGBoost' con un Mean Percentage Error pari a 8.33\%. Questo modello inoltre ottiene un buon punteggio anche quando applicato ai dati aggregati settimanalmente, con modello Prophet, come osservabile nell'immagine sottostante.
+\begin{figure}[H]
+  \caption{Prophet Calcio Settimanale}
+  \begin{center}
+    \includegraphics[width=75mm,scale=0.5]{Calcio_settimanale_19.07}
+  \end{center}
+\end{figure}
+
+I dati relativi a questo settore non ottengono invece buoni risultati con altri modelli e altri tipi di aggregazioni.
+
+\subsection{Analisi Casual}
+Infine, per quanto riguarda il settore di vendite Casual, il modello che ha ottenuto risultati migliori è stato ancora una volta 'XGBoost' applicato ai dati 'annuali'. Il MAPE ottenuto da questo modello è pari a 14.63\%.\\
+Nell'immagine proposta di seguito osserviamo invece il modello Prophet, applicato ai dati 'mensili'.
+\begin{figure}[H]
+  \caption{Prophet Casual Mensile}
+  \begin{center}
+    \includegraphics[width=75mm,scale=0.5]{Casual_mensile_22.88}
+  \end{center}
+\end{figure}
+
+Anche per quanto riguarda questo settore, valgono le considerazioni fatte per il settore calcio.
+
+\section{Risultati}
+Al fine di valutare e selezionare il modello più indicato e preciso relativamente alle finalità del progetto, si è scelto di utilizzare una metrica, 'MAPE', in grado di tener conto anche dell'errore di previsione.\\
+Di seguito il MAPE (Mean Absolute Percentage Error), o errore percentuale medio assoluto, dal punto di vista teorico:\\
+\includegraphics[width=75mm,scale=0.5]{mape.png}
+\\
+dove:
+\begin{description}
+	\item[$A_t$] sono i valori reali
+	\item[$F_t$] sono i valori predetti
+	\item[n] rappresenta il numero di osservazioni
+\end{description}
+
+La metrica MAPE consiste nella media aritmetica dei rapporti tra il valore assoluto degli errori di previsione e la domanda che si è effettivamente verificata.\\
+Illustriamo di seguito i valori della metrica considerata per ciascuno dei modelli testati.
+
+\begin{table}[H]
+\caption{MAPE dati annuali}
+\centering
+	\begin{tabular}{lllr}
+		\toprule
+		\multicolumn{4}{c}{MAPE} \\
+		\cmidrule(r){2-4}
+			Modello & Pesca & Calcio & Casual \\
+		\midrule
+			ARIMA & 31.75\% & 28.5\% & 31.74\% \\
+			TBATS & 28.6\% & 50.08\% & 28.32\% \\
+			PROPHET & 36.88\% & 97.64\% & 36.88\% \\
+			XGBOOST & 4.30\% & 8.33\% & 14.63\% \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\caption{MAPE dati trimestrali}
+	\centering
+		\begin{tabular}{lllr}
+			\toprule
+			\multicolumn{4}{c}{MAPE} \\
+			\cmidrule(r){2-4}
+				Modello & Pesca & Calcio & Casual \\
+			\midrule
+				ARIMA & 28.67\% & 80.68\% & 73.66\% \\
+				TBATS & 42.16\% & 39.5\% & 37.35\% \\
+				PROPHET & 45.87\% & 86.19\% & 63.67\% \\
+				XGBOOST & 13.08\% & 48.01\% & 15.87\% \\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+
+	\begin{table}[H]
+		\caption{MAPE dati mensili}
+		\centering
+			\begin{tabular}{lllr}
+				\toprule
+				\multicolumn{4}{c}{MAPE} \\
+				\cmidrule(r){2-4}
+					Modello & Pesca & Calcio & Casual \\
+				\midrule
+					ARIMA & 33.60\% & 116.59\% &234.71\% \\
+					TBATS & 47.09\% & 58.05\% & 33.92\% \\
+					PROPHET & 12.86\% & 106.61\% & 22.88\% \\
+					XGBOOST & 15.87\% & 40.19\% & 32.49\% \\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+		\begin{table}[H]
+			\caption{MAPE dati settimanali}
+			\centering
+				\begin{tabular}{lllr}
+					\toprule
+					\multicolumn{4}{c}{MAPE} \\
+					\cmidrule(r){2-4}
+						Modello & Pesca & Calcio & Casual \\
+					\midrule
+						ARIMA & 71.09\% & 111.99\% & 118.32\% \\
+						TBATS & 40.63\% & 159.13\% & 41.63\% \\
+						PROPHET & 18.97\% & 19.07\% & 57.51\% \\
+						XGBOOST & 17.86\% & 47.44\% & 44.81\% \\
+					\bottomrule
+				\end{tabular}
+			\end{table}
+			
+Alla luce dei risultati visualizzati di sopra, possiamo constatare che il miglior modello predittivo è XGBoost, in grado di garantire un errore previsionale più basso rispetto agli altri modelli, almeno nella maggior parte dei casi analizzati.\\
+Questo vale sia tra i diversi settori che tra le differenti aggregazioni utilizzate.\\
+In conclusione abbiamo notato che il modello generalmente più performante ottenuto è XGBoost applicato ai dati del settore Pesca aggregati annualmente.\\
+D'altro canto il modello che ha avuto la peggiore performance è il modello SARIMA applicato al settore casual con raggruppamento dei dati mensile.
+
+\section{Conclusioni}
+L'obiettivo di questo progetto consisteva nell'individuare il miglior modello predittivo tra quelli analizzati, con il fine di renderlo utilizzabile per analizzare le vendite di un e-commerce per i vari settori proposti.\\
+I risultati ottenuti possono essere considerati soddisfacenti, in particolare per i dati con aggregazione annuale.\\
+Il periodo di previsione scelto è molto ampio, ed è possibile aggiornare i risultati nel tempo, con nuove osservazioni.\\
+Ridurre l'intervallo temporale potrebbe garantire un'accuratezza migliore, ma anche tralasciare informazioni importanti.\\
+Potrebbe inoltre essere stimolante estendere l'analisi ad altri settori presenti all'interno dell'e-commerce.\\
+Alcuni ulteriori sviluppi potrebbero consistere nel test di altri algoritmi per la previsione di serie storiche, ad esempio utilizzando tecniche di deep learning.
+
+\nocite{*} %aggiunge a bibliografia gli elementi non citati nel testo
+\printbibliography[title={Bibliografia}] %Prints bibliography
+
+\end{document}
