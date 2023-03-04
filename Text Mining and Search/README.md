@@ -1,8 +1,10 @@
 # Text Mining and Search project
 
-<p style="text-align: center;">Fabrizio Cominetti, 882737 - Ruben Agazzi, 844736</p>
+---
 
-<p align="center"><img src="[logo](https://www.scienze.unimib.it/sites/sc02/files/scientifica_logo.png)"></p>
+<center>Fabrizio Cominetti, 882737 - Ruben Agazzi, 844736<center>
+
+<img src="[logo](/unimib-green.png)">
 
 Tasks to be accomplished:
 - Text pre-processing (mandatory, task dependent)
