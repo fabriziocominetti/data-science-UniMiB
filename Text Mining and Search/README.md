@@ -2,9 +2,7 @@
 
 ---
 
-<center>Fabrizio Cominetti, 882737 - Ruben Agazzi, 844736<center>
-
-<img src="[logo](/unimib-green.png)">
+<center>Fabrizio Cominetti, 882737 - Ruben Agazzi, 844736</center>
 
 Tasks to be accomplished:
 - Text pre-processing (mandatory, task dependent)
