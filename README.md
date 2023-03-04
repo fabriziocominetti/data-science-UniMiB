@@ -1,17 +1,20 @@
-# Data Science UNIMIB
+# Data Science UniMiB
 
 Università degli Studi di Milano-Bicocca
-
-![UnimibDS](https://datascience.disco.unimib.it/wp-content/uploads/2018/05/Datascience1-gradient.png)
 
 Repository containing all projects realized for the Master's Degree in Data Science at University of Milan-Bicocca.
 
 Table of Contents:
 
-- [Foundations of Computer Science](/FoundationsOf_Computer_Science)
-- [Foundations of Probability and Statistics](/FoundationsOf_Probability_and_Statistics)
-- [Data Management](/Data_Management)
-- [Data Visualization](/Data_Visualization)
-- [Machine Learning](/Machine_Learning)
+- [Foundations of Computer Science](/Foundations%20of%20Computer%20Science/)
+- [Foundations of Probability and Statistics](/Foundations%20of%20Probability%20and%20Statistics/)
+- [Data Management](/Data%20Management/)
+- [Data Visualization](/Data%20Visualization/)
+- [Machine Learning](/Machine%20Learning/)
+- [Decision Models](/Decision%20Models/)
+- [Data Science Lab](/Data%20Science%20Lab/)
+- [Financial Market Analytics](/Financial%20Market%20Analytics/)
+- [Social Media Analytics](/Social%20Media%20Analytics/)
+- [Text Mining and Search](/Text%20Mining%20and%20Search/)
 
-![UnimibLogo](https://i.ytimg.com/vi/BRCf5_p_i80/maxresdefault.jpg)
+![UnimibLogo](/unimib-bordeaux.jpg)
