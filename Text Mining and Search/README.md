@@ -1,8 +1,6 @@
 # Text Mining and Search project
 
----
-
-<center>Fabrizio Cominetti, 882737 - Ruben Agazzi, 844736</center>
+Fabrizio Cominetti, 882737 - Ruben Agazzi, 844736
 
 Tasks to be accomplished:
 - Text pre-processing (mandatory, task dependent)
