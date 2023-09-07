@@ -1,19 +1,14 @@
 # Data Visualization
 
-project for the 'Data Visualization' course - UNIMIB
-
--- Project status: [Completed]
+<h3 align="center"><i>Fabrizio Cominetti | Ruben Agazzi | Davide Abete</i></h3>
 
 ## About
 
-Technologies:
+In today's attention economy and society is it true that people also prefer shorter films? This consideration guided us in the realization of this project and allowed us to determine the following research question: do shorter films generally receive better ratings?
 
-- Python and Libraries
-- Plotly
-- Bokeh
-- Seaborn
+We have therefore used the datasets provided by IMDb to answer the research question through an interactive visualization.
 
-## Repository overview
+## Repository Overview
 
 ```
 ├── LICENSE
@@ -21,11 +16,7 @@ Technologies:
 ├── data
 ├── figures
 ├── notebooks
-├── index.html
+└── index.html
 ```
 
-## Contributing Members
-
-- Fabrizio Cominetti
-- Ruben Agazzi
-- Davide Abete
+<p align="center"><img src="../images/unimib-gray.png" width="200"/></p>
