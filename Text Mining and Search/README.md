@@ -1,22 +1,20 @@
 # Text Mining and Search project
 
-Fabrizio Cominetti, 882737 - Ruben Agazzi, 844736
+<h3 align="center"><i>Fabrizio Cominetti | Ruben Agazzi</i></h3>
 
 Tasks to be accomplished:
 - Text pre-processing (mandatory, task dependent)
 - Text representation (choose suitable representation (s) and explain the rationale behind this choice)
 
 Core tasks (please select two at your choice):
-- Text classification;
-- Text clustering.
+- Text classification
+- Text clustering
 
 Dataset:
 - IMBD reviews
 
 Evaluation:
 - Provide suitable evaluation metrics, depending on the considered task.
-
----
 
 ## About
 
@@ -34,9 +32,4 @@ In this project, user reviews from the IMDB platform were analyzed through the u
 └── requirements.txt
 ```
 
-## Installation & Usage
-
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](/data/raw/) within this repo, make sure to un-zip the raw data folder.
-3. Data processing/transformation and all scripts are being kept [here](/notebooks/)
-4. Run the notebook (see requirements.txt to install the necessary packages)
+<p align="center"><img src="../images/unimib-gray.png" width="200"/></p>
