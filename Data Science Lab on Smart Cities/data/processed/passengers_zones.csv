@@ -1,0 +1,38 @@
+Paese,ISO2,regione,ID_zona
+Italia,IT,Sardegna,1
+Italia,IT,Friuli-Venezia Giulia,2
+Italia,IT,Liguria,2
+Italia,IT,Lombardia,2
+Italia,IT,Piemonte,2
+Italia,IT,Trentino-Alto Adige,2
+Italia,IT,Valle d'Aosta/Vallée d'Aoste,2
+Italia,IT,Veneto,2
+Italia,IT,Emilia-Romagna,3
+Italia,IT,Lazio,3
+Italia,IT,Marche,3
+Italia,IT,Toscana,3
+Italia,IT,Umbria,3
+Italia,IT,Abruzzo,4
+Italia,IT,Calabria,4
+Italia,IT,Campania,4
+Italia,IT,Puglia,4
+Italia,IT,Sicilia,4
+Francia,FR,*,11
+Portogallo,PT,*,11
+Spagna,ES,*,11
+Danimarca,DK,*,12
+Finlandia,FI,*,12
+Irlanda,IE,*,12
+Norvegia,NO,*,12
+Regno Unito,GB,*,12
+Svezia,SE,*,12
+Austria,AT,*,13
+Polonia,PL,*,13
+Repubblica Ceca,CZ,*,13
+Slovacchia,SK,*,13
+Svizzera,CH,*,13
+Ungheria,HU,*,13
+Belgio,BE,*,14
+Germania,DE,*,14
+Lussemburgo,LU,*,14
+Paesi Bassi,NL,*,14
