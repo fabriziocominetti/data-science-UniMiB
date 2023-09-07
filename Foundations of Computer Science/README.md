@@ -1,27 +1,17 @@
 # Foundations of Computer Science
 
-project for the 'Foundations of Computer Science' course - UNIMIB
-
-(Published 1 year after the delivery for didactic reasons)
-
--- Project status: [Completed]
+<h3 align="center"><i>Fabrizio Cominetti | Alessandro Fasani</i></h3>
 
 ## About
 
-Technologies:
+Published 1 year after the delivery for didactic reasons.
 
-- Python
-- Pandas
-
-## Repository overview
+## Repository Overview
 
 ```
 ├── README.md
 ├── data
-├── notebooks
+└── notebooks
 ```
 
-## Contributing Members
-
-- Fabrizio Cominetti
-- Alessandro Fasani
+<p align="center"><img src="../images/unimib-gray.png" width="200"/></p>
