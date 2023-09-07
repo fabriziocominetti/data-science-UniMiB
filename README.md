@@ -18,4 +18,4 @@ Table of Contents:
 - [Text Mining and Search](/Text%20Mining%20and%20Search/)
 - [Data Science Lab on Smart Cities](/Data%20Science%20Lab%20on%20Smart%20Cities/)
 
-![UnimibLogo](/unimib-bordeaux.jpg)
+![UnimibLogo](./images/unimib-bordeaux.jpg)
