@@ -1,26 +1,14 @@
 # Foundations of Probability and Statistics
 
-project for the 'Foundations of Probability and Statistics' course - UNIMIB
+<h3 align="center"><i>Fabrizio Cominetti | Davide Abete</i></h3>
 
--- Project status: [Completed]
-
-## About
-
-Technologies:
-
-- R
-- Rstudio
-
-## Repository overview
+## Repository Overview
 
 ```
 ├── LICENSE
 ├── README.md
 ├── data
-├── notebooks
+└── notebooks
 ```
 
-## Contributing Members
-
-- Fabrizio Cominetti
-- Davide Abete
+<p align="center"><img src="../images/unimib-gray.png" width="200"/></p>
