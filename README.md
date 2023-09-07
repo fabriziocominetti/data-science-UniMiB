@@ -16,5 +16,6 @@ Table of Contents:
 - [Financial Market Analytics](/Financial%20Market%20Analytics/)
 - [Social Media Analytics](/Social%20Media%20Analytics/)
 - [Text Mining and Search](/Text%20Mining%20and%20Search/)
+- [Data Science Lab on Smart Cities](/Data%20Science%20Lab%20on%20Smart%20Cities/)
 
 ![UnimibLogo](/unimib-bordeaux.jpg)
