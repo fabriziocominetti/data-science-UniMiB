@@ -3,7 +3,7 @@
 <center>Fabrizio Cominetti</center>
 <br />
 
-<center><img src="https://www.scienze.unimib.it/sites/sc02/files/scientifica_logo.png"></center>
+<center><img src="../unimib-gray.png"></center>
 <br />
 
 The objective of this assignment is to assess groups of two students' ability to analyze and solve problems arising in the context of smart cities using tools provided by Data Science. Students are required to write an essay in English consisting of two parts. The first part involves describing the problem, its significance, and presenting indicators to capture related patterns. The second part includes the data analytics part of the problem, which involves dataset selection, data wrangling, spatio-temporal correlation analysis (if required by the problem), visualization, prediction/classification, and possible optimizations to suggest to policy makers.
