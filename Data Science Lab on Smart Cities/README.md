@@ -22,8 +22,6 @@ _Part 2: Data Analytics, Optimization and Policy Suggestions_
 - Suggest possible new policy or optimizations based on the data analysis to address the problem, such as implementing smart traffic management systems, promoting renewable energy sources, or encouraging recycling.
 - Consider the ethical and social implications of the policy suggestions.
 
----
-
 ## About
 
 In this project, we're diving into how people move around in the northern part of Sardinia, starting from the arrivals by airports and ports and focusing mainly on public transport stops to reach key facilities. Transportation is a big deal for making places thrive, and the goal is to understand this and find ways to improve it. To analyze the situation, several indicators are calculated, accompanied by data visualizations. As for airports and ports, the project aims to examine the flows both on a seasonal basis, differentiating by the airport of arrival and departure, and by checking the number of domestic and foreign tourists. The analysis then focuses in particular on the situation of public transportation for tourists, analyzing their current conditions and the possibility of reaching popular destinations such as beaches, as well as for residents and connections to more populated areas. In the end, some suggestions to policy makers are provided.
@@ -39,4 +37,4 @@ In this project, we're diving into how people move around in the northern part o
 └── slideshow
 ```
 
-<p align="center"><img src="../unimib-gray.png" /></p>
+<p align="center"><img src="../images/unimib-gray.png" /></p>
