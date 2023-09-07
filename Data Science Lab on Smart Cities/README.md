@@ -37,4 +37,4 @@ In this project, we're diving into how people move around in the northern part o
 └── slideshow
 ```
 
-<p align="center"><img src="../images/unimib-gray.png" /></p>
+<p align="center"><img src="../images/unimib-gray.png" width="200"/></p>
