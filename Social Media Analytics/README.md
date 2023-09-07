@@ -1,11 +1,6 @@
 # Social Media Analytics
 
-<center>Fabrizio Cominetti</center>
-<center>Ruben Agazzi</center>
-<br />
-
-<center><img src="https://www.scienze.unimib.it/sites/sc02/files/scientifica_logo.png"></center>
-<br />
+<h3 align="center"><i>Fabrizio Cominetti | Ruben Agazzi</i></h3>
 
 Given a topic (keyword and/or hashtag) or known users of your choice:
 - Define the objective of the analysis (what do we want to do?)
@@ -32,3 +27,5 @@ This project focuses on the analysis of the Twitter community and sentiment rega
 ├── slideshow
 └── requirements.txt
 ```
+
+<p align="center"><img src="../images/unimib-gray.png" width="200"/></p>
