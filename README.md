@@ -1,8 +1,15 @@
 # Data Science UniMiB
 
-Università degli Studi di Milano-Bicocca
-
-Repository containing all projects realized for the Master's Degree in Data Science at University of Milan-Bicocca.
+<div style="display: flex; align-items: flex-start;">
+    <div style="width: 100px;">
+        <img src="./images/unimib-bordeaux.jpg" alt="UnimibLogo">
+    </div>
+    <div style="margin-left: 20px;">
+        <p>Università degli Studi di Milano-Bicocca | Data Science | 2021-2024</p>
+        <p>Repository containing all projects realized for the Master's Degree in Data Science at University of Milano-Bicocca.</p>
+        <p><a href="/Master's%20Thesis/">Master's Thesis</a> - <i>Exposing Bias in Vision-Language Models</i></p>
+    </div>
+</div>
 
 Table of Contents:
 
@@ -17,5 +24,3 @@ Table of Contents:
 - [Social Media Analytics](/Social%20Media%20Analytics/)
 - [Text Mining and Search](/Text%20Mining%20and%20Search/)
 - [Data Science Lab on Smart Cities](/Data%20Science%20Lab%20on%20Smart%20Cities/)
-
-![UnimibLogo](./images/unimib-bordeaux.jpg)
