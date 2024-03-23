@@ -1,7 +1,7 @@
 # Data Science UniMiB
 
 <div style="display: flex; align-items: flex-start;">
-    <div style="width: 100px;">
+    <div style="width: 10px;">
         <img src="./images/unimib-bordeaux.jpg" alt="UnimibLogo">
     </div>
     <div style="margin-left: 20px;">
