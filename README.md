@@ -5,9 +5,6 @@
     <p>Repository containing all projects realized for the Master's Degree in Data Science at University of Milano-Bicocca.</p>
     <p><a href="/Master's%20Thesis/">Master's Thesis</a> - <i>Exposing Bias in Vision-Language Models</i></p>
 </div>
-<div>
-    <img src="./images/unimib-bordeaux.jpg" alt="UnimibLogo" width=150>
-</div>
 
 Table of Contents:
 
